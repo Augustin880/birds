@@ -2,6 +2,7 @@ import { defaultTaxonomy } from "./data/taxonomy-data.js";
 
 const TAXONOMY_JSON_URL = "./data/taxonomy.json";
 const TAXONOMY_API_URL = "./taxonomy.php";
+const IMAGE_FOLDER_QUERY_PARAM = "imageFolder";
 
 const view = document.getElementById("view");
 const breadcrumb = document.getElementById("breadcrumb");
@@ -25,14 +26,15 @@ const deleteNodeSelect = document.getElementById("delete-node-id");
 const deleteButton = deleteForm?.querySelector("button[type='submit']");
 const submitButton = document.getElementById("submit-button");
 const DEFAULT_IMAGE = "./img/default.jpg";
+const EMPTY_IMAGE_PLACEHOLDER =
+  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 const NEXT_TAXON_RANK = {
   class: "order",
   order: "family",
   family: "genus"
 };
 const speciesImageCache = new Map();
-const speciesPrimaryImageCache = new Map();
-const nodeRepresentativeImageCache = new Map();
+const nodeRepresentativeImageCandidatesCache = new Map();
 const browseSearchState = {
   scopeId: null,
   query: ""
@@ -49,7 +51,6 @@ async function bootstrap() {
   }
 
   taxonomy = await loadTaxonomy();
-  await refreshImageCatalog();
   hydrateEditor();
   bindEvents();
   syncCrossLinks();
@@ -75,9 +76,9 @@ async function loadTaxonomy() {
 
 async function persistTaxonomy() {
   clearStoredNodeImages(taxonomy);
+  clearImageCaches();
 
   if (await saveTaxonomyToApi()) {
-    await refreshImageCatalog();
     return true;
   }
 
@@ -312,7 +313,11 @@ function renderSpecies(node, lineage) {
           <div class="species-gallery__frame">
             <img
               class="species-gallery__image"
-              src="${escapeHtml(initialImage)}"
+              src="${EMPTY_IMAGE_PLACEHOLDER}"
+              data-image-src="${escapeHtml(initialImage)}"
+              data-managed-image="true"
+              decoding="async"
+              fetchpriority="high"
               alt="${escapeHtml(node.label)}"
             />
           </div>
@@ -330,6 +335,7 @@ function renderSpecies(node, lineage) {
     </section>
   `;
 
+  hydrateManagedImages(view);
   initializeSpeciesGallery(node);
 }
 
@@ -870,7 +876,17 @@ function renderBranchCardResults(scopeId, children) {
       .map(
         (child) => `
           <button class="card" type="button" data-node-id="${child.id}">
-            <div class="card__media" style="${buildCardBackground(child)}"></div>
+            <div class="card__media">
+              <img
+                class="card__image"
+                src="${EMPTY_IMAGE_PLACEHOLDER}"
+                data-node-image-id="${child.id}"
+                data-managed-image="true"
+                loading="lazy"
+                decoding="async"
+                alt="${escapeHtml(child.label)}"
+              />
+            </div>
             <span class="card__rank">${escapeHtml(child.rank)}</span>
             <h3>${escapeHtml(child.label)}</h3>
             <p>${escapeHtml(child.summary || "No summary yet.")}</p>
@@ -893,6 +909,7 @@ function renderBranchCardResults(scopeId, children) {
       : `Showing all ${children.length} direct children of ${scopeLabel}.`;
   }
 
+  hydrateManagedImages(cardGrid);
   cardGrid.querySelectorAll("[data-node-id]").forEach((card) => {
     card.addEventListener("click", () => {
       location.hash = `#/node/${card.dataset.nodeId}`;
@@ -962,6 +979,7 @@ function ensureTopology(data) {
 
   rebuildParents(data);
   clearStoredNodeImages(data);
+  clearImageCaches();
 
   return data;
 }
@@ -1114,58 +1132,46 @@ function clearStoredNodeImages(tree) {
   });
 }
 
-async function refreshImageCatalog() {
+function clearImageCaches() {
   speciesImageCache.clear();
-  speciesPrimaryImageCache.clear();
-  nodeRepresentativeImageCache.clear();
-
-  const speciesNodes = Object.values(taxonomy.nodes).filter((node) => node.type === "species");
-
-  await Promise.all(
-    speciesNodes.map(async (node) => {
-      const primaryImage = buildSpeciesImagePath(node, 0);
-
-      if (primaryImage && (await canLoadImage(primaryImage))) {
-        speciesPrimaryImageCache.set(node.id, primaryImage);
-      }
-    })
-  );
+  nodeRepresentativeImageCandidatesCache.clear();
 }
 
-function resolveRepresentativeImage(nodeId) {
+function resolveRepresentativeImageCandidates(nodeId) {
   if (!nodeId) {
-    return "";
+    return [];
   }
 
-  if (nodeRepresentativeImageCache.has(nodeId)) {
-    return nodeRepresentativeImageCache.get(nodeId);
+  if (nodeRepresentativeImageCandidatesCache.has(nodeId)) {
+    return nodeRepresentativeImageCandidatesCache.get(nodeId);
   }
 
   const node = taxonomy.nodes[nodeId];
 
   if (!node) {
-    nodeRepresentativeImageCache.set(nodeId, "");
-    return "";
+    nodeRepresentativeImageCandidatesCache.set(nodeId, []);
+    return [];
   }
 
   if (node.type === "species") {
-    const image = speciesPrimaryImageCache.get(nodeId) || "";
-    nodeRepresentativeImageCache.set(nodeId, image);
-    return image;
+    const image = buildSpeciesImagePath(node, 0);
+    const candidates = image ? [image] : [];
+    nodeRepresentativeImageCandidatesCache.set(nodeId, candidates);
+    return candidates;
   }
 
-  let image = "";
+  const candidates = [];
 
   for (const childId of taxonomy.children[nodeId] || []) {
-    image = resolveRepresentativeImage(childId);
+    const childCandidates = resolveRepresentativeImageCandidates(childId);
 
-    if (image) {
-      break;
+    if (childCandidates.length) {
+      candidates.push(...childCandidates);
     }
   }
 
-  nodeRepresentativeImageCache.set(nodeId, image);
-  return image;
+  nodeRepresentativeImageCandidatesCache.set(nodeId, candidates);
+  return candidates;
 }
 
 function getSpeciesImageFolder(node) {
@@ -1297,30 +1303,12 @@ function collectDescendants(nodeId) {
   return descendants;
 }
 
-function buildCardBackground(node) {
-  return `--card-image: ${buildBackgroundImageValue(getNodeImage(node))}`;
-}
-
-function buildPanelBackground(node) {
-  return `--panel-image: ${buildBackgroundImageValue(getNodeImage(node))}`;
-}
-
-function buildBackgroundImageValue(imageUrl) {
-  return `url('${imageUrl || DEFAULT_IMAGE}')`;
-}
-
 function getNodeImage(node) {
-  return resolveRepresentativeImage(node?.id);
+  return resolveRepresentativeImageCandidates(node?.id)[0] || DEFAULT_IMAGE;
 }
 
 function getSpeciesInitialImage(node) {
-  const image = speciesPrimaryImageCache.get(node.id);
-
-  if (!image) {
-    return DEFAULT_IMAGE;
-  }
-
-  return image;
+  return buildSpeciesImagePath(node, 0) || DEFAULT_IMAGE;
 }
 
 async function initializeSpeciesGallery(node) {
@@ -1343,7 +1331,7 @@ async function initializeSpeciesGallery(node) {
   let currentIndex = 0;
 
   const updateGallery = () => {
-    imageElement.src = images[currentIndex];
+    setManagedImageSource(imageElement, images[currentIndex]);
     statusElement.textContent = `${currentIndex + 1} / ${images.length}`;
     prevButton.disabled = images.length <= 1;
     nextButton.disabled = images.length <= 1;
@@ -1373,7 +1361,9 @@ async function collectSpeciesImages(node) {
   const speciesFolder = getSpeciesImageFolder(node);
 
   if (speciesFolder) {
-    const seriesImages = await collectImageSeries(speciesFolder);
+    const seriesImages =
+      (await collectImageSeriesFromApi(speciesFolder)) ||
+      (await collectImageSeries(speciesFolder));
 
     seriesImages.forEach((imagePath) => {
       pushUniqueImage(images, imageKeys, imagePath);
@@ -1386,6 +1376,34 @@ async function collectSpeciesImages(node) {
 
   speciesImageCache.set(node.id, images);
   return images;
+}
+
+async function collectImageSeriesFromApi(folderPath) {
+  try {
+    const requestUrl = new URL(TAXONOMY_API_URL, window.location.href);
+    requestUrl.searchParams.set(
+      IMAGE_FOLDER_QUERY_PARAM,
+      folderPath.replace(/^\.?\//, "")
+    );
+
+    const response = await fetch(requestUrl, { cache: "default" });
+
+    if (!response.ok) {
+      return null;
+    }
+
+    const payload = await response.json();
+
+    if (!Array.isArray(payload.images)) {
+      return null;
+    }
+
+    return payload.images
+      .map((imagePath) => String(imagePath || ""))
+      .filter(Boolean);
+  } catch {
+    return null;
+  }
 }
 
 async function collectImageSeries(folderPath) {
@@ -1428,6 +1446,66 @@ function normalizeImageKey(imagePath) {
     .replace(/^\.?\//, "")
     .replace(/\\/g, "/")
     .toLowerCase();
+}
+
+function hydrateManagedImages(container = document) {
+  container.querySelectorAll("img[data-managed-image]").forEach((imageElement) => {
+    if (imageElement.dataset.managedImageBound === "true") {
+      return;
+    }
+
+    imageElement.dataset.managedImageBound = "true";
+    imageElement.addEventListener("error", handleManagedImageError);
+
+    if (imageElement.dataset.nodeImageId) {
+      imageElement.dataset.imageCandidateIndex = "0";
+      const candidate = getNodeImageCandidates(imageElement.dataset.nodeImageId)[0];
+      setManagedImageSource(imageElement, candidate || DEFAULT_IMAGE);
+      return;
+    }
+
+    setManagedImageSource(imageElement, imageElement.dataset.imageSrc || DEFAULT_IMAGE);
+  });
+}
+
+function getNodeImageCandidates(nodeId) {
+  return resolveRepresentativeImageCandidates(nodeId).filter(Boolean);
+}
+
+function setManagedImageSource(imageElement, src) {
+  const nextSrc = src || DEFAULT_IMAGE;
+
+  if (imageElement.dataset.currentSrc === nextSrc) {
+    return;
+  }
+
+  delete imageElement.dataset.fallbackApplied;
+  imageElement.dataset.currentSrc = nextSrc;
+  imageElement.src = nextSrc;
+}
+
+function handleManagedImageError(event) {
+  const imageElement = event.currentTarget;
+  const nodeId = imageElement.dataset.nodeImageId;
+
+  if (nodeId) {
+    const nextIndex = Number(imageElement.dataset.imageCandidateIndex || "0") + 1;
+    const candidates = getNodeImageCandidates(nodeId);
+
+    if (nextIndex < candidates.length) {
+      imageElement.dataset.imageCandidateIndex = String(nextIndex);
+      setManagedImageSource(imageElement, candidates[nextIndex]);
+      return;
+    }
+  }
+
+  if (imageElement.dataset.fallbackApplied === "true") {
+    return;
+  }
+
+  imageElement.dataset.fallbackApplied = "true";
+  imageElement.dataset.currentSrc = DEFAULT_IMAGE;
+  imageElement.src = DEFAULT_IMAGE;
 }
 
 function canLoadImage(src) {

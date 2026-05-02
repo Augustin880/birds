@@ -75,7 +75,7 @@ body.edit-page {
   inset: 0;
   background:
     linear-gradient(rgba(4, 10, 16, 0.28), rgba(4, 10, 16, 0.8)),
-    url("/img/Aves/Passeriformes/Paridae/Cyanistes/Caeruleus/0.png")
+    url("./img/Aves/Passeriformes/Paridae/Cyanistes/Caeruleus/0.png")
       center/cover no-repeat;
   transform: scale(1.04);
 }
@@ -424,7 +424,17 @@ body.edit-page {
 
 .card__media {
   min-height: 172px;
-  background: var(--card-image) center/cover no-repeat;
+  background:
+    linear-gradient(180deg, rgba(12, 24, 34, 0.8), rgba(7, 15, 23, 0.92)),
+    #09141d;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  min-height: 172px;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
 }
 
 .card__rank {

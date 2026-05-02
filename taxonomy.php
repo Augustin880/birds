@@ -14,6 +14,10 @@ if ($method === 'OPTIONS') {
 }
 
 if ($method === 'GET') {
+    if (isset($_GET['imageFolder'])) {
+        respondWithImageList((string) $_GET['imageFolder']);
+    }
+
     if (!is_file($dataFile) || !is_readable($dataFile)) {
         respondWithJson(['error' => 'Taxonomy file is not readable.'], 500);
     }
@@ -72,4 +76,60 @@ function respondWithJson(array $payload, int $statusCode): void
     http_response_code($statusCode);
     echo json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
     exit;
+}
+
+function respondWithImageList(string $requestedFolder): void
+{
+    $imagesRoot = realpath(__DIR__ . '/img');
+
+    if ($imagesRoot === false) {
+        respondWithJson(['error' => 'Image root is not available.'], 500);
+    }
+
+    $normalizedFolder = trim(str_replace('\\', '/', $requestedFolder), '/');
+
+    if ($normalizedFolder === '' || str_contains($normalizedFolder, '..')) {
+        respondWithJson(['images' => []], 400);
+    }
+
+    $folderPath = realpath(__DIR__ . '/' . $normalizedFolder);
+
+    if ($folderPath === false || !is_dir($folderPath)) {
+        respondWithJson(['images' => []], 200);
+    }
+
+    if ($folderPath !== $imagesRoot && !str_starts_with($folderPath, $imagesRoot . DIRECTORY_SEPARATOR)) {
+        respondWithJson(['images' => []], 403);
+    }
+
+    $entries = scandir($folderPath);
+
+    if ($entries === false) {
+        respondWithJson(['images' => []], 500);
+    }
+
+    $imageFiles = array_values(
+        array_filter(
+            $entries,
+            static fn(string $entry): bool => preg_match('/^\d+\.png$/i', $entry) === 1
+        )
+    );
+
+    usort(
+        $imageFiles,
+        static function (string $left, string $right): int {
+            $leftIndex = (int) pathinfo($left, PATHINFO_FILENAME);
+            $rightIndex = (int) pathinfo($right, PATHINFO_FILENAME);
+
+            return $leftIndex <=> $rightIndex;
+        }
+    );
+
+    $relativeFolder = '.' . str_replace(DIRECTORY_SEPARATOR, '/', substr($folderPath, strlen(__DIR__)));
+    $imagePaths = array_map(
+        static fn(string $entry): string => $relativeFolder . '/' . $entry,
+        $imageFiles
+    );
+
+    respondWithJson(['images' => $imagePaths], 200);
 }
