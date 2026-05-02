@@ -1015,7 +1015,7 @@ function filterBranchChildren(children, query) {
   }
 
   return children.filter((child) =>
-    normalizeSearchValue(child.label).includes(normalizedQuery)
+    getNodeSearchText(child).includes(normalizedQuery)
   );
 }
 
@@ -1029,7 +1029,7 @@ function buildFlattenedBranchGroups(children, query) {
           return true;
         }
 
-        return normalizeSearchValue(speciesNode.label).includes(normalizedQuery);
+        return getNodeSearchText(speciesNode).includes(normalizedQuery);
       });
 
       return {
@@ -1041,6 +1041,8 @@ function buildFlattenedBranchGroups(children, query) {
 }
 
 function renderNodeCard(node) {
+  const browseTitle = getNodeBrowseTitle(node);
+
   return `
     <button class="card" type="button" data-node-id="${node.id}">
       <div class="card__media">
@@ -1051,14 +1053,34 @@ function renderNodeCard(node) {
           data-managed-image="true"
           loading="lazy"
           decoding="async"
-          alt="${escapeHtml(node.label)}"
+          alt="${escapeHtml(browseTitle)}"
         />
       </div>
       <span class="card__rank">${escapeHtml(node.rank)}</span>
-      <h3>${escapeHtml(node.label)}</h3>
+      <h3>${escapeHtml(browseTitle)}</h3>
       <p>${escapeHtml(node.summary || "No summary yet.")}</p>
     </button>
   `;
+}
+
+function getNodeBrowseTitle(node) {
+  if (node?.type === "species") {
+    return node.profile?.scientificName || node.label;
+  }
+
+  return node?.label || "";
+}
+
+function getNodeSearchText(node) {
+  if (!node) {
+    return "";
+  }
+
+  return normalizeSearchValue(
+    node.type === "species"
+      ? `${node.label} ${node.profile?.scientificName || ""}`
+      : node.label
+  );
 }
 
 function normalizeSearchValue(value) {

@@ -412,7 +412,7 @@
             "rank": "species",
             "summary": "A marsh bird with a red frontal shield and confident swimming gait.",
             "profile": {
-                "scientificName": "Gallinula chloropus",
+                "scientificName": "Gallinula Chloropus",
                 "habitat": "Ponds, marshes, canals, and slow vegetated water.",
                 "diet": "Aquatic plants, seeds, snails, and small invertebrates.",
                 "wingspan": "50 to 55 cm",
@@ -567,7 +567,7 @@
             "rank": "species",
             "summary": "A compact seabird with a bright bill and powerful underwater wing-strokes.",
             "profile": {
-                "scientificName": "Fratercula arctica",
+                "scientificName": "Fratercula Arctica",
                 "habitat": "North Atlantic cliffs and offshore waters.",
                 "diet": "Small fish such as sand eels and capelin.",
                 "wingspan": "47 to 63 cm",
