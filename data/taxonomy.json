@@ -55,21 +55,6 @@
             "rank": "genus",
             "summary": "Struthio represented here as a genus branch within Struthionidae."
         },
-        "common-ostrich": {
-            "id": "common-ostrich",
-            "type": "species",
-            "label": "Common Ostrich",
-            "rank": "species",
-            "summary": "The largest living bird, built for speed across open African landscapes.",
-            "profile": {
-                "scientificName": "Struthio camelus",
-                "habitat": "Savannas, Sahel scrub, and open semi-desert.",
-                "diet": "Seeds, grasses, leaves, flowers, and small invertebrates.",
-                "wingspan": "About 2 m",
-                "status": "Least Concern"
-            },
-            "notes": "A flightless ratite with powerful legs and highly social behavior."
-        },
         "casuariiformes": {
             "id": "casuariiformes",
             "type": "taxon",
@@ -91,21 +76,6 @@
             "rank": "genus",
             "summary": "Dromaius represented here as a genus branch within Casuariidae."
         },
-        "emu": {
-            "id": "emu",
-            "type": "species",
-            "label": "Emu",
-            "rank": "species",
-            "summary": "Australia's tallest native bird, adapted to wide-ranging movement in open country.",
-            "profile": {
-                "scientificName": "Dromaius novaehollandiae",
-                "habitat": "Open woodland, grassland, and scrub across much of Australia.",
-                "diet": "Seeds, fruits, shoots, and invertebrates.",
-                "wingspan": "Vestigial wings",
-                "status": "Least Concern"
-            },
-            "notes": "Male emus incubate the eggs and care for the chicks."
-        },
         "apterygiformes": {
             "id": "apterygiformes",
             "type": "taxon",
@@ -126,21 +96,6 @@
             "label": "Apteryx",
             "rank": "genus",
             "summary": "Apteryx represented here as a genus branch within Apterygidae."
-        },
-        "north-island-brown-kiwi": {
-            "id": "north-island-brown-kiwi",
-            "type": "species",
-            "label": "North Island Brown Kiwi",
-            "rank": "species",
-            "summary": "A nocturnal kiwi with a long bill and a strong reliance on smell.",
-            "profile": {
-                "scientificName": "Apteryx mantelli",
-                "habitat": "Forest, scrub, and rough farmland in New Zealand.",
-                "diet": "Earthworms, insects, larvae, and fallen fruit.",
-                "wingspan": "Flightless",
-                "status": "Vulnerable"
-            },
-            "notes": "Kiwis are iconic flightless birds with whisker-like facial feathers."
         },
         "rheiformes": {
             "id": "rheiformes",
@@ -254,21 +209,6 @@
             "rank": "genus",
             "summary": "Pavo represented here as a genus branch within Phasianidae."
         },
-        "indian-peafowl": {
-            "id": "indian-peafowl",
-            "type": "species",
-            "label": "Indian Peafowl",
-            "rank": "species",
-            "summary": "A large pheasant famous for the male's iridescent train and courtship display.",
-            "profile": {
-                "scientificName": "Pavo cristatus",
-                "habitat": "Open forest, farmland edges, and villages in South Asia.",
-                "diet": "Seeds, insects, fruits, reptiles, and small animals.",
-                "wingspan": "140 to 160 cm",
-                "status": "Least Concern"
-            },
-            "notes": "The train is an ornamental tail covert display rather than the true tail."
-        },
         "phoenicopteriformes": {
             "id": "phoenicopteriformes",
             "type": "taxon",
@@ -289,21 +229,6 @@
             "label": "Phoenicopterus",
             "rank": "genus",
             "summary": "Phoenicopterus represented here as a genus branch within Phoenicopteridae."
-        },
-        "greater-flamingo": {
-            "id": "greater-flamingo",
-            "type": "species",
-            "label": "Greater Flamingo",
-            "rank": "species",
-            "summary": "A tall wader that filters food from saline lakes and lagoons.",
-            "profile": {
-                "scientificName": "Phoenicopterus roseus",
-                "habitat": "Salt pans, lagoons, estuaries, and shallow alkaline lakes.",
-                "diet": "Brine shrimp, algae, and other microscopic aquatic food.",
-                "wingspan": "140 to 170 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Its pink color comes largely from carotenoid-rich food."
         },
         "podicipediformes": {
             "id": "podicipediformes",
@@ -727,21 +652,6 @@
             "rank": "genus",
             "summary": "Aptenodytes represented here as a genus branch within Spheniscidae."
         },
-        "emperor-penguin": {
-            "id": "emperor-penguin",
-            "type": "species",
-            "label": "Emperor Penguin",
-            "rank": "species",
-            "summary": "The tallest and heaviest penguin, breeding through Antarctic winter.",
-            "profile": {
-                "scientificName": "Aptenodytes forsteri",
-                "habitat": "Pack ice and surrounding Southern Ocean waters.",
-                "diet": "Fish, squid, and krill.",
-                "wingspan": "Flippered forelimbs",
-                "status": "Near Threatened"
-            },
-            "notes": "Males incubate the egg on their feet during the darkest part of winter."
-        },
         "procellariiformes": {
             "id": "procellariiformes",
             "type": "taxon",
@@ -762,21 +672,6 @@
             "label": "Diomedea",
             "rank": "genus",
             "summary": "Diomedea represented here as a genus branch within Diomedeidae."
-        },
-        "wandering-albatross": {
-            "id": "wandering-albatross",
-            "type": "species",
-            "label": "Wandering Albatross",
-            "rank": "species",
-            "summary": "A giant oceanic glider with one of the longest wingspans of any bird.",
-            "profile": {
-                "scientificName": "Diomedea exulans",
-                "habitat": "Open Southern Ocean, breeding on remote subantarctic islands.",
-                "diet": "Squid, fish, and carrion at sea.",
-                "wingspan": "250 to 350 cm",
-                "status": "Vulnerable"
-            },
-            "notes": "Dynamic soaring lets it cover huge distances with minimal flapping."
         },
         "oceanitidae": {
             "id": "oceanitidae",
@@ -897,21 +792,6 @@
             "rank": "genus",
             "summary": "Ardea represented here as a genus branch within Ardeidae."
         },
-        "great-blue-heron": {
-            "id": "great-blue-heron",
-            "type": "species",
-            "label": "Great Blue Heron",
-            "rank": "species",
-            "summary": "A tall heron that stalks shallow water with slow, deliberate steps.",
-            "profile": {
-                "scientificName": "Ardea herodias",
-                "habitat": "Marshes, shorelines, rivers, and estuaries.",
-                "diet": "Fish, amphibians, crustaceans, and small vertebrates.",
-                "wingspan": "167 to 201 cm",
-                "status": "Least Concern"
-            },
-            "notes": "This species can hunt in fresh, brackish, and marine waters."
-        },
         "caprimulgiformes": {
             "id": "caprimulgiformes",
             "type": "taxon",
@@ -1017,21 +897,6 @@
             "rank": "genus",
             "summary": "Archilochus represented here as a genus branch within Trochilidae."
         },
-        "ruby-throated-hummingbird": {
-            "id": "ruby-throated-hummingbird",
-            "type": "species",
-            "label": "Ruby-throated Hummingbird",
-            "rank": "species",
-            "summary": "A migratory hummingbird known for rapid wingbeats and precision hovering.",
-            "profile": {
-                "scientificName": "Archilochus colubris",
-                "habitat": "Forest edges, gardens, meadows, and woodland clearings.",
-                "diet": "Nectar and small flying insects.",
-                "wingspan": "8 to 11 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Many individuals cross the Gulf of Mexico during migration."
-        },
         "strigiformes": {
             "id": "strigiformes",
             "type": "taxon",
@@ -1059,21 +924,6 @@
             "label": "Bubo",
             "rank": "genus",
             "summary": "Bubo represented here as a genus branch within Strigidae."
-        },
-        "great-horned-owl": {
-            "id": "great-horned-owl",
-            "type": "species",
-            "label": "Great Horned Owl",
-            "rank": "species",
-            "summary": "A powerful owl with prominent ear tufts and a deep resonant voice.",
-            "profile": {
-                "scientificName": "Bubo virginianus",
-                "habitat": "Forests, deserts, suburbs, and open country.",
-                "diet": "Mammals, birds, reptiles, and other vertebrates.",
-                "wingspan": "101 to 145 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It is one of the most versatile avian predators in the Americas."
         },
         "cathartiformes": {
             "id": "cathartiformes",
@@ -1124,42 +974,12 @@
             "rank": "genus",
             "summary": "Buteo represented here as a genus branch within Accipitridae."
         },
-        "red-tailed-hawk": {
-            "id": "red-tailed-hawk",
-            "type": "species",
-            "label": "Red-tailed Hawk",
-            "rank": "species",
-            "summary": "A broad-winged hawk often seen soaring over fields and roadsides.",
-            "profile": {
-                "scientificName": "Buteo jamaicensis",
-                "habitat": "Open country, woodland edges, deserts, and suburbs.",
-                "diet": "Mostly small mammals, plus reptiles and birds.",
-                "wingspan": "114 to 133 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Its classic scream is often used in film for any large raptor."
-        },
         "haliaeetus": {
             "id": "haliaeetus",
             "type": "taxon",
             "label": "Haliaeetus",
             "rank": "genus",
             "summary": "Haliaeetus represented here as a genus branch within Accipitridae."
-        },
-        "bald-eagle": {
-            "id": "bald-eagle",
-            "type": "species",
-            "label": "Bald Eagle",
-            "rank": "species",
-            "summary": "A large fish-eating eagle associated with major North American waterways.",
-            "profile": {
-                "scientificName": "Haliaeetus leucocephalus",
-                "habitat": "Lakes, rivers, reservoirs, and coastal estuaries.",
-                "diet": "Fish, waterbirds, carrion, and opportunistic prey.",
-                "wingspan": "180 to 230 cm",
-                "status": "Least Concern"
-            },
-            "notes": "The species has rebounded strongly in North America after major conservation efforts."
         },
         "coliiformes": {
             "id": "coliiformes",
@@ -1238,21 +1058,6 @@
             "rank": "genus",
             "summary": "Buceros represented here as a genus branch within Bucerotidae."
         },
-        "great-hornbill": {
-            "id": "great-hornbill",
-            "type": "species",
-            "label": "Great Hornbill",
-            "rank": "species",
-            "summary": "A huge forest hornbill with a striking casque and loud wingbeats.",
-            "profile": {
-                "scientificName": "Buceros bicornis",
-                "habitat": "Tall evergreen and moist deciduous forest in South and Southeast Asia.",
-                "diet": "Mostly fruit, with insects and small vertebrates.",
-                "wingspan": "152 to 180 cm",
-                "status": "Vulnerable"
-            },
-            "notes": "Females seal themselves inside tree cavities while nesting."
-        },
         "coraciiformes": {
             "id": "coraciiformes",
             "type": "taxon",
@@ -1308,21 +1113,6 @@
             "label": "Alcedo",
             "rank": "genus",
             "summary": "Alcedo represented here as a genus branch within Alcedinidae."
-        },
-        "common-kingfisher": {
-            "id": "common-kingfisher",
-            "type": "species",
-            "label": "Common Kingfisher",
-            "rank": "species",
-            "summary": "A jewel-like fishing bird that darts low over clear water.",
-            "profile": {
-                "scientificName": "Alcedo atthis",
-                "habitat": "Streams, canals, ponds, and slow rivers with banks for nesting.",
-                "diet": "Small fish, aquatic insects, and crustaceans.",
-                "wingspan": "24 to 26 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It nests in burrows excavated into banks."
         },
         "galbuliformes": {
             "id": "galbuliformes",
@@ -1394,21 +1184,6 @@
             "rank": "genus",
             "summary": "Ramphastos represented here as a genus branch within Ramphastidae."
         },
-        "toco-toucan": {
-            "id": "toco-toucan",
-            "type": "species",
-            "label": "Toco Toucan",
-            "rank": "species",
-            "summary": "A large toucan with an oversized bill and bold black, white, and orange patterning.",
-            "profile": {
-                "scientificName": "Ramphastos toco",
-                "habitat": "Woodland edges, gallery forest, and savanna mosaics in South America.",
-                "diet": "Fruit, eggs, nestlings, and small animals.",
-                "wingspan": "50 to 60 cm",
-                "status": "Least Concern"
-            },
-            "notes": "The bill is lightweight despite its size, thanks to internal air spaces."
-        },
         "indicatoridae": {
             "id": "indicatoridae",
             "type": "taxon",
@@ -1429,21 +1204,6 @@
             "label": "Dendrocopos",
             "rank": "genus",
             "summary": "Dendrocopos represented here as a genus branch within Picidae."
-        },
-        "great-spotted-woodpecker": {
-            "id": "great-spotted-woodpecker",
-            "type": "species",
-            "label": "Great Spotted Woodpecker",
-            "rank": "species",
-            "summary": "A familiar Eurasian woodpecker that drums loudly on resonant trunks.",
-            "profile": {
-                "scientificName": "Dendrocopos major",
-                "habitat": "Woodland, parks, orchards, and large gardens.",
-                "diet": "Insects, larvae, seeds, and nuts.",
-                "wingspan": "34 to 39 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It wedges seeds and cones into bark crevices before hammering them open."
         },
         "cariamiformes": {
             "id": "cariamiformes",
@@ -1480,21 +1240,6 @@
             "rank": "genus",
             "summary": "Falco represented here as a genus branch within Falconidae."
         },
-        "peregrine-falcon": {
-            "id": "peregrine-falcon",
-            "type": "species",
-            "label": "Peregrine Falcon",
-            "rank": "species",
-            "summary": "A fast aerial predator famous for its high-speed hunting dives.",
-            "profile": {
-                "scientificName": "Falco peregrinus",
-                "habitat": "Cliffs, coasts, cities, and open landscapes worldwide.",
-                "diet": "Mostly medium-sized birds captured in flight.",
-                "wingspan": "74 to 120 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Peregrines have adapted especially well to nesting on urban towers and bridges."
-        },
         "psittaciformes": {
             "id": "psittaciformes",
             "type": "taxon",
@@ -1530,21 +1275,6 @@
             "rank": "genus",
             "summary": "Ara represented here as a genus branch within Psittacidae."
         },
-        "scarlet-macaw": {
-            "id": "scarlet-macaw",
-            "type": "species",
-            "label": "Scarlet Macaw",
-            "rank": "species",
-            "summary": "A brilliantly colored macaw of tropical forest canopies and river corridors.",
-            "profile": {
-                "scientificName": "Ara macao",
-                "habitat": "Humid forest, woodland edges, and riverine forest.",
-                "diet": "Seeds, nuts, fruits, and clay from exposed licks.",
-                "wingspan": "99 to 109 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Macaws often travel in noisy bonded pairs or small groups."
-        },
         "psittaculidae": {
             "id": "psittaculidae",
             "type": "taxon",
@@ -1558,21 +1288,6 @@
             "label": "Psittacula",
             "rank": "genus",
             "summary": "Psittacula represented here as a genus branch within Psittaculidae."
-        },
-        "rose-ringed-parakeet": {
-            "id": "rose-ringed-parakeet",
-            "type": "species",
-            "label": "Rose-ringed Parakeet",
-            "rank": "species",
-            "summary": "A highly adaptable parakeet now established far beyond its native range.",
-            "profile": {
-                "scientificName": "Psittacula krameri",
-                "habitat": "Woodland, farmland, cities, and suburban parks.",
-                "diet": "Seeds, fruits, buds, and cultivated crops.",
-                "wingspan": "38 to 42 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Urban feral populations are now common in many parts of Europe."
         },
         "passeriformes": {
             "id": "passeriformes",
@@ -1672,21 +1387,6 @@
             "rank": "genus",
             "summary": "Sayornis represented here as a genus branch within Tyrannidae."
         },
-        "eastern-phoebe": {
-            "id": "eastern-phoebe",
-            "type": "species",
-            "label": "Eastern Phoebe",
-            "rank": "species",
-            "summary": "A familiar flycatcher that sallies from low perches and often nests on buildings.",
-            "profile": {
-                "scientificName": "Sayornis phoebe",
-                "habitat": "Woodland edges, farms, bridges, and suburban areas near water.",
-                "diet": "Flying insects and other small arthropods.",
-                "wingspan": "26 to 28 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It pumps its tail repeatedly while perched."
-        },
         "melanopareiidae": {
             "id": "melanopareiidae",
             "type": "taxon",
@@ -1742,21 +1442,6 @@
             "label": "Furnarius",
             "rank": "genus",
             "summary": "Furnarius represented here as a genus branch within Furnariidae."
-        },
-        "rufous-hornero": {
-            "id": "rufous-hornero",
-            "type": "species",
-            "label": "Rufous Hornero",
-            "rank": "species",
-            "summary": "A clay-nest building ovenbird widely seen in open habitats of South America.",
-            "profile": {
-                "scientificName": "Furnarius rufus",
-                "habitat": "Grassland, farmland, towns, and open woodland.",
-                "diet": "Insects and other small invertebrates.",
-                "wingspan": "25 to 28 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Its oven-shaped mud nest gives the family one of its common English names."
         },
         "menuridae": {
             "id": "menuridae",
@@ -2024,21 +1709,6 @@
             "rank": "genus",
             "summary": "Paradisaea represented here as a genus branch within Paradisaeidae."
         },
-        "greater-bird-of-paradise": {
-            "id": "greater-bird-of-paradise",
-            "type": "species",
-            "label": "Greater Bird-of-paradise",
-            "rank": "species",
-            "summary": "A spectacular lekking species with elongated flank plumes and elaborate display behavior.",
-            "profile": {
-                "scientificName": "Paradisaea apoda",
-                "habitat": "Lowland and hill rainforest in New Guinea and nearby islands.",
-                "diet": "Fruit and arthropods.",
-                "wingspan": "43 to 48 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Males gather at display trees and perform coordinated visual displays."
-        },
         "melampittidae": {
             "id": "melampittidae",
             "type": "taxon",
@@ -2080,21 +1750,6 @@
             "label": "Cyanocitta",
             "rank": "genus",
             "summary": "Cyanocitta represented here as a genus branch within Corvidae."
-        },
-        "blue-jay": {
-            "id": "blue-jay",
-            "type": "species",
-            "label": "Blue Jay",
-            "rank": "species",
-            "summary": "A crested jay with bold patterning and a strong role in woodland acorn dispersal.",
-            "profile": {
-                "scientificName": "Cyanocitta cristata",
-                "habitat": "Mixed woodland, parks, and suburban edges in eastern North America.",
-                "diet": "Seeds, nuts, insects, and occasional eggs or small vertebrates.",
-                "wingspan": "34 to 43 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Blue Jays often cache food and can mimic the calls of hawks."
         },
         "cnemophilidae": {
             "id": "cnemophilidae",
@@ -2187,21 +1842,6 @@
             "rank": "genus",
             "summary": "Poecile represented here as a genus branch within Paridae."
         },
-        "black-capped-chickadee": {
-            "id": "black-capped-chickadee",
-            "type": "species",
-            "label": "Black-capped Chickadee",
-            "rank": "species",
-            "summary": "A small active tit that anchors mixed winter flocks in North America.",
-            "profile": {
-                "scientificName": "Poecile atricapillus",
-                "habitat": "Woodland, parks, suburban trees, and riparian edges.",
-                "diet": "Insects, seeds, and berries.",
-                "wingspan": "16 to 21 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It stores food widely and remembers cache locations with impressive precision."
-        },
         "panuridae": {
             "id": "panuridae",
             "type": "taxon",
@@ -2285,21 +1925,6 @@
             "label": "Hirundo",
             "rank": "genus",
             "summary": "Hirundo represented here as a genus branch within Hirundinidae."
-        },
-        "barn-swallow": {
-            "id": "barn-swallow",
-            "type": "species",
-            "label": "Barn Swallow",
-            "rank": "species",
-            "summary": "A graceful migrant with deeply forked tail streamers and agile aerial feeding.",
-            "profile": {
-                "scientificName": "Hirundo rustica",
-                "habitat": "Open country, farmland, wetlands, and human structures.",
-                "diet": "Flying insects taken on the wing.",
-                "wingspan": "29 to 32 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It often nests inside barns, sheds, and bridges."
         },
         "hyliidae": {
             "id": "hyliidae",
@@ -2483,21 +2108,6 @@
             "rank": "genus",
             "summary": "Troglodytes represented here as a genus branch within Troglodytidae."
         },
-        "house-wren": {
-            "id": "house-wren",
-            "type": "species",
-            "label": "House Wren",
-            "rank": "species",
-            "summary": "A small loud wren that readily nests around houses and gardens.",
-            "profile": {
-                "scientificName": "Troglodytes aedon",
-                "habitat": "Shrubby edges, woodland openings, gardens, and towns.",
-                "diet": "Insects and spiders.",
-                "wingspan": "12 to 15 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Males often start multiple nests before a female chooses one."
-        },
         "elachuridae": {
             "id": "elachuridae",
             "type": "taxon",
@@ -2526,21 +2136,6 @@
             "rank": "genus",
             "summary": "Mimus represented here as a genus branch within Mimidae."
         },
-        "northern-mockingbird": {
-            "id": "northern-mockingbird",
-            "type": "species",
-            "label": "Northern Mockingbird",
-            "rank": "species",
-            "summary": "A bold songster with an enormous repertoire and strong territorial behavior.",
-            "profile": {
-                "scientificName": "Mimus polyglottos",
-                "habitat": "Suburbs, parks, thorn scrub, and open woodland.",
-                "diet": "Insects, berries, and other fruit.",
-                "wingspan": "31 to 38 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It is famous for repeating and recombining phrases from other birds and noises."
-        },
         "sturnidae": {
             "id": "sturnidae",
             "type": "taxon",
@@ -2568,21 +2163,6 @@
             "label": "Turdus",
             "rank": "genus",
             "summary": "Turdus represented here as a genus branch within Turdidae."
-        },
-        "american-robin": {
-            "id": "american-robin",
-            "type": "species",
-            "label": "American Robin",
-            "rank": "species",
-            "summary": "A familiar thrush with a warm orange breast and an early dawn song.",
-            "profile": {
-                "scientificName": "Turdus migratorius",
-                "habitat": "Lawns, woodland edges, parks, and suburbs.",
-                "diet": "Earthworms, insects, and fruit.",
-                "wingspan": "31 to 41 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Robins shift seasonally from ground foraging to fruit-heavy diets."
         },
         "muscicapidae": {
             "id": "muscicapidae",
@@ -2647,21 +2227,6 @@
             "label": "Cinnyris",
             "rank": "genus",
             "summary": "Cinnyris represented here as a genus branch within Nectariniidae."
-        },
-        "olive-backed-sunbird": {
-            "id": "olive-backed-sunbird",
-            "type": "species",
-            "label": "Olive-backed Sunbird",
-            "rank": "species",
-            "summary": "A small nectar-feeding passerine with a decurved bill and broad tropical range.",
-            "profile": {
-                "scientificName": "Cinnyris jugularis",
-                "habitat": "Gardens, mangroves, forest edge, and disturbed tropical habitats.",
-                "diet": "Nectar, spiders, and small insects.",
-                "wingspan": "11 to 13 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Sunbirds often hover briefly but usually feed while perched."
         },
         "chloropseidae": {
             "id": "chloropseidae",
@@ -2747,21 +2312,6 @@
             "rank": "genus",
             "summary": "Carduelis represented here as a genus branch within Fringillidae."
         },
-        "european-goldfinch": {
-            "id": "european-goldfinch",
-            "type": "species",
-            "label": "European Goldfinch",
-            "rank": "species",
-            "summary": "A bright finch with a red face mask and strong association with thistle seed.",
-            "profile": {
-                "scientificName": "Carduelis carduelis",
-                "habitat": "Open woodland, orchards, farmland, and gardens.",
-                "diet": "Seeds, especially from thistles and teasels.",
-                "wingspan": "21 to 25 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Its fine bill is especially well suited to extracting small seeds."
-        },
         "rhodinocichlidae": {
             "id": "rhodinocichlidae",
             "type": "taxon",
@@ -2796,21 +2346,6 @@
             "label": "Melospiza",
             "rank": "genus",
             "summary": "Melospiza represented here as a genus branch within Passerellidae."
-        },
-        "song-sparrow": {
-            "id": "song-sparrow",
-            "type": "species",
-            "label": "Song Sparrow",
-            "rank": "species",
-            "summary": "A widespread sparrow with rich regional variation in song and plumage.",
-            "profile": {
-                "scientificName": "Melospiza melodia",
-                "habitat": "Marsh edges, shrubby fields, riparian cover, and gardens.",
-                "diet": "Seeds, insects, and small invertebrates.",
-                "wingspan": "18 to 25 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Song structure varies strongly across populations and regions."
         },
         "calyptophilidae": {
             "id": "calyptophilidae",
@@ -2868,21 +2403,6 @@
             "rank": "genus",
             "summary": "Agelaius represented here as a genus branch within Icteridae."
         },
-        "red-winged-blackbird": {
-            "id": "red-winged-blackbird",
-            "type": "species",
-            "label": "Red-winged Blackbird",
-            "rank": "species",
-            "summary": "A marshland icterid whose males defend reedbeds with flashing shoulder patches.",
-            "profile": {
-                "scientificName": "Agelaius phoeniceus",
-                "habitat": "Marshes, wet meadows, roadside ditches, and agricultural fields.",
-                "diet": "Seeds, grains, and insects.",
-                "wingspan": "31 to 40 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Outside breeding season it often gathers in very large flocks."
-        },
         "parulidae": {
             "id": "parulidae",
             "type": "taxon",
@@ -2897,21 +2417,6 @@
             "rank": "genus",
             "summary": "Setophaga represented here as a genus branch within Parulidae."
         },
-        "yellow-warbler": {
-            "id": "yellow-warbler",
-            "type": "species",
-            "label": "Yellow Warbler",
-            "rank": "species",
-            "summary": "A bright migratory warbler common in wet shrubs and riparian thickets.",
-            "profile": {
-                "scientificName": "Setophaga petechia",
-                "habitat": "Willows, wetlands, shrubby stream edges, and second growth.",
-                "diet": "Insects and other small arthropods.",
-                "wingspan": "16 to 22 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Females may bury cowbird eggs under fresh nest lining."
-        },
         "cardinalidae": {
             "id": "cardinalidae",
             "type": "taxon",
@@ -2925,21 +2430,6 @@
             "label": "Cardinalis",
             "rank": "genus",
             "summary": "Cardinalis represented here as a genus branch within Cardinalidae."
-        },
-        "northern-cardinal": {
-            "id": "northern-cardinal",
-            "type": "species",
-            "label": "Northern Cardinal",
-            "rank": "species",
-            "summary": "A conspicuous songbird with a crest, stout bill, and strong pair bonds.",
-            "profile": {
-                "scientificName": "Cardinalis cardinalis",
-                "habitat": "Gardens, woodland edge, shrubland, and suburban neighborhoods.",
-                "diet": "Seeds, fruit, and insects.",
-                "wingspan": "25 to 31 cm",
-                "status": "Least Concern"
-            },
-            "notes": "Both sexes sing, and pairs may duet in the breeding season."
         },
         "mitrospingidae": {
             "id": "mitrospingidae",
@@ -2961,21 +2451,6 @@
             "label": "Thraupis",
             "rank": "genus",
             "summary": "Thraupis represented here as a genus branch within Thraupidae."
-        },
-        "blue-gray-tanager": {
-            "id": "blue-gray-tanager",
-            "type": "species",
-            "label": "Blue-gray Tanager",
-            "rank": "species",
-            "summary": "A widespread Neotropical tanager comfortable in edges, parks, and cities.",
-            "profile": {
-                "scientificName": "Thraupis episcopus",
-                "habitat": "Forest edge, gardens, plantations, and urban green space.",
-                "diet": "Fruit, nectar, and insects.",
-                "wingspan": "26 to 30 cm",
-                "status": "Least Concern"
-            },
-            "notes": "It is one of the most familiar garden birds in much of tropical America."
         },
         "parus": {
             "id": "parus",
@@ -3490,27 +2965,21 @@
         "struthionidae": [
             "struthio"
         ],
-        "struthio": [
-            "common-ostrich"
-        ],
+        "struthio": [],
         "casuariiformes": [
             "casuariidae"
         ],
         "casuariidae": [
             "dromaius"
         ],
-        "dromaius": [
-            "emu"
-        ],
+        "dromaius": [],
         "apterygiformes": [
             "apterygidae"
         ],
         "apterygidae": [
             "apteryx"
         ],
-        "apteryx": [
-            "north-island-brown-kiwi"
-        ],
+        "apteryx": [],
         "rheiformes": [
             "rheidae"
         ],
@@ -3542,18 +3011,14 @@
             "pavo",
             "phasianus"
         ],
-        "pavo": [
-            "indian-peafowl"
-        ],
+        "pavo": [],
         "phoenicopteriformes": [
             "phoenicopteridae"
         ],
         "phoenicopteridae": [
             "phoenicopterus"
         ],
-        "phoenicopterus": [
-            "greater-flamingo"
-        ],
+        "phoenicopterus": [],
         "podicipediformes": [
             "podicipedidae"
         ],
@@ -3642,9 +3107,7 @@
         "spheniscidae": [
             "aptenodytes"
         ],
-        "aptenodytes": [
-            "emperor-penguin"
-        ],
+        "aptenodytes": [],
         "procellariiformes": [
             "diomedeidae",
             "hydrobatidae",
@@ -3654,9 +3117,7 @@
         "diomedeidae": [
             "diomedea"
         ],
-        "diomedea": [
-            "wandering-albatross"
-        ],
+        "diomedea": [],
         "ciconiiformes": [
             "ciconiidae"
         ],
@@ -3677,7 +3138,6 @@
             "ardea"
         ],
         "ardea": [
-            "great-blue-heron",
             "grey-heron"
         ],
         "caprimulgiformes": [
@@ -3703,9 +3163,7 @@
         "trochilidae": [
             "archilochus"
         ],
-        "archilochus": [
-            "ruby-throated-hummingbird"
-        ],
+        "archilochus": [],
         "strigiformes": [
             "strigidae",
             "tytonidae"
@@ -3713,9 +3171,7 @@
         "strigidae": [
             "bubo"
         ],
-        "bubo": [
-            "great-horned-owl"
-        ],
+        "bubo": [],
         "cathartiformes": [
             "cathartidae"
         ],
@@ -3728,12 +3184,8 @@
             "buteo",
             "haliaeetus"
         ],
-        "buteo": [
-            "red-tailed-hawk"
-        ],
-        "haliaeetus": [
-            "bald-eagle"
-        ],
+        "buteo": [],
+        "haliaeetus": [],
         "coliiformes": [
             "coliidae"
         ],
@@ -3751,9 +3203,7 @@
         "bucerotidae": [
             "buceros"
         ],
-        "buceros": [
-            "great-hornbill"
-        ],
+        "buceros": [],
         "coraciiformes": [
             "alcedinidae",
             "brachypteraciidae",
@@ -3765,9 +3215,7 @@
         "alcedinidae": [
             "alcedo"
         ],
-        "alcedo": [
-            "common-kingfisher"
-        ],
+        "alcedo": [],
         "galbuliformes": [
             "bucconidae",
             "galbulidae"
@@ -3784,15 +3232,11 @@
         "ramphastidae": [
             "ramphastos"
         ],
-        "ramphastos": [
-            "toco-toucan"
-        ],
+        "ramphastos": [],
         "picidae": [
             "dendrocopos"
         ],
-        "dendrocopos": [
-            "great-spotted-woodpecker"
-        ],
+        "dendrocopos": [],
         "cariamiformes": [
             "cariamidae"
         ],
@@ -3802,9 +3246,7 @@
         "falconidae": [
             "falco"
         ],
-        "falco": [
-            "peregrine-falcon"
-        ],
+        "falco": [],
         "psittaciformes": [
             "cacatuidae",
             "psittacidae",
@@ -3814,15 +3256,11 @@
         "psittacidae": [
             "ara"
         ],
-        "ara": [
-            "scarlet-macaw"
-        ],
+        "ara": [],
         "psittaculidae": [
             "psittacula"
         ],
-        "psittacula": [
-            "rose-ringed-parakeet"
-        ],
+        "psittacula": [],
         "passeriformes": [
             "acanthisittidae",
             "acanthizidae",
@@ -3973,21 +3411,15 @@
         "tyrannidae": [
             "sayornis"
         ],
-        "sayornis": [
-            "eastern-phoebe"
-        ],
+        "sayornis": [],
         "furnariidae": [
             "furnarius"
         ],
-        "furnarius": [
-            "rufous-hornero"
-        ],
+        "furnarius": [],
         "paradisaeidae": [
             "paradisaea"
         ],
-        "paradisaea": [
-            "greater-bird-of-paradise"
-        ],
+        "paradisaea": [],
         "corvidae": [
             "coloeus",
             "corvus",
@@ -3999,40 +3431,29 @@
             "hooded-crow",
             "rook"
         ],
-        "cyanocitta": [
-            "blue-jay"
-        ],
+        "cyanocitta": [],
         "paridae": [
             "cyanistes",
             "parus",
             "poecile"
         ],
-        "poecile": [
-            "black-capped-chickadee"
-        ],
+        "poecile": [],
         "hirundinidae": [
             "hirundo"
         ],
-        "hirundo": [
-            "barn-swallow"
-        ],
+        "hirundo": [],
         "troglodytidae": [
             "troglodytes"
         ],
-        "troglodytes": [
-            "house-wren"
-        ],
+        "troglodytes": [],
         "mimidae": [
             "mimus"
         ],
-        "mimus": [
-            "northern-mockingbird"
-        ],
+        "mimus": [],
         "turdidae": [
             "turdus"
         ],
         "turdus": [
-            "american-robin",
             "eurasian-blackbird"
         ],
         "muscicapidae": [
@@ -4045,46 +3466,32 @@
         "nectariniidae": [
             "cinnyris"
         ],
-        "cinnyris": [
-            "olive-backed-sunbird"
-        ],
+        "cinnyris": [],
         "fringillidae": [
             "carduelis",
             "fringilla"
         ],
-        "carduelis": [
-            "european-goldfinch"
-        ],
+        "carduelis": [],
         "passerellidae": [
             "melospiza"
         ],
-        "melospiza": [
-            "song-sparrow"
-        ],
+        "melospiza": [],
         "icteridae": [
             "agelaius"
         ],
-        "agelaius": [
-            "red-winged-blackbird"
-        ],
+        "agelaius": [],
         "parulidae": [
             "setophaga"
         ],
-        "setophaga": [
-            "yellow-warbler"
-        ],
+        "setophaga": [],
         "cardinalidae": [
             "cardinalis"
         ],
-        "cardinalis": [
-            "northern-cardinal"
-        ],
+        "cardinalis": [],
         "thraupidae": [
             "thraupis"
         ],
-        "thraupis": [
-            "blue-gray-tanager"
-        ],
+        "thraupis": [],
         "parus": [
             "major"
         ],
@@ -4198,13 +3605,10 @@
         "trogoniformes": "all-birds",
         "struthionidae": "struthioniformes",
         "struthio": "struthionidae",
-        "common-ostrich": "struthio",
         "casuariidae": "casuariiformes",
         "dromaius": "casuariidae",
-        "emu": "dromaius",
         "apterygidae": "apterygiformes",
         "apteryx": "apterygidae",
-        "north-island-brown-kiwi": "apteryx",
         "rheidae": "rheiformes",
         "tinamidae": "tinamiformes",
         "anatidae": "anseriformes",
@@ -4222,10 +3626,8 @@
         "phasianidae": "galliformes",
         "pavo": "phasianidae",
         "phasianus": "phasianidae",
-        "indian-peafowl": "pavo",
         "phoenicopteridae": "phoenicopteriformes",
         "phoenicopterus": "phoenicopteridae",
-        "greater-flamingo": "phoenicopterus",
         "podicipedidae": "podicipediformes",
         "musophagidae": "musophagiformes",
         "otididae": "otidiformes",
@@ -4272,13 +3674,11 @@
         "gaviidae": "gaviiformes",
         "spheniscidae": "sphenisciformes",
         "aptenodytes": "spheniscidae",
-        "emperor-penguin": "aptenodytes",
         "diomedeidae": "procellariiformes",
         "hydrobatidae": "procellariiformes",
         "oceanitidae": "procellariiformes",
         "procellariidae": "procellariiformes",
         "diomedea": "diomedeidae",
-        "wandering-albatross": "diomedea",
         "ciconiidae": "ciconiiformes",
         "anhingidae": "suliformes",
         "fregatidae": "suliformes",
@@ -4290,7 +3690,6 @@
         "scopidae": "pelecaniformes",
         "threskiornithidae": "pelecaniformes",
         "ardea": "ardeidae",
-        "great-blue-heron": "ardea",
         "grey-heron": "ardea",
         "caprimulgidae": "caprimulgiformes",
         "steatornithidae": "steatornithiformes",
@@ -4301,19 +3700,15 @@
         "hemiprocnidae": "apodiformes",
         "trochilidae": "apodiformes",
         "archilochus": "trochilidae",
-        "ruby-throated-hummingbird": "archilochus",
         "strigidae": "strigiformes",
         "tytonidae": "strigiformes",
         "bubo": "strigidae",
-        "great-horned-owl": "bubo",
         "cathartidae": "cathartiformes",
         "accipitridae": "accipitriformes",
         "pandionidae": "accipitriformes",
         "sagittariidae": "accipitriformes",
         "buteo": "accipitridae",
         "haliaeetus": "accipitridae",
-        "red-tailed-hawk": "buteo",
-        "bald-eagle": "haliaeetus",
         "coliidae": "coliiformes",
         "leptosomidae": "leptosomiformes",
         "trogonidae": "trogoniformes",
@@ -4321,7 +3716,6 @@
         "phoeniculidae": "bucerotiformes",
         "upupidae": "bucerotiformes",
         "buceros": "bucerotidae",
-        "great-hornbill": "buceros",
         "alcedinidae": "coraciiformes",
         "brachypteraciidae": "coraciiformes",
         "coraciidae": "coraciiformes",
@@ -4329,7 +3723,6 @@
         "momotidae": "coraciiformes",
         "todidae": "coraciiformes",
         "alcedo": "alcedinidae",
-        "common-kingfisher": "alcedo",
         "bucconidae": "galbuliformes",
         "galbulidae": "galbuliformes",
         "capitonidae": "piciformes",
@@ -4340,21 +3733,16 @@
         "ramphastidae": "piciformes",
         "semnornithidae": "piciformes",
         "ramphastos": "ramphastidae",
-        "toco-toucan": "ramphastos",
         "dendrocopos": "picidae",
-        "great-spotted-woodpecker": "dendrocopos",
         "cariamidae": "cariamiformes",
         "falconidae": "falconiformes",
         "falco": "falconidae",
-        "peregrine-falcon": "falco",
         "cacatuidae": "psittaciformes",
         "psittacidae": "psittaciformes",
         "psittaculidae": "psittaciformes",
         "strigopidae": "psittaciformes",
         "ara": "psittacidae",
-        "scarlet-macaw": "ara",
         "psittacula": "psittaculidae",
-        "rose-ringed-parakeet": "psittacula",
         "acanthisittidae": "passeriformes",
         "acanthizidae": "passeriformes",
         "acrocephalidae": "passeriformes",
@@ -4501,11 +3889,8 @@
         "zeledoniidae": "passeriformes",
         "zosteropidae": "passeriformes",
         "sayornis": "tyrannidae",
-        "eastern-phoebe": "sayornis",
         "furnarius": "furnariidae",
-        "rufous-hornero": "furnarius",
         "paradisaea": "paradisaeidae",
-        "greater-bird-of-paradise": "paradisaea",
         "coloeus": "corvidae",
         "corvus": "corvidae",
         "cyanocitta": "corvidae",
@@ -4513,38 +3898,25 @@
         "carrion-crow": "corvus",
         "hooded-crow": "corvus",
         "rook": "corvus",
-        "blue-jay": "cyanocitta",
         "cyanistes": "paridae",
         "parus": "paridae",
         "poecile": "paridae",
-        "black-capped-chickadee": "poecile",
         "hirundo": "hirundinidae",
-        "barn-swallow": "hirundo",
         "troglodytes": "troglodytidae",
-        "house-wren": "troglodytes",
         "mimus": "mimidae",
-        "northern-mockingbird": "mimus",
         "turdus": "turdidae",
-        "american-robin": "turdus",
         "eurasian-blackbird": "turdus",
         "erithacus": "muscicapidae",
         "phoenicurus": "muscicapidae",
         "european-robin": "erithacus",
         "cinnyris": "nectariniidae",
-        "olive-backed-sunbird": "cinnyris",
         "carduelis": "fringillidae",
         "fringilla": "fringillidae",
-        "european-goldfinch": "carduelis",
         "melospiza": "passerellidae",
-        "song-sparrow": "melospiza",
         "agelaius": "icteridae",
-        "red-winged-blackbird": "agelaius",
         "setophaga": "parulidae",
-        "yellow-warbler": "setophaga",
         "cardinalis": "cardinalidae",
-        "northern-cardinal": "cardinalis",
         "thraupis": "thraupidae",
-        "blue-gray-tanager": "thraupis",
         "major": "parus",
         "blue-tit": "cyanistes",
         "sturnus": "sturnidae",

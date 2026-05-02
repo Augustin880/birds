@@ -350,6 +350,11 @@ body.edit-page {
   gap: 0.45rem;
 }
 
+.branch-search__controls {
+  display: grid;
+  gap: 0.85rem;
+}
+
 .branch-search__label {
   font-size: 0.78rem;
   font-weight: 700;
@@ -369,6 +374,21 @@ body.edit-page {
 
 .branch-search__field input::placeholder {
   color: rgba(158, 177, 188, 0.8);
+}
+
+.branch-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: fit-content;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.branch-toggle input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--mint);
 }
 
 .branch-search__status {
@@ -413,6 +433,31 @@ body.edit-page {
 
 .card-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card-grid--grouped {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.branch-group {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.branch-group__title {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #f0f7fb;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 700;
+  text-align: left;
+}
+
+.branch-group__title:hover {
+  color: var(--mint);
 }
 
 .card {
@@ -841,6 +886,11 @@ body.edit-page {
 
   .card-grid,
   .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid--grouped,
+  .branch-group .card-grid {
     grid-template-columns: 1fr;
   }
 

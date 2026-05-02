@@ -35,9 +35,12 @@ const NEXT_TAXON_RANK = {
 };
 const speciesImageCache = new Map();
 const nodeRepresentativeImageCandidatesCache = new Map();
+const branchLeafVisibilityCache = new Map();
+const branchSpeciesCache = new Map();
 const browseSearchState = {
   scopeId: null,
-  query: ""
+  query: "",
+  flattenedScopes: {}
 };
 const editorState = {
   editingNodeId: null
@@ -225,22 +228,43 @@ function renderTaxon(node, children) {
 function renderTaxonCards(scopeId, children, intro = "", heading = "") {
   const scopeNode = taxonomy.nodes[scopeId];
   const scopeLabel = scopeNode?.label || "this branch";
-  const hasChildren = children.length > 0;
+  const displayChildren = getDisplayableBranchChildren(children);
+  const hasChildren = displayChildren.length > 0;
+  const canFlatten = displayChildren.some((child) => child.type === "taxon");
   const query = browseSearchState.scopeId === scopeId ? browseSearchState.query : "";
+  const isFlattened = canFlatten && isBranchFlattened(scopeId);
+  const searchLabel = isFlattened
+    ? "Search species in this branch"
+    : "Search direct children";
+  const searchPlaceholder = isFlattened
+    ? `Filter species in ${escapeHtml(scopeLabel)}`
+    : `Filter ${escapeHtml(scopeLabel)} children`;
   const searchSection = hasChildren
     ? `
         <section class="branch-search">
-          <label class="branch-search__field">
-            <span class="branch-search__label">Search direct children</span>
-            <input
-              type="search"
-              data-branch-search
-              placeholder="Filter ${escapeHtml(scopeLabel)} children"
-              value="${escapeHtml(query)}"
-              autocomplete="off"
-              spellcheck="false"
-            />
-          </label>
+          <div class="branch-search__controls">
+            <label class="branch-search__field">
+              <span class="branch-search__label">${searchLabel}</span>
+              <input
+                type="search"
+                data-branch-search
+                placeholder="${searchPlaceholder}"
+                value="${escapeHtml(query)}"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </label>
+            ${
+              canFlatten
+                ? `
+                  <label class="branch-toggle">
+                    <input type="checkbox" data-branch-flatten ${isFlattened ? "checked" : ""} />
+                    <span>Flatten by direct child</span>
+                  </label>
+                `
+                : ""
+            }
+          </div>
           <p class="branch-search__status" data-branch-search-status></p>
         </section>
       `
@@ -264,15 +288,23 @@ function renderTaxonCards(scopeId, children, intro = "", heading = "") {
   `;
 
   const searchInput = view.querySelector("[data-branch-search]");
+  const flattenInput = view.querySelector("[data-branch-flatten]");
 
   if (searchInput) {
     searchInput.addEventListener("input", (event) => {
       browseSearchState.query = event.target.value;
-      renderBranchCardResults(scopeId, children);
+      renderBranchCardResults(scopeId, displayChildren);
     });
   }
 
-  renderBranchCardResults(scopeId, children);
+  if (flattenInput) {
+    flattenInput.addEventListener("change", (event) => {
+      setBranchFlattened(scopeId, event.target.checked);
+      renderTaxonCards(scopeId, children, intro, heading);
+    });
+  }
+
+  renderBranchCardResults(scopeId, displayChildren);
 }
 
 function renderSpecies(node, lineage) {
@@ -868,38 +900,37 @@ function renderBranchCardResults(scopeId, children) {
   }
 
   const query = browseSearchState.scopeId === scopeId ? browseSearchState.query : "";
-  const filteredChildren = filterBranchChildren(children, query);
   const scopeLabel = taxonomy.nodes[scopeId]?.label || "this branch";
+  const canFlatten = children.some((child) => child.type === "taxon");
+  const isFlattened = canFlatten && isBranchFlattened(scopeId);
+
+  cardGrid.classList.remove("card-grid--grouped");
+
+  if (isFlattened) {
+    renderFlattenedBranchResults({
+      cardGrid,
+      emptyState,
+      status,
+      scopeId,
+      scopeLabel,
+      children,
+      query
+    });
+    return;
+  }
+
+  const filteredChildren = filterBranchChildren(children, query);
 
   if (filteredChildren.length) {
     cardGrid.innerHTML = filteredChildren
-      .map(
-        (child) => `
-          <button class="card" type="button" data-node-id="${child.id}">
-            <div class="card__media">
-              <img
-                class="card__image"
-                src="${EMPTY_IMAGE_PLACEHOLDER}"
-                data-node-image-id="${child.id}"
-                data-managed-image="true"
-                loading="lazy"
-                decoding="async"
-                alt="${escapeHtml(child.label)}"
-              />
-            </div>
-            <span class="card__rank">${escapeHtml(child.rank)}</span>
-            <h3>${escapeHtml(child.label)}</h3>
-            <p>${escapeHtml(child.summary || "No summary yet.")}</p>
-          </button>
-        `
-      )
+      .map((child) => renderNodeCard(child))
       .join("");
     emptyState.classList.add("hidden");
   } else {
     cardGrid.innerHTML = "";
     emptyState.textContent = query
       ? `No direct children of ${scopeLabel} match "${query.trim()}".`
-      : "This branch has no children yet. Add one from the editor to keep growing the taxonomy.";
+      : "This branch has no species yet. Add one from the editor to keep growing the taxonomy.";
     emptyState.classList.remove("hidden");
   }
 
@@ -907,6 +938,65 @@ function renderBranchCardResults(scopeId, children) {
     status.textContent = query.trim()
       ? `Showing ${filteredChildren.length} of ${children.length} direct children in ${scopeLabel}.`
       : `Showing all ${children.length} direct children of ${scopeLabel}.`;
+  }
+
+  hydrateManagedImages(cardGrid);
+  cardGrid.querySelectorAll("[data-node-id]").forEach((card) => {
+    card.addEventListener("click", () => {
+      location.hash = `#/node/${card.dataset.nodeId}`;
+    });
+  });
+}
+
+function renderFlattenedBranchResults({
+  cardGrid,
+  emptyState,
+  status,
+  scopeId,
+  scopeLabel,
+  children,
+  query
+}) {
+  const groups = buildFlattenedBranchGroups(children, query);
+  const totalSpecies = children.reduce(
+    (count, child) => count + collectSpeciesDescendants(child.id).length,
+    0
+  );
+  const visibleSpecies = groups.reduce((count, group) => count + group.species.length, 0);
+
+  if (groups.length) {
+    cardGrid.classList.add("card-grid--grouped");
+    cardGrid.innerHTML = groups
+      .map(
+        (group) => `
+          <section class="branch-group">
+            <button
+              class="branch-group__title"
+              type="button"
+              data-node-id="${group.branch.id}"
+            >
+              ${escapeHtml(group.branch.label)}
+            </button>
+            <div class="card-grid">
+              ${group.species.map((species) => renderNodeCard(species)).join("")}
+            </div>
+          </section>
+        `
+      )
+      .join("");
+    emptyState.classList.add("hidden");
+  } else {
+    cardGrid.innerHTML = "";
+    emptyState.textContent = query.trim()
+      ? `No species in ${scopeLabel} match "${query.trim()}".`
+      : "This branch has no species yet. Add one from the editor to keep growing the taxonomy.";
+    emptyState.classList.remove("hidden");
+  }
+
+  if (status) {
+    status.textContent = query.trim()
+      ? `Showing ${visibleSpecies} of ${totalSpecies} species across ${groups.length} direct child branches in ${scopeLabel}.`
+      : `Showing all ${totalSpecies} species grouped under ${children.length} direct child branches in ${scopeLabel}.`;
   }
 
   hydrateManagedImages(cardGrid);
@@ -927,6 +1017,48 @@ function filterBranchChildren(children, query) {
   return children.filter((child) =>
     normalizeSearchValue(child.label).includes(normalizedQuery)
   );
+}
+
+function buildFlattenedBranchGroups(children, query) {
+  const normalizedQuery = normalizeSearchValue(query);
+
+  return children
+    .map((child) => {
+      const species = collectSpeciesDescendants(child.id).filter((speciesNode) => {
+        if (!normalizedQuery) {
+          return true;
+        }
+
+        return normalizeSearchValue(speciesNode.label).includes(normalizedQuery);
+      });
+
+      return {
+        branch: child,
+        species
+      };
+    })
+    .filter((group) => group.species.length > 0);
+}
+
+function renderNodeCard(node) {
+  return `
+    <button class="card" type="button" data-node-id="${node.id}">
+      <div class="card__media">
+        <img
+          class="card__image"
+          src="${EMPTY_IMAGE_PLACEHOLDER}"
+          data-node-image-id="${node.id}"
+          data-managed-image="true"
+          loading="lazy"
+          decoding="async"
+          alt="${escapeHtml(node.label)}"
+        />
+      </div>
+      <span class="card__rank">${escapeHtml(node.rank)}</span>
+      <h3>${escapeHtml(node.label)}</h3>
+      <p>${escapeHtml(node.summary || "No summary yet.")}</p>
+    </button>
+  `;
 }
 
 function normalizeSearchValue(value) {
@@ -1129,6 +1261,82 @@ function clearStoredNodeImages(tree) {
 function clearImageCaches() {
   speciesImageCache.clear();
   nodeRepresentativeImageCandidatesCache.clear();
+  branchLeafVisibilityCache.clear();
+  branchSpeciesCache.clear();
+}
+
+function getDisplayableBranchChildren(children) {
+  return children.filter((child) => branchHasLeaves(child.id));
+}
+
+function branchHasLeaves(nodeId) {
+  if (!nodeId) {
+    return false;
+  }
+
+  if (branchLeafVisibilityCache.has(nodeId)) {
+    return branchLeafVisibilityCache.get(nodeId);
+  }
+
+  const node = taxonomy.nodes[nodeId];
+
+  if (!node) {
+    branchLeafVisibilityCache.set(nodeId, false);
+    return false;
+  }
+
+  if (node.type === "species") {
+    branchLeafVisibilityCache.set(nodeId, true);
+    return true;
+  }
+
+  const hasLeaves = (taxonomy.children[nodeId] || []).some((childId) =>
+    branchHasLeaves(childId)
+  );
+
+  branchLeafVisibilityCache.set(nodeId, hasLeaves);
+  return hasLeaves;
+}
+
+function collectSpeciesDescendants(nodeId) {
+  if (!nodeId) {
+    return [];
+  }
+
+  if (branchSpeciesCache.has(nodeId)) {
+    return branchSpeciesCache.get(nodeId);
+  }
+
+  const node = taxonomy.nodes[nodeId];
+
+  if (!node) {
+    branchSpeciesCache.set(nodeId, []);
+    return [];
+  }
+
+  if (node.type === "species") {
+    branchSpeciesCache.set(nodeId, [node]);
+    return [node];
+  }
+
+  const species = (taxonomy.children[nodeId] || []).flatMap((childId) =>
+    collectSpeciesDescendants(childId)
+  );
+
+  branchSpeciesCache.set(nodeId, species);
+  return species;
+}
+
+function isBranchFlattened(scopeId) {
+  return Boolean(browseSearchState.flattenedScopes[scopeId]);
+}
+
+function setBranchFlattened(scopeId, flattened) {
+  if (!scopeId) {
+    return;
+  }
+
+  browseSearchState.flattenedScopes[scopeId] = flattened;
 }
 
 function resolveRepresentativeImageCandidates(nodeId) {
