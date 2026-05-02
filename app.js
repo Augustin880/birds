@@ -1039,13 +1039,7 @@ function updateFileStatus(message = "") {
     return;
   }
 
-  if (message) {
-    fileStatus.textContent = message;
-    return;
-  }
-
-  fileStatus.textContent =
-    "If the app is served through PHP, edits save directly to data/taxonomy.json.";
+  fileStatus.textContent = message;
 }
 
 function downloadTaxonomyFile(filename = "taxonomy-export.json") {
