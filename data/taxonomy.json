@@ -1,0 +1,4570 @@
+{
+    "meta": {
+        "title": "Bird Atlas",
+        "rootId": "all-birds",
+        "sourceNote": "Seeded from the public Birds of the World taxonomy pages and AviList v2025 order/family checklist: 46 orders, 252 families, and selected example species pages.",
+        "leafTemplate": [
+            {
+                "key": "scientificName",
+                "label": "Scientific name"
+            },
+            {
+                "key": "habitat",
+                "label": "Habitat"
+            },
+            {
+                "key": "diet",
+                "label": "Diet"
+            },
+            {
+                "key": "wingspan",
+                "label": "Wingspan"
+            },
+            {
+                "key": "status",
+                "label": "Conservation status"
+            }
+        ]
+    },
+    "nodes": {
+        "all-birds": {
+            "id": "all-birds",
+            "type": "taxon",
+            "label": "Aves",
+            "rank": "class",
+            "summary": "Start at Aves and drill down through orders, families, genera, and species."
+        },
+        "struthioniformes": {
+            "id": "struthioniformes",
+            "type": "taxon",
+            "label": "Struthioniformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 2 species across 1 genera and 1 families in Struthioniformes."
+        },
+        "struthionidae": {
+            "id": "struthionidae",
+            "type": "taxon",
+            "label": "Struthionidae",
+            "rank": "family",
+            "summary": "Ostriches recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "struthio": {
+            "id": "struthio",
+            "type": "taxon",
+            "label": "Struthio",
+            "rank": "genus",
+            "summary": "Struthio represented here as a genus branch within Struthionidae."
+        },
+        "common-ostrich": {
+            "id": "common-ostrich",
+            "type": "species",
+            "label": "Common Ostrich",
+            "rank": "species",
+            "summary": "The largest living bird, built for speed across open African landscapes.",
+            "profile": {
+                "scientificName": "Struthio camelus",
+                "habitat": "Savannas, Sahel scrub, and open semi-desert.",
+                "diet": "Seeds, grasses, leaves, flowers, and small invertebrates.",
+                "wingspan": "About 2 m",
+                "status": "Least Concern"
+            },
+            "notes": "A flightless ratite with powerful legs and highly social behavior."
+        },
+        "casuariiformes": {
+            "id": "casuariiformes",
+            "type": "taxon",
+            "label": "Casuariiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 4 species across 2 genera and 1 families in Casuariiformes."
+        },
+        "casuariidae": {
+            "id": "casuariidae",
+            "type": "taxon",
+            "label": "Casuariidae",
+            "rank": "family",
+            "summary": "Emu and Cassowaries recognized by AviList v2025 with 4 species across 2 genera."
+        },
+        "dromaius": {
+            "id": "dromaius",
+            "type": "taxon",
+            "label": "Dromaius",
+            "rank": "genus",
+            "summary": "Dromaius represented here as a genus branch within Casuariidae."
+        },
+        "emu": {
+            "id": "emu",
+            "type": "species",
+            "label": "Emu",
+            "rank": "species",
+            "summary": "Australia's tallest native bird, adapted to wide-ranging movement in open country.",
+            "profile": {
+                "scientificName": "Dromaius novaehollandiae",
+                "habitat": "Open woodland, grassland, and scrub across much of Australia.",
+                "diet": "Seeds, fruits, shoots, and invertebrates.",
+                "wingspan": "Vestigial wings",
+                "status": "Least Concern"
+            },
+            "notes": "Male emus incubate the eggs and care for the chicks."
+        },
+        "apterygiformes": {
+            "id": "apterygiformes",
+            "type": "taxon",
+            "label": "Apterygiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 5 species across 1 genera and 1 families in Apterygiformes."
+        },
+        "apterygidae": {
+            "id": "apterygidae",
+            "type": "taxon",
+            "label": "Apterygidae",
+            "rank": "family",
+            "summary": "Kiwis recognized by AviList v2025 with 5 species across 1 genera."
+        },
+        "apteryx": {
+            "id": "apteryx",
+            "type": "taxon",
+            "label": "Apteryx",
+            "rank": "genus",
+            "summary": "Apteryx represented here as a genus branch within Apterygidae."
+        },
+        "north-island-brown-kiwi": {
+            "id": "north-island-brown-kiwi",
+            "type": "species",
+            "label": "North Island Brown Kiwi",
+            "rank": "species",
+            "summary": "A nocturnal kiwi with a long bill and a strong reliance on smell.",
+            "profile": {
+                "scientificName": "Apteryx mantelli",
+                "habitat": "Forest, scrub, and rough farmland in New Zealand.",
+                "diet": "Earthworms, insects, larvae, and fallen fruit.",
+                "wingspan": "Flightless",
+                "status": "Vulnerable"
+            },
+            "notes": "Kiwis are iconic flightless birds with whisker-like facial feathers."
+        },
+        "rheiformes": {
+            "id": "rheiformes",
+            "type": "taxon",
+            "label": "Rheiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 2 species across 1 genera and 1 families in Rheiformes."
+        },
+        "rheidae": {
+            "id": "rheidae",
+            "type": "taxon",
+            "label": "Rheidae",
+            "rank": "family",
+            "summary": "Rheas recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "tinamiformes": {
+            "id": "tinamiformes",
+            "type": "taxon",
+            "label": "Tinamiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 46 species across 9 genera and 1 families in Tinamiformes."
+        },
+        "tinamidae": {
+            "id": "tinamidae",
+            "type": "taxon",
+            "label": "Tinamidae",
+            "rank": "family",
+            "summary": "Tinamous recognized by AviList v2025 with 46 species across 9 genera."
+        },
+        "anseriformes": {
+            "id": "anseriformes",
+            "type": "taxon",
+            "label": "Anseriformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 176 species across 56 genera and 3 families in Anseriformes."
+        },
+        "anhimidae": {
+            "id": "anhimidae",
+            "type": "taxon",
+            "label": "Anhimidae",
+            "rank": "family",
+            "summary": "Screamers recognized by AviList v2025 with 3 species across 2 genera."
+        },
+        "anseranatidae": {
+            "id": "anseranatidae",
+            "type": "taxon",
+            "label": "Anseranatidae",
+            "rank": "family",
+            "summary": "Magpie Goose recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "anatidae": {
+            "id": "anatidae",
+            "type": "taxon",
+            "label": "Anatidae",
+            "rank": "family",
+            "summary": "Ducks, Swans, and Geese recognized by AviList v2025 with 172 species across 53 genera."
+        },
+        "anas": {
+            "id": "anas",
+            "type": "taxon",
+            "label": "Branta",
+            "rank": "genus",
+            "summary": ""
+        },
+        "galliformes": {
+            "id": "galliformes",
+            "type": "taxon",
+            "label": "Galliformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 307 species across 86 genera and 5 families in Galliformes."
+        },
+        "megapodiidae": {
+            "id": "megapodiidae",
+            "type": "taxon",
+            "label": "Megapodiidae",
+            "rank": "family",
+            "summary": "Megapodes recognized by AviList v2025 with 21 species across 7 genera."
+        },
+        "cracidae": {
+            "id": "cracidae",
+            "type": "taxon",
+            "label": "Cracidae",
+            "rank": "family",
+            "summary": "Guans, Curassows, and Chachalacas recognized by AviList v2025 with 57 species across 11 genera."
+        },
+        "numididae": {
+            "id": "numididae",
+            "type": "taxon",
+            "label": "Numididae",
+            "rank": "family",
+            "summary": "Guineafowl recognized by AviList v2025 with 8 species across 4 genera."
+        },
+        "odontophoridae": {
+            "id": "odontophoridae",
+            "type": "taxon",
+            "label": "Odontophoridae",
+            "rank": "family",
+            "summary": "New World Quail recognized by AviList v2025 with 34 species across 10 genera."
+        },
+        "phasianidae": {
+            "id": "phasianidae",
+            "type": "taxon",
+            "label": "Phasianidae",
+            "rank": "family",
+            "summary": "Partridges, Pheasants, Grouse, and Allies recognized by AviList v2025 with 187 species across 54 genera."
+        },
+        "pavo": {
+            "id": "pavo",
+            "type": "taxon",
+            "label": "Pavo",
+            "rank": "genus",
+            "summary": "Pavo represented here as a genus branch within Phasianidae."
+        },
+        "indian-peafowl": {
+            "id": "indian-peafowl",
+            "type": "species",
+            "label": "Indian Peafowl",
+            "rank": "species",
+            "summary": "A large pheasant famous for the male's iridescent train and courtship display.",
+            "profile": {
+                "scientificName": "Pavo cristatus",
+                "habitat": "Open forest, farmland edges, and villages in South Asia.",
+                "diet": "Seeds, insects, fruits, reptiles, and small animals.",
+                "wingspan": "140 to 160 cm",
+                "status": "Least Concern"
+            },
+            "notes": "The train is an ornamental tail covert display rather than the true tail."
+        },
+        "phoenicopteriformes": {
+            "id": "phoenicopteriformes",
+            "type": "taxon",
+            "label": "Phoenicopteriformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 6 species across 3 genera and 1 families in Phoenicopteriformes."
+        },
+        "phoenicopteridae": {
+            "id": "phoenicopteridae",
+            "type": "taxon",
+            "label": "Phoenicopteridae",
+            "rank": "family",
+            "summary": "Flamingos recognized by AviList v2025 with 6 species across 3 genera."
+        },
+        "phoenicopterus": {
+            "id": "phoenicopterus",
+            "type": "taxon",
+            "label": "Phoenicopterus",
+            "rank": "genus",
+            "summary": "Phoenicopterus represented here as a genus branch within Phoenicopteridae."
+        },
+        "greater-flamingo": {
+            "id": "greater-flamingo",
+            "type": "species",
+            "label": "Greater Flamingo",
+            "rank": "species",
+            "summary": "A tall wader that filters food from saline lakes and lagoons.",
+            "profile": {
+                "scientificName": "Phoenicopterus roseus",
+                "habitat": "Salt pans, lagoons, estuaries, and shallow alkaline lakes.",
+                "diet": "Brine shrimp, algae, and other microscopic aquatic food.",
+                "wingspan": "140 to 170 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Its pink color comes largely from carotenoid-rich food."
+        },
+        "podicipediformes": {
+            "id": "podicipediformes",
+            "type": "taxon",
+            "label": "Podicipediformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 22 species across 6 genera and 1 families in Podicipediformes."
+        },
+        "podicipedidae": {
+            "id": "podicipedidae",
+            "type": "taxon",
+            "label": "Podicipedidae",
+            "rank": "family",
+            "summary": "Grebes recognized by AviList v2025 with 22 species across 6 genera."
+        },
+        "musophagiformes": {
+            "id": "musophagiformes",
+            "type": "taxon",
+            "label": "Musophagiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 23 species across 5 genera and 1 families in Musophagiformes."
+        },
+        "musophagidae": {
+            "id": "musophagidae",
+            "type": "taxon",
+            "label": "Musophagidae",
+            "rank": "family",
+            "summary": "Turacos recognized by AviList v2025 with 23 species across 5 genera."
+        },
+        "otidiformes": {
+            "id": "otidiformes",
+            "type": "taxon",
+            "label": "Otidiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 26 species across 12 genera and 1 families in Otidiformes."
+        },
+        "otididae": {
+            "id": "otididae",
+            "type": "taxon",
+            "label": "Otididae",
+            "rank": "family",
+            "summary": "Bustards recognized by AviList v2025 with 26 species across 12 genera."
+        },
+        "cuculiformes": {
+            "id": "cuculiformes",
+            "type": "taxon",
+            "label": "Cuculiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 156 species across 36 genera and 1 families in Cuculiformes."
+        },
+        "cuculidae": {
+            "id": "cuculidae",
+            "type": "taxon",
+            "label": "Cuculidae",
+            "rank": "family",
+            "summary": "Cuckoos recognized by AviList v2025 with 156 species across 36 genera."
+        },
+        "mesitornithiformes": {
+            "id": "mesitornithiformes",
+            "type": "taxon",
+            "label": "Mesitornithiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 3 species across 2 genera and 1 families in Mesitornithiformes."
+        },
+        "mesitornithidae": {
+            "id": "mesitornithidae",
+            "type": "taxon",
+            "label": "Mesitornithidae",
+            "rank": "family",
+            "summary": "Mesites recognized by AviList v2025 with 3 species across 2 genera."
+        },
+        "pterocliformes": {
+            "id": "pterocliformes",
+            "type": "taxon",
+            "label": "Pterocliformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 16 species across 2 genera and 1 families in Pterocliformes."
+        },
+        "pteroclidae": {
+            "id": "pteroclidae",
+            "type": "taxon",
+            "label": "Pteroclidae",
+            "rank": "family",
+            "summary": "Sandgrouse recognized by AviList v2025 with 16 species across 2 genera."
+        },
+        "columbiformes": {
+            "id": "columbiformes",
+            "type": "taxon",
+            "label": "Columbiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 350 species across 52 genera and 1 families in Columbiformes."
+        },
+        "columbidae": {
+            "id": "columbidae",
+            "type": "taxon",
+            "label": "Columbidae",
+            "rank": "family",
+            "summary": "Doves and Pigeons recognized by AviList v2025 with 350 species across 52 genera."
+        },
+        "columba": {
+            "id": "columba",
+            "type": "taxon",
+            "label": "Columba",
+            "rank": "genus",
+            "summary": ""
+        },
+        "opisthocomiformes": {
+            "id": "opisthocomiformes",
+            "type": "taxon",
+            "label": "Opisthocomiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 1 species across 1 genera and 1 families in Opisthocomiformes."
+        },
+        "opisthocomidae": {
+            "id": "opisthocomidae",
+            "type": "taxon",
+            "label": "Opisthocomidae",
+            "rank": "family",
+            "summary": "Hoatzin recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "gruiformes": {
+            "id": "gruiformes",
+            "type": "taxon",
+            "label": "Gruiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 185 species across 50 genera and 6 families in Gruiformes."
+        },
+        "psophiidae": {
+            "id": "psophiidae",
+            "type": "taxon",
+            "label": "Psophiidae",
+            "rank": "family",
+            "summary": "Trumpeters recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "aramidae": {
+            "id": "aramidae",
+            "type": "taxon",
+            "label": "Aramidae",
+            "rank": "family",
+            "summary": "Limpkin recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "gruidae": {
+            "id": "gruidae",
+            "type": "taxon",
+            "label": "Gruidae",
+            "rank": "family",
+            "summary": "Cranes recognized by AviList v2025 with 15 species across 4 genera."
+        },
+        "heliornithidae": {
+            "id": "heliornithidae",
+            "type": "taxon",
+            "label": "Heliornithidae",
+            "rank": "family",
+            "summary": "Finfoots recognized by AviList v2025 with 3 species across 3 genera."
+        },
+        "sarothruridae": {
+            "id": "sarothruridae",
+            "type": "taxon",
+            "label": "Sarothruridae",
+            "rank": "family",
+            "summary": "Flufftails recognized by AviList v2025 with 15 species across 3 genera."
+        },
+        "rallidae": {
+            "id": "rallidae",
+            "type": "taxon",
+            "label": "Rallidae",
+            "rank": "family",
+            "summary": "Rails, Gallinules, and Coots recognized by AviList v2025 with 148 species across 38 genera."
+        },
+        "gallinula": {
+            "id": "gallinula",
+            "type": "taxon",
+            "label": "Gallinula",
+            "rank": "genus",
+            "summary": "Gallinula represented here as a genus branch within Rallidae."
+        },
+        "common-moorhen": {
+            "id": "common-moorhen",
+            "type": "species",
+            "label": "Common Moorhen",
+            "rank": "species",
+            "summary": "A marsh bird with a red frontal shield and confident swimming gait.",
+            "profile": {
+                "scientificName": "Gallinula chloropus",
+                "habitat": "Ponds, marshes, canals, and slow vegetated water.",
+                "diet": "Aquatic plants, seeds, snails, and small invertebrates.",
+                "wingspan": "50 to 55 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Moorhens often walk on floating vegetation with surprisingly long toes."
+        },
+        "charadriiformes": {
+            "id": "charadriiformes",
+            "type": "taxon",
+            "label": "Charadriiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 392 species across 91 genera and 19 families in Charadriiformes."
+        },
+        "pluvianellidae": {
+            "id": "pluvianellidae",
+            "type": "taxon",
+            "label": "Pluvianellidae",
+            "rank": "family",
+            "summary": "Magellanic Plover recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "chionidae": {
+            "id": "chionidae",
+            "type": "taxon",
+            "label": "Chionidae",
+            "rank": "family",
+            "summary": "Sheathbills recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "burhinidae": {
+            "id": "burhinidae",
+            "type": "taxon",
+            "label": "Burhinidae",
+            "rank": "family",
+            "summary": "Thick-knees and Stone-curlews recognized by AviList v2025 with 10 species across 3 genera."
+        },
+        "pluvianidae": {
+            "id": "pluvianidae",
+            "type": "taxon",
+            "label": "Pluvianidae",
+            "rank": "family",
+            "summary": "Egyptian Plover recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "recurvirostridae": {
+            "id": "recurvirostridae",
+            "type": "taxon",
+            "label": "Recurvirostridae",
+            "rank": "family",
+            "summary": "Stilts and Avocets recognized by AviList v2025 with 9 species across 3 genera."
+        },
+        "ibidorhynchidae": {
+            "id": "ibidorhynchidae",
+            "type": "taxon",
+            "label": "Ibidorhynchidae",
+            "rank": "family",
+            "summary": "Ibisbill recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "haematopodidae": {
+            "id": "haematopodidae",
+            "type": "taxon",
+            "label": "Haematopodidae",
+            "rank": "family",
+            "summary": "Oystercatchers recognized by AviList v2025 with 12 species across 1 genera."
+        },
+        "charadriidae": {
+            "id": "charadriidae",
+            "type": "taxon",
+            "label": "Charadriidae",
+            "rank": "family",
+            "summary": "Plovers and Lapwings recognized by AviList v2025 with 69 species across 12 genera."
+        },
+        "pedionomidae": {
+            "id": "pedionomidae",
+            "type": "taxon",
+            "label": "Pedionomidae",
+            "rank": "family",
+            "summary": "Plains-wanderer recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "thinocoridae": {
+            "id": "thinocoridae",
+            "type": "taxon",
+            "label": "Thinocoridae",
+            "rank": "family",
+            "summary": "Seedsnipes recognized by AviList v2025 with 4 species across 2 genera."
+        },
+        "rostratulidae": {
+            "id": "rostratulidae",
+            "type": "taxon",
+            "label": "Rostratulidae",
+            "rank": "family",
+            "summary": "Painted-Snipes recognized by AviList v2025 with 3 species across 2 genera."
+        },
+        "jacanidae": {
+            "id": "jacanidae",
+            "type": "taxon",
+            "label": "Jacanidae",
+            "rank": "family",
+            "summary": "Jacanas recognized by AviList v2025 with 8 species across 6 genera."
+        },
+        "scolopacidae": {
+            "id": "scolopacidae",
+            "type": "taxon",
+            "label": "Scolopacidae",
+            "rank": "family",
+            "summary": "Sandpipers and Allies recognized by AviList v2025 with 98 species across 15 genera."
+        },
+        "turnicidae": {
+            "id": "turnicidae",
+            "type": "taxon",
+            "label": "Turnicidae",
+            "rank": "family",
+            "summary": "Buttonquail recognized by AviList v2025 with 18 species across 2 genera."
+        },
+        "dromadidae": {
+            "id": "dromadidae",
+            "type": "taxon",
+            "label": "Dromadidae",
+            "rank": "family",
+            "summary": "Crab-Plover recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "glareolidae": {
+            "id": "glareolidae",
+            "type": "taxon",
+            "label": "Glareolidae",
+            "rank": "family",
+            "summary": "Coursers and Pratincoles recognized by AviList v2025 with 17 species across 4 genera."
+        },
+        "stercorariidae": {
+            "id": "stercorariidae",
+            "type": "taxon",
+            "label": "Stercorariidae",
+            "rank": "family",
+            "summary": "Jaegers and Skuas recognized by AviList v2025 with 7 species across 1 genera."
+        },
+        "alcidae": {
+            "id": "alcidae",
+            "type": "taxon",
+            "label": "Alcidae",
+            "rank": "family",
+            "summary": "Auks, Puffins, and Murres recognized by AviList v2025 with 25 species across 11 genera."
+        },
+        "fratercula": {
+            "id": "fratercula",
+            "type": "taxon",
+            "label": "Fratercula",
+            "rank": "genus",
+            "summary": "Fratercula represented here as a genus branch within Alcidae."
+        },
+        "atlantic-puffin": {
+            "id": "atlantic-puffin",
+            "type": "species",
+            "label": "Atlantic Puffin",
+            "rank": "species",
+            "summary": "A compact seabird with a bright bill and powerful underwater wing-strokes.",
+            "profile": {
+                "scientificName": "Fratercula arctica",
+                "habitat": "North Atlantic cliffs and offshore waters.",
+                "diet": "Small fish such as sand eels and capelin.",
+                "wingspan": "47 to 63 cm",
+                "status": "Vulnerable"
+            },
+            "notes": "Puffins carry multiple fish crosswise in the bill thanks to specialized tongue spines."
+        },
+        "laridae": {
+            "id": "laridae",
+            "type": "taxon",
+            "label": "Laridae",
+            "rank": "family",
+            "summary": "Skimmers, Noddies, Terns, and Gulls recognized by AviList v2025 with 105 species across 23 genera."
+        },
+        "eurypygiformes": {
+            "id": "eurypygiformes",
+            "type": "taxon",
+            "label": "Eurypygiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 2 species across 2 genera and 2 families in Eurypygiformes."
+        },
+        "eurypygidae": {
+            "id": "eurypygidae",
+            "type": "taxon",
+            "label": "Eurypygidae",
+            "rank": "family",
+            "summary": "Sunbittern recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "rhynochetidae": {
+            "id": "rhynochetidae",
+            "type": "taxon",
+            "label": "Rhynochetidae",
+            "rank": "family",
+            "summary": "Kagu recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "phaethontiformes": {
+            "id": "phaethontiformes",
+            "type": "taxon",
+            "label": "Phaethontiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 3 species across 1 genera and 1 families in Phaethontiformes."
+        },
+        "phaethontidae": {
+            "id": "phaethontidae",
+            "type": "taxon",
+            "label": "Phaethontidae",
+            "rank": "family",
+            "summary": "Tropicbirds recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "gaviiformes": {
+            "id": "gaviiformes",
+            "type": "taxon",
+            "label": "Gaviiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 5 species across 1 genera and 1 families in Gaviiformes."
+        },
+        "gaviidae": {
+            "id": "gaviidae",
+            "type": "taxon",
+            "label": "Gaviidae",
+            "rank": "family",
+            "summary": "Loons recognized by AviList v2025 with 5 species across 1 genera."
+        },
+        "sphenisciformes": {
+            "id": "sphenisciformes",
+            "type": "taxon",
+            "label": "Sphenisciformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 19 species across 6 genera and 1 families in Sphenisciformes."
+        },
+        "spheniscidae": {
+            "id": "spheniscidae",
+            "type": "taxon",
+            "label": "Spheniscidae",
+            "rank": "family",
+            "summary": "Penguins recognized by AviList v2025 with 19 species across 6 genera."
+        },
+        "aptenodytes": {
+            "id": "aptenodytes",
+            "type": "taxon",
+            "label": "Aptenodytes",
+            "rank": "genus",
+            "summary": "Aptenodytes represented here as a genus branch within Spheniscidae."
+        },
+        "emperor-penguin": {
+            "id": "emperor-penguin",
+            "type": "species",
+            "label": "Emperor Penguin",
+            "rank": "species",
+            "summary": "The tallest and heaviest penguin, breeding through Antarctic winter.",
+            "profile": {
+                "scientificName": "Aptenodytes forsteri",
+                "habitat": "Pack ice and surrounding Southern Ocean waters.",
+                "diet": "Fish, squid, and krill.",
+                "wingspan": "Flippered forelimbs",
+                "status": "Near Threatened"
+            },
+            "notes": "Males incubate the egg on their feet during the darkest part of winter."
+        },
+        "procellariiformes": {
+            "id": "procellariiformes",
+            "type": "taxon",
+            "label": "Procellariiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 146 species across 26 genera and 4 families in Procellariiformes."
+        },
+        "diomedeidae": {
+            "id": "diomedeidae",
+            "type": "taxon",
+            "label": "Diomedeidae",
+            "rank": "family",
+            "summary": "Albatrosses recognized by AviList v2025 with 20 species across 4 genera."
+        },
+        "diomedea": {
+            "id": "diomedea",
+            "type": "taxon",
+            "label": "Diomedea",
+            "rank": "genus",
+            "summary": "Diomedea represented here as a genus branch within Diomedeidae."
+        },
+        "wandering-albatross": {
+            "id": "wandering-albatross",
+            "type": "species",
+            "label": "Wandering Albatross",
+            "rank": "species",
+            "summary": "A giant oceanic glider with one of the longest wingspans of any bird.",
+            "profile": {
+                "scientificName": "Diomedea exulans",
+                "habitat": "Open Southern Ocean, breeding on remote subantarctic islands.",
+                "diet": "Squid, fish, and carrion at sea.",
+                "wingspan": "250 to 350 cm",
+                "status": "Vulnerable"
+            },
+            "notes": "Dynamic soaring lets it cover huge distances with minimal flapping."
+        },
+        "oceanitidae": {
+            "id": "oceanitidae",
+            "type": "taxon",
+            "label": "Oceanitidae",
+            "rank": "family",
+            "summary": "Southern Storm Petrels recognized by AviList v2025 with 10 species across 5 genera."
+        },
+        "hydrobatidae": {
+            "id": "hydrobatidae",
+            "type": "taxon",
+            "label": "Hydrobatidae",
+            "rank": "family",
+            "summary": "Northern Storm Petrels recognized by AviList v2025 with 18 species across 1 genera."
+        },
+        "procellariidae": {
+            "id": "procellariidae",
+            "type": "taxon",
+            "label": "Procellariidae",
+            "rank": "family",
+            "summary": "Petrels, Shearwaters, and Diving Petrels recognized by AviList v2025 with 98 species across 16 genera."
+        },
+        "ciconiiformes": {
+            "id": "ciconiiformes",
+            "type": "taxon",
+            "label": "Ciconiiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 20 species across 6 genera and 1 families in Ciconiiformes."
+        },
+        "ciconiidae": {
+            "id": "ciconiidae",
+            "type": "taxon",
+            "label": "Ciconiidae",
+            "rank": "family",
+            "summary": "Storks recognized by AviList v2025 with 20 species across 6 genera."
+        },
+        "suliformes": {
+            "id": "suliformes",
+            "type": "taxon",
+            "label": "Suliformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 54 species across 12 genera and 4 families in Suliformes."
+        },
+        "fregatidae": {
+            "id": "fregatidae",
+            "type": "taxon",
+            "label": "Fregatidae",
+            "rank": "family",
+            "summary": "Frigatebirds recognized by AviList v2025 with 5 species across 1 genera."
+        },
+        "sulidae": {
+            "id": "sulidae",
+            "type": "taxon",
+            "label": "Sulidae",
+            "rank": "family",
+            "summary": "Boobies and Gannets recognized by AviList v2025 with 11 species across 3 genera."
+        },
+        "anhingidae": {
+            "id": "anhingidae",
+            "type": "taxon",
+            "label": "Anhingidae",
+            "rank": "family",
+            "summary": "Anhinga and Darters recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "phalacrocoracidae": {
+            "id": "phalacrocoracidae",
+            "type": "taxon",
+            "label": "Phalacrocoracidae",
+            "rank": "family",
+            "summary": "Cormorants and Shags recognized by AviList v2025 with 34 species across 7 genera."
+        },
+        "pelecaniformes": {
+            "id": "pelecaniformes",
+            "type": "taxon",
+            "label": "Pelecaniformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 120 species across 34 genera and 5 families in Pelecaniformes."
+        },
+        "threskiornithidae": {
+            "id": "threskiornithidae",
+            "type": "taxon",
+            "label": "Threskiornithidae",
+            "rank": "family",
+            "summary": "Ibises and Spoonbills recognized by AviList v2025 with 36 species across 13 genera."
+        },
+        "balaenicipitidae": {
+            "id": "balaenicipitidae",
+            "type": "taxon",
+            "label": "Balaenicipitidae",
+            "rank": "family",
+            "summary": "Shoebill recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "scopidae": {
+            "id": "scopidae",
+            "type": "taxon",
+            "label": "Scopidae",
+            "rank": "family",
+            "summary": "Hamerkop recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "pelecanidae": {
+            "id": "pelecanidae",
+            "type": "taxon",
+            "label": "Pelecanidae",
+            "rank": "family",
+            "summary": "Pelicans recognized by AviList v2025 with 8 species across 1 genera."
+        },
+        "ardeidae": {
+            "id": "ardeidae",
+            "type": "taxon",
+            "label": "Ardeidae",
+            "rank": "family",
+            "summary": "Herons, Egrets, and Bitterns recognized by AviList v2025 with 74 species across 18 genera."
+        },
+        "ardea": {
+            "id": "ardea",
+            "type": "taxon",
+            "label": "Ardea",
+            "rank": "genus",
+            "summary": "Ardea represented here as a genus branch within Ardeidae."
+        },
+        "great-blue-heron": {
+            "id": "great-blue-heron",
+            "type": "species",
+            "label": "Great Blue Heron",
+            "rank": "species",
+            "summary": "A tall heron that stalks shallow water with slow, deliberate steps.",
+            "profile": {
+                "scientificName": "Ardea herodias",
+                "habitat": "Marshes, shorelines, rivers, and estuaries.",
+                "diet": "Fish, amphibians, crustaceans, and small vertebrates.",
+                "wingspan": "167 to 201 cm",
+                "status": "Least Concern"
+            },
+            "notes": "This species can hunt in fresh, brackish, and marine waters."
+        },
+        "caprimulgiformes": {
+            "id": "caprimulgiformes",
+            "type": "taxon",
+            "label": "Caprimulgiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 98 species across 22 genera and 1 families in Caprimulgiformes."
+        },
+        "caprimulgidae": {
+            "id": "caprimulgidae",
+            "type": "taxon",
+            "label": "Caprimulgidae",
+            "rank": "family",
+            "summary": "Nightjars and Nighthawks recognized by AviList v2025 with 98 species across 22 genera."
+        },
+        "steatornithiformes": {
+            "id": "steatornithiformes",
+            "type": "taxon",
+            "label": "Steatornithiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 1 species across 1 genera and 1 families in Steatornithiformes."
+        },
+        "steatornithidae": {
+            "id": "steatornithidae",
+            "type": "taxon",
+            "label": "Steatornithidae",
+            "rank": "family",
+            "summary": "Oilbird recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "nyctibiiformes": {
+            "id": "nyctibiiformes",
+            "type": "taxon",
+            "label": "Nyctibiiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 7 species across 2 genera and 1 families in Nyctibiiformes."
+        },
+        "nyctibiidae": {
+            "id": "nyctibiidae",
+            "type": "taxon",
+            "label": "Nyctibiidae",
+            "rank": "family",
+            "summary": "Potoos recognized by AviList v2025 with 7 species across 2 genera."
+        },
+        "podargiformes": {
+            "id": "podargiformes",
+            "type": "taxon",
+            "label": "Podargiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 16 species across 3 genera and 1 families in Podargiformes."
+        },
+        "podargidae": {
+            "id": "podargidae",
+            "type": "taxon",
+            "label": "Podargidae",
+            "rank": "family",
+            "summary": "Frogmouths recognized by AviList v2025 with 16 species across 3 genera."
+        },
+        "aegotheliformes": {
+            "id": "aegotheliformes",
+            "type": "taxon",
+            "label": "Aegotheliformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 10 species across 1 genera and 1 families in Aegotheliformes."
+        },
+        "aegothelidae": {
+            "id": "aegothelidae",
+            "type": "taxon",
+            "label": "Aegothelidae",
+            "rank": "family",
+            "summary": "Owlet-nightjars recognized by AviList v2025 with 10 species across 1 genera."
+        },
+        "apodiformes": {
+            "id": "apodiformes",
+            "type": "taxon",
+            "label": "Apodiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 472 species across 132 genera and 3 families in Apodiformes."
+        },
+        "hemiprocnidae": {
+            "id": "hemiprocnidae",
+            "type": "taxon",
+            "label": "Hemiprocnidae",
+            "rank": "family",
+            "summary": "Treeswifts recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "apodidae": {
+            "id": "apodidae",
+            "type": "taxon",
+            "label": "Apodidae",
+            "rank": "family",
+            "summary": "Swifts recognized by AviList v2025 with 105 species across 19 genera."
+        },
+        "trochilidae": {
+            "id": "trochilidae",
+            "type": "taxon",
+            "label": "Trochilidae",
+            "rank": "family",
+            "summary": "Hummingbirds recognized by AviList v2025 with 363 species across 112 genera."
+        },
+        "archilochus": {
+            "id": "archilochus",
+            "type": "taxon",
+            "label": "Archilochus",
+            "rank": "genus",
+            "summary": "Archilochus represented here as a genus branch within Trochilidae."
+        },
+        "ruby-throated-hummingbird": {
+            "id": "ruby-throated-hummingbird",
+            "type": "species",
+            "label": "Ruby-throated Hummingbird",
+            "rank": "species",
+            "summary": "A migratory hummingbird known for rapid wingbeats and precision hovering.",
+            "profile": {
+                "scientificName": "Archilochus colubris",
+                "habitat": "Forest edges, gardens, meadows, and woodland clearings.",
+                "diet": "Nectar and small flying insects.",
+                "wingspan": "8 to 11 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Many individuals cross the Gulf of Mexico during migration."
+        },
+        "strigiformes": {
+            "id": "strigiformes",
+            "type": "taxon",
+            "label": "Strigiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 245 species across 25 genera and 2 families in Strigiformes."
+        },
+        "tytonidae": {
+            "id": "tytonidae",
+            "type": "taxon",
+            "label": "Tytonidae",
+            "rank": "family",
+            "summary": "Bay Owls and Barn Owls recognized by AviList v2025 with 17 species across 2 genera."
+        },
+        "strigidae": {
+            "id": "strigidae",
+            "type": "taxon",
+            "label": "Strigidae",
+            "rank": "family",
+            "summary": "Owls recognized by AviList v2025 with 228 species across 23 genera."
+        },
+        "bubo": {
+            "id": "bubo",
+            "type": "taxon",
+            "label": "Bubo",
+            "rank": "genus",
+            "summary": "Bubo represented here as a genus branch within Strigidae."
+        },
+        "great-horned-owl": {
+            "id": "great-horned-owl",
+            "type": "species",
+            "label": "Great Horned Owl",
+            "rank": "species",
+            "summary": "A powerful owl with prominent ear tufts and a deep resonant voice.",
+            "profile": {
+                "scientificName": "Bubo virginianus",
+                "habitat": "Forests, deserts, suburbs, and open country.",
+                "diet": "Mammals, birds, reptiles, and other vertebrates.",
+                "wingspan": "101 to 145 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It is one of the most versatile avian predators in the Americas."
+        },
+        "cathartiformes": {
+            "id": "cathartiformes",
+            "type": "taxon",
+            "label": "Cathartiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 7 species across 5 genera and 1 families in Cathartiformes."
+        },
+        "cathartidae": {
+            "id": "cathartidae",
+            "type": "taxon",
+            "label": "Cathartidae",
+            "rank": "family",
+            "summary": "New World Vultures recognized by AviList v2025 with 7 species across 5 genera."
+        },
+        "accipitriformes": {
+            "id": "accipitriformes",
+            "type": "taxon",
+            "label": "Accipitriformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 252 species across 76 genera and 3 families in Accipitriformes."
+        },
+        "sagittariidae": {
+            "id": "sagittariidae",
+            "type": "taxon",
+            "label": "Sagittariidae",
+            "rank": "family",
+            "summary": "Secretarybird recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "pandionidae": {
+            "id": "pandionidae",
+            "type": "taxon",
+            "label": "Pandionidae",
+            "rank": "family",
+            "summary": "Osprey recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "accipitridae": {
+            "id": "accipitridae",
+            "type": "taxon",
+            "label": "Accipitridae",
+            "rank": "family",
+            "summary": "Kites, Old World Vultures, Eagles, and Hawks recognized by AviList v2025 with 250 species across 74 genera."
+        },
+        "buteo": {
+            "id": "buteo",
+            "type": "taxon",
+            "label": "Buteo",
+            "rank": "genus",
+            "summary": "Buteo represented here as a genus branch within Accipitridae."
+        },
+        "red-tailed-hawk": {
+            "id": "red-tailed-hawk",
+            "type": "species",
+            "label": "Red-tailed Hawk",
+            "rank": "species",
+            "summary": "A broad-winged hawk often seen soaring over fields and roadsides.",
+            "profile": {
+                "scientificName": "Buteo jamaicensis",
+                "habitat": "Open country, woodland edges, deserts, and suburbs.",
+                "diet": "Mostly small mammals, plus reptiles and birds.",
+                "wingspan": "114 to 133 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Its classic scream is often used in film for any large raptor."
+        },
+        "haliaeetus": {
+            "id": "haliaeetus",
+            "type": "taxon",
+            "label": "Haliaeetus",
+            "rank": "genus",
+            "summary": "Haliaeetus represented here as a genus branch within Accipitridae."
+        },
+        "bald-eagle": {
+            "id": "bald-eagle",
+            "type": "species",
+            "label": "Bald Eagle",
+            "rank": "species",
+            "summary": "A large fish-eating eagle associated with major North American waterways.",
+            "profile": {
+                "scientificName": "Haliaeetus leucocephalus",
+                "habitat": "Lakes, rivers, reservoirs, and coastal estuaries.",
+                "diet": "Fish, waterbirds, carrion, and opportunistic prey.",
+                "wingspan": "180 to 230 cm",
+                "status": "Least Concern"
+            },
+            "notes": "The species has rebounded strongly in North America after major conservation efforts."
+        },
+        "coliiformes": {
+            "id": "coliiformes",
+            "type": "taxon",
+            "label": "Coliiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 6 species across 2 genera and 1 families in Coliiformes."
+        },
+        "coliidae": {
+            "id": "coliidae",
+            "type": "taxon",
+            "label": "Coliidae",
+            "rank": "family",
+            "summary": "Mousebirds recognized by AviList v2025 with 6 species across 2 genera."
+        },
+        "leptosomiformes": {
+            "id": "leptosomiformes",
+            "type": "taxon",
+            "label": "Leptosomiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 1 species across 1 genera and 1 families in Leptosomiformes."
+        },
+        "leptosomidae": {
+            "id": "leptosomidae",
+            "type": "taxon",
+            "label": "Leptosomidae",
+            "rank": "family",
+            "summary": "Cuckoo-roller recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "trogoniformes": {
+            "id": "trogoniformes",
+            "type": "taxon",
+            "label": "Trogoniformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 47 species across 7 genera and 1 families in Trogoniformes."
+        },
+        "trogonidae": {
+            "id": "trogonidae",
+            "type": "taxon",
+            "label": "Trogonidae",
+            "rank": "family",
+            "summary": "Trogons recognized by AviList v2025 with 47 species across 7 genera."
+        },
+        "bucerotiformes": {
+            "id": "bucerotiformes",
+            "type": "taxon",
+            "label": "Bucerotiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 75 species across 19 genera and 3 families in Bucerotiformes."
+        },
+        "upupidae": {
+            "id": "upupidae",
+            "type": "taxon",
+            "label": "Upupidae",
+            "rank": "family",
+            "summary": "Hoopoes recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "phoeniculidae": {
+            "id": "phoeniculidae",
+            "type": "taxon",
+            "label": "Phoeniculidae",
+            "rank": "family",
+            "summary": "Wood Hoopoes and Scimitarbills recognized by AviList v2025 with 8 species across 2 genera."
+        },
+        "bucerotidae": {
+            "id": "bucerotidae",
+            "type": "taxon",
+            "label": "Bucerotidae",
+            "rank": "family",
+            "summary": "Hornbills recognized by AviList v2025 with 64 species across 16 genera."
+        },
+        "buceros": {
+            "id": "buceros",
+            "type": "taxon",
+            "label": "Buceros",
+            "rank": "genus",
+            "summary": "Buceros represented here as a genus branch within Bucerotidae."
+        },
+        "great-hornbill": {
+            "id": "great-hornbill",
+            "type": "species",
+            "label": "Great Hornbill",
+            "rank": "species",
+            "summary": "A huge forest hornbill with a striking casque and loud wingbeats.",
+            "profile": {
+                "scientificName": "Buceros bicornis",
+                "habitat": "Tall evergreen and moist deciduous forest in South and Southeast Asia.",
+                "diet": "Mostly fruit, with insects and small vertebrates.",
+                "wingspan": "152 to 180 cm",
+                "status": "Vulnerable"
+            },
+            "notes": "Females seal themselves inside tree cavities while nesting."
+        },
+        "coraciiformes": {
+            "id": "coraciiformes",
+            "type": "taxon",
+            "label": "Coraciiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 185 species across 34 genera and 6 families in Coraciiformes."
+        },
+        "brachypteraciidae": {
+            "id": "brachypteraciidae",
+            "type": "taxon",
+            "label": "Brachypteraciidae",
+            "rank": "family",
+            "summary": "Ground Rollers recognized by AviList v2025 with 5 species across 4 genera."
+        },
+        "coraciidae": {
+            "id": "coraciidae",
+            "type": "taxon",
+            "label": "Coraciidae",
+            "rank": "family",
+            "summary": "Rollers recognized by AviList v2025 with 13 species across 2 genera."
+        },
+        "meropidae": {
+            "id": "meropidae",
+            "type": "taxon",
+            "label": "Meropidae",
+            "rank": "family",
+            "summary": "Bee-eaters recognized by AviList v2025 with 31 species across 3 genera."
+        },
+        "todidae": {
+            "id": "todidae",
+            "type": "taxon",
+            "label": "Todidae",
+            "rank": "family",
+            "summary": "Todies recognized by AviList v2025 with 5 species across 1 genera."
+        },
+        "momotidae": {
+            "id": "momotidae",
+            "type": "taxon",
+            "label": "Momotidae",
+            "rank": "family",
+            "summary": "Motmots recognized by AviList v2025 with 14 species across 6 genera."
+        },
+        "alcedinidae": {
+            "id": "alcedinidae",
+            "type": "taxon",
+            "label": "Alcedinidae",
+            "rank": "family",
+            "summary": "Kingfishers recognized by AviList v2025 with 117 species across 18 genera."
+        },
+        "alcedo": {
+            "id": "alcedo",
+            "type": "taxon",
+            "label": "Alcedo",
+            "rank": "genus",
+            "summary": "Alcedo represented here as a genus branch within Alcedinidae."
+        },
+        "common-kingfisher": {
+            "id": "common-kingfisher",
+            "type": "species",
+            "label": "Common Kingfisher",
+            "rank": "species",
+            "summary": "A jewel-like fishing bird that darts low over clear water.",
+            "profile": {
+                "scientificName": "Alcedo atthis",
+                "habitat": "Streams, canals, ponds, and slow rivers with banks for nesting.",
+                "diet": "Small fish, aquatic insects, and crustaceans.",
+                "wingspan": "24 to 26 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It nests in burrows excavated into banks."
+        },
+        "galbuliformes": {
+            "id": "galbuliformes",
+            "type": "taxon",
+            "label": "Galbuliformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 55 species across 15 genera and 2 families in Galbuliformes."
+        },
+        "galbulidae": {
+            "id": "galbulidae",
+            "type": "taxon",
+            "label": "Galbulidae",
+            "rank": "family",
+            "summary": "Jacamars recognized by AviList v2025 with 18 species across 5 genera."
+        },
+        "bucconidae": {
+            "id": "bucconidae",
+            "type": "taxon",
+            "label": "Bucconidae",
+            "rank": "family",
+            "summary": "Puffbirds recognized by AviList v2025 with 37 species across 10 genera."
+        },
+        "piciformes": {
+            "id": "piciformes",
+            "type": "taxon",
+            "label": "Piciformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 385 species across 60 genera and 7 families in Piciformes."
+        },
+        "megalaimidae": {
+            "id": "megalaimidae",
+            "type": "taxon",
+            "label": "Megalaimidae",
+            "rank": "family",
+            "summary": "Asian Barbets recognized by AviList v2025 with 35 species across 2 genera."
+        },
+        "lybiidae": {
+            "id": "lybiidae",
+            "type": "taxon",
+            "label": "Lybiidae",
+            "rank": "family",
+            "summary": "African Barbets recognized by AviList v2025 with 43 species across 10 genera."
+        },
+        "capitonidae": {
+            "id": "capitonidae",
+            "type": "taxon",
+            "label": "Capitonidae",
+            "rank": "family",
+            "summary": "New World Barbets recognized by AviList v2025 with 15 species across 2 genera."
+        },
+        "semnornithidae": {
+            "id": "semnornithidae",
+            "type": "taxon",
+            "label": "Semnornithidae",
+            "rank": "family",
+            "summary": "Prong-billed Barbet and Toucan Barbet recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "ramphastidae": {
+            "id": "ramphastidae",
+            "type": "taxon",
+            "label": "Ramphastidae",
+            "rank": "family",
+            "summary": "Toucans recognized by AviList v2025 with 37 species across 5 genera."
+        },
+        "ramphastos": {
+            "id": "ramphastos",
+            "type": "taxon",
+            "label": "Ramphastos",
+            "rank": "genus",
+            "summary": "Ramphastos represented here as a genus branch within Ramphastidae."
+        },
+        "toco-toucan": {
+            "id": "toco-toucan",
+            "type": "species",
+            "label": "Toco Toucan",
+            "rank": "species",
+            "summary": "A large toucan with an oversized bill and bold black, white, and orange patterning.",
+            "profile": {
+                "scientificName": "Ramphastos toco",
+                "habitat": "Woodland edges, gallery forest, and savanna mosaics in South America.",
+                "diet": "Fruit, eggs, nestlings, and small animals.",
+                "wingspan": "50 to 60 cm",
+                "status": "Least Concern"
+            },
+            "notes": "The bill is lightweight despite its size, thanks to internal air spaces."
+        },
+        "indicatoridae": {
+            "id": "indicatoridae",
+            "type": "taxon",
+            "label": "Indicatoridae",
+            "rank": "family",
+            "summary": "Honeyguides recognized by AviList v2025 with 16 species across 4 genera."
+        },
+        "picidae": {
+            "id": "picidae",
+            "type": "taxon",
+            "label": "Picidae",
+            "rank": "family",
+            "summary": "Woodpeckers recognized by AviList v2025 with 237 species across 36 genera."
+        },
+        "dendrocopos": {
+            "id": "dendrocopos",
+            "type": "taxon",
+            "label": "Dendrocopos",
+            "rank": "genus",
+            "summary": "Dendrocopos represented here as a genus branch within Picidae."
+        },
+        "great-spotted-woodpecker": {
+            "id": "great-spotted-woodpecker",
+            "type": "species",
+            "label": "Great Spotted Woodpecker",
+            "rank": "species",
+            "summary": "A familiar Eurasian woodpecker that drums loudly on resonant trunks.",
+            "profile": {
+                "scientificName": "Dendrocopos major",
+                "habitat": "Woodland, parks, orchards, and large gardens.",
+                "diet": "Insects, larvae, seeds, and nuts.",
+                "wingspan": "34 to 39 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It wedges seeds and cones into bark crevices before hammering them open."
+        },
+        "cariamiformes": {
+            "id": "cariamiformes",
+            "type": "taxon",
+            "label": "Cariamiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 2 species across 2 genera and 1 families in Cariamiformes."
+        },
+        "cariamidae": {
+            "id": "cariamidae",
+            "type": "taxon",
+            "label": "Cariamidae",
+            "rank": "family",
+            "summary": "Seriemas recognized by AviList v2025 with 2 species across 2 genera."
+        },
+        "falconiformes": {
+            "id": "falconiformes",
+            "type": "taxon",
+            "label": "Falconiformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 65 species across 10 genera and 1 families in Falconiformes."
+        },
+        "falconidae": {
+            "id": "falconidae",
+            "type": "taxon",
+            "label": "Falconidae",
+            "rank": "family",
+            "summary": "Falcons and Caracaras recognized by AviList v2025 with 65 species across 10 genera."
+        },
+        "falco": {
+            "id": "falco",
+            "type": "taxon",
+            "label": "Falco",
+            "rank": "genus",
+            "summary": "Falco represented here as a genus branch within Falconidae."
+        },
+        "peregrine-falcon": {
+            "id": "peregrine-falcon",
+            "type": "species",
+            "label": "Peregrine Falcon",
+            "rank": "species",
+            "summary": "A fast aerial predator famous for its high-speed hunting dives.",
+            "profile": {
+                "scientificName": "Falco peregrinus",
+                "habitat": "Cliffs, coasts, cities, and open landscapes worldwide.",
+                "diet": "Mostly medium-sized birds captured in flight.",
+                "wingspan": "74 to 120 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Peregrines have adapted especially well to nesting on urban towers and bridges."
+        },
+        "psittaciformes": {
+            "id": "psittaciformes",
+            "type": "taxon",
+            "label": "Psittaciformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 406 species across 94 genera and 4 families in Psittaciformes."
+        },
+        "strigopidae": {
+            "id": "strigopidae",
+            "type": "taxon",
+            "label": "Strigopidae",
+            "rank": "family",
+            "summary": "New Zealand Parrots recognized by AviList v2025 with 4 species across 2 genera."
+        },
+        "cacatuidae": {
+            "id": "cacatuidae",
+            "type": "taxon",
+            "label": "Cacatuidae",
+            "rank": "family",
+            "summary": "Cockatoos recognized by AviList v2025 with 22 species across 7 genera."
+        },
+        "psittacidae": {
+            "id": "psittacidae",
+            "type": "taxon",
+            "label": "Psittacidae",
+            "rank": "family",
+            "summary": "African and New World Parrots recognized by AviList v2025 with 180 species across 37 genera."
+        },
+        "ara": {
+            "id": "ara",
+            "type": "taxon",
+            "label": "Ara",
+            "rank": "genus",
+            "summary": "Ara represented here as a genus branch within Psittacidae."
+        },
+        "scarlet-macaw": {
+            "id": "scarlet-macaw",
+            "type": "species",
+            "label": "Scarlet Macaw",
+            "rank": "species",
+            "summary": "A brilliantly colored macaw of tropical forest canopies and river corridors.",
+            "profile": {
+                "scientificName": "Ara macao",
+                "habitat": "Humid forest, woodland edges, and riverine forest.",
+                "diet": "Seeds, nuts, fruits, and clay from exposed licks.",
+                "wingspan": "99 to 109 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Macaws often travel in noisy bonded pairs or small groups."
+        },
+        "psittaculidae": {
+            "id": "psittaculidae",
+            "type": "taxon",
+            "label": "Psittaculidae",
+            "rank": "family",
+            "summary": "Old World Parrots recognized by AviList v2025 with 200 species across 48 genera."
+        },
+        "psittacula": {
+            "id": "psittacula",
+            "type": "taxon",
+            "label": "Psittacula",
+            "rank": "genus",
+            "summary": "Psittacula represented here as a genus branch within Psittaculidae."
+        },
+        "rose-ringed-parakeet": {
+            "id": "rose-ringed-parakeet",
+            "type": "species",
+            "label": "Rose-ringed Parakeet",
+            "rank": "species",
+            "summary": "A highly adaptable parakeet now established far beyond its native range.",
+            "profile": {
+                "scientificName": "Psittacula krameri",
+                "habitat": "Woodland, farmland, cities, and suburban parks.",
+                "diet": "Seeds, fruits, buds, and cultivated crops.",
+                "wingspan": "38 to 42 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Urban feral populations are now common in many parts of Europe."
+        },
+        "passeriformes": {
+            "id": "passeriformes",
+            "type": "taxon",
+            "label": "Passeriformes",
+            "rank": "order",
+            "summary": "AviList v2025 recognizes 6705 species across 1361 genera and 145 families in Passeriformes."
+        },
+        "acanthisittidae": {
+            "id": "acanthisittidae",
+            "type": "taxon",
+            "label": "Acanthisittidae",
+            "rank": "family",
+            "summary": "New Zealand Wrens recognized by AviList v2025 with 4 species across 3 genera."
+        },
+        "philepittidae": {
+            "id": "philepittidae",
+            "type": "taxon",
+            "label": "Philepittidae",
+            "rank": "family",
+            "summary": "Asities recognized by AviList v2025 with 4 species across 2 genera."
+        },
+        "eurylaimidae": {
+            "id": "eurylaimidae",
+            "type": "taxon",
+            "label": "Eurylaimidae",
+            "rank": "family",
+            "summary": "Grauer's Broadbill and Asian Broadbills recognized by AviList v2025 with 10 species across 7 genera."
+        },
+        "calyptomenidae": {
+            "id": "calyptomenidae",
+            "type": "taxon",
+            "label": "Calyptomenidae",
+            "rank": "family",
+            "summary": "African and Green Broadbills recognized by AviList v2025 with 6 species across 2 genera."
+        },
+        "sapayoidae": {
+            "id": "sapayoidae",
+            "type": "taxon",
+            "label": "Sapayoidae",
+            "rank": "family",
+            "summary": "Sapayoa recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "pittidae": {
+            "id": "pittidae",
+            "type": "taxon",
+            "label": "Pittidae",
+            "rank": "family",
+            "summary": "Pittas recognized by AviList v2025 with 46 species across 3 genera."
+        },
+        "pipridae": {
+            "id": "pipridae",
+            "type": "taxon",
+            "label": "Pipridae",
+            "rank": "family",
+            "summary": "Manakins recognized by AviList v2025 with 55 species across 16 genera."
+        },
+        "cotingidae": {
+            "id": "cotingidae",
+            "type": "taxon",
+            "label": "Cotingidae",
+            "rank": "family",
+            "summary": "Cotingas recognized by AviList v2025 with 65 species across 24 genera."
+        },
+        "tityridae": {
+            "id": "tityridae",
+            "type": "taxon",
+            "label": "Tityridae",
+            "rank": "family",
+            "summary": "Tityras, Becards, and Allies recognized by AviList v2025 with 36 species across 7 genera."
+        },
+        "oxyruncidae": {
+            "id": "oxyruncidae",
+            "type": "taxon",
+            "label": "Oxyruncidae",
+            "rank": "family",
+            "summary": "Sharpbill recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "onychorhynchidae": {
+            "id": "onychorhynchidae",
+            "type": "taxon",
+            "label": "Onychorhynchidae",
+            "rank": "family",
+            "summary": "Royal Flycatchers and Allies recognized by AviList v2025 with 7 species across 3 genera."
+        },
+        "tyrannidae": {
+            "id": "tyrannidae",
+            "type": "taxon",
+            "label": "Tyrannidae",
+            "rank": "family",
+            "summary": "Tyrant Flycatchers and Allies recognized by AviList v2025 with 441 species across 104 genera."
+        },
+        "sayornis": {
+            "id": "sayornis",
+            "type": "taxon",
+            "label": "Sayornis",
+            "rank": "genus",
+            "summary": "Sayornis represented here as a genus branch within Tyrannidae."
+        },
+        "eastern-phoebe": {
+            "id": "eastern-phoebe",
+            "type": "species",
+            "label": "Eastern Phoebe",
+            "rank": "species",
+            "summary": "A familiar flycatcher that sallies from low perches and often nests on buildings.",
+            "profile": {
+                "scientificName": "Sayornis phoebe",
+                "habitat": "Woodland edges, farms, bridges, and suburban areas near water.",
+                "diet": "Flying insects and other small arthropods.",
+                "wingspan": "26 to 28 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It pumps its tail repeatedly while perched."
+        },
+        "melanopareiidae": {
+            "id": "melanopareiidae",
+            "type": "taxon",
+            "label": "Melanopareiidae",
+            "rank": "family",
+            "summary": "Crescentchests recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "conopophagidae": {
+            "id": "conopophagidae",
+            "type": "taxon",
+            "label": "Conopophagidae",
+            "rank": "family",
+            "summary": "Gnateaters recognized by AviList v2025 with 12 species across 2 genera."
+        },
+        "thamnophilidae": {
+            "id": "thamnophilidae",
+            "type": "taxon",
+            "label": "Thamnophilidae",
+            "rank": "family",
+            "summary": "Antbirds, Antshrikes, Antwrens, and Antvireos recognized by AviList v2025 with 239 species across 63 genera."
+        },
+        "grallariidae": {
+            "id": "grallariidae",
+            "type": "taxon",
+            "label": "Grallariidae",
+            "rank": "family",
+            "summary": "Antpittas recognized by AviList v2025 with 70 species across 5 genera."
+        },
+        "rhinocryptidae": {
+            "id": "rhinocryptidae",
+            "type": "taxon",
+            "label": "Rhinocryptidae",
+            "rank": "family",
+            "summary": "Tapaculos recognized by AviList v2025 with 65 species across 12 genera."
+        },
+        "formicariidae": {
+            "id": "formicariidae",
+            "type": "taxon",
+            "label": "Formicariidae",
+            "rank": "family",
+            "summary": "Antthrushes recognized by AviList v2025 with 12 species across 2 genera."
+        },
+        "furnariidae": {
+            "id": "furnariidae",
+            "type": "taxon",
+            "label": "Furnariidae",
+            "rank": "family",
+            "summary": "Ovenbirds and Woodcreepers recognized by AviList v2025 with 321 species across 71 genera."
+        },
+        "furnarius": {
+            "id": "furnarius",
+            "type": "taxon",
+            "label": "Furnarius",
+            "rank": "genus",
+            "summary": "Furnarius represented here as a genus branch within Furnariidae."
+        },
+        "rufous-hornero": {
+            "id": "rufous-hornero",
+            "type": "species",
+            "label": "Rufous Hornero",
+            "rank": "species",
+            "summary": "A clay-nest building ovenbird widely seen in open habitats of South America.",
+            "profile": {
+                "scientificName": "Furnarius rufus",
+                "habitat": "Grassland, farmland, towns, and open woodland.",
+                "diet": "Insects and other small invertebrates.",
+                "wingspan": "25 to 28 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Its oven-shaped mud nest gives the family one of its common English names."
+        },
+        "menuridae": {
+            "id": "menuridae",
+            "type": "taxon",
+            "label": "Menuridae",
+            "rank": "family",
+            "summary": "Lyrebirds recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "atrichornithidae": {
+            "id": "atrichornithidae",
+            "type": "taxon",
+            "label": "Atrichornithidae",
+            "rank": "family",
+            "summary": "Scrubbirds recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "climacteridae": {
+            "id": "climacteridae",
+            "type": "taxon",
+            "label": "Climacteridae",
+            "rank": "family",
+            "summary": "Australasian Treecreepers recognized by AviList v2025 with 7 species across 2 genera."
+        },
+        "ptilonorhynchidae": {
+            "id": "ptilonorhynchidae",
+            "type": "taxon",
+            "label": "Ptilonorhynchidae",
+            "rank": "family",
+            "summary": "Bowerbirds recognized by AviList v2025 with 23 species across 8 genera."
+        },
+        "maluridae": {
+            "id": "maluridae",
+            "type": "taxon",
+            "label": "Maluridae",
+            "rank": "family",
+            "summary": "Grasswrens, Fairywrens, and Emu-wrens recognized by AviList v2025 with 33 species across 6 genera."
+        },
+        "dasyornithidae": {
+            "id": "dasyornithidae",
+            "type": "taxon",
+            "label": "Dasyornithidae",
+            "rank": "family",
+            "summary": "Bristlebirds recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "pardalotidae": {
+            "id": "pardalotidae",
+            "type": "taxon",
+            "label": "Pardalotidae",
+            "rank": "family",
+            "summary": "Pardalotes recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "acanthizidae": {
+            "id": "acanthizidae",
+            "type": "taxon",
+            "label": "Acanthizidae",
+            "rank": "family",
+            "summary": "Gerygones, Thornbills, Scrubwrens, and Allies recognized by AviList v2025 with 66 species across 15 genera."
+        },
+        "meliphagidae": {
+            "id": "meliphagidae",
+            "type": "taxon",
+            "label": "Meliphagidae",
+            "rank": "family",
+            "summary": "Honeyeaters recognized by AviList v2025 with 195 species across 51 genera."
+        },
+        "orthonychidae": {
+            "id": "orthonychidae",
+            "type": "taxon",
+            "label": "Orthonychidae",
+            "rank": "family",
+            "summary": "Logrunner and Chowchilla recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "pomatostomidae": {
+            "id": "pomatostomidae",
+            "type": "taxon",
+            "label": "Pomatostomidae",
+            "rank": "family",
+            "summary": "Australasian Babblers recognized by AviList v2025 with 5 species across 2 genera."
+        },
+        "cinclosomatidae": {
+            "id": "cinclosomatidae",
+            "type": "taxon",
+            "label": "Cinclosomatidae",
+            "rank": "family",
+            "summary": "Jewel-babblers and Quail-thrushes recognized by AviList v2025 with 12 species across 2 genera."
+        },
+        "campephagidae": {
+            "id": "campephagidae",
+            "type": "taxon",
+            "label": "Campephagidae",
+            "rank": "family",
+            "summary": "Cuckooshrikes recognized by AviList v2025 with 107 species across 11 genera."
+        },
+        "mohouidae": {
+            "id": "mohouidae",
+            "type": "taxon",
+            "label": "Mohouidae",
+            "rank": "family",
+            "summary": "Whiteheads recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "machaerirhynchidae": {
+            "id": "machaerirhynchidae",
+            "type": "taxon",
+            "label": "Machaerirhynchidae",
+            "rank": "family",
+            "summary": "Boatbills recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "artamidae": {
+            "id": "artamidae",
+            "type": "taxon",
+            "label": "Artamidae",
+            "rank": "family",
+            "summary": "Woodswallows, Bellmagpies, and Allies recognized by AviList v2025 with 24 species across 6 genera."
+        },
+        "rhagologidae": {
+            "id": "rhagologidae",
+            "type": "taxon",
+            "label": "Rhagologidae",
+            "rank": "family",
+            "summary": "Berryhunter recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "pityriasidae": {
+            "id": "pityriasidae",
+            "type": "taxon",
+            "label": "Pityriasidae",
+            "rank": "family",
+            "summary": "Bristlehead recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "aegithinidae": {
+            "id": "aegithinidae",
+            "type": "taxon",
+            "label": "Aegithinidae",
+            "rank": "family",
+            "summary": "Ioras recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "malaconotidae": {
+            "id": "malaconotidae",
+            "type": "taxon",
+            "label": "Malaconotidae",
+            "rank": "family",
+            "summary": "Bushshrikes and Allies recognized by AviList v2025 with 50 species across 9 genera."
+        },
+        "platysteiridae": {
+            "id": "platysteiridae",
+            "type": "taxon",
+            "label": "Platysteiridae",
+            "rank": "family",
+            "summary": "Wattle-eyes and Batises recognized by AviList v2025 with 32 species across 4 genera."
+        },
+        "vangidae": {
+            "id": "vangidae",
+            "type": "taxon",
+            "label": "Vangidae",
+            "rank": "family",
+            "summary": "Vangas, Helmetshrikes, and Allies recognized by AviList v2025 with 40 species across 21 genera."
+        },
+        "neosittidae": {
+            "id": "neosittidae",
+            "type": "taxon",
+            "label": "Neosittidae",
+            "rank": "family",
+            "summary": "Sittellas recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "psophodidae": {
+            "id": "psophodidae",
+            "type": "taxon",
+            "label": "Psophodidae",
+            "rank": "family",
+            "summary": "Whipbirds and Wedgebills recognized by AviList v2025 with 5 species across 2 genera."
+        },
+        "eulacestomatidae": {
+            "id": "eulacestomatidae",
+            "type": "taxon",
+            "label": "Eulacestomatidae",
+            "rank": "family",
+            "summary": "Ploughbill recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "oreoicidae": {
+            "id": "oreoicidae",
+            "type": "taxon",
+            "label": "Oreoicidae",
+            "rank": "family",
+            "summary": "Australasian Bellbirds recognized by AviList v2025 with 3 species across 3 genera."
+        },
+        "falcunculidae": {
+            "id": "falcunculidae",
+            "type": "taxon",
+            "label": "Falcunculidae",
+            "rank": "family",
+            "summary": "Shriketits recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "paramythiidae": {
+            "id": "paramythiidae",
+            "type": "taxon",
+            "label": "Paramythiidae",
+            "rank": "family",
+            "summary": "Tit Berrypecker and Crested Berrypeckers recognized by AviList v2025 with 3 species across 2 genera."
+        },
+        "vireonidae": {
+            "id": "vireonidae",
+            "type": "taxon",
+            "label": "Vireonidae",
+            "rank": "family",
+            "summary": "Shrike-babblers, Erpornis, and Vireos recognized by AviList v2025 with 64 species across 8 genera."
+        },
+        "oriolidae": {
+            "id": "oriolidae",
+            "type": "taxon",
+            "label": "Oriolidae",
+            "rank": "family",
+            "summary": "Old World Orioles recognized by AviList v2025 with 41 species across 4 genera."
+        },
+        "pachycephalidae": {
+            "id": "pachycephalidae",
+            "type": "taxon",
+            "label": "Pachycephalidae",
+            "rank": "family",
+            "summary": "Whistlers and Allies recognized by AviList v2025 with 61 species across 5 genera."
+        },
+        "rhipiduridae": {
+            "id": "rhipiduridae",
+            "type": "taxon",
+            "label": "Rhipiduridae",
+            "rank": "family",
+            "summary": "Fantails and Silktails recognized by AviList v2025 with 64 species across 4 genera."
+        },
+        "dicruridae": {
+            "id": "dicruridae",
+            "type": "taxon",
+            "label": "Dicruridae",
+            "rank": "family",
+            "summary": "Drongos recognized by AviList v2025 with 28 species across 1 genera."
+        },
+        "monarchidae": {
+            "id": "monarchidae",
+            "type": "taxon",
+            "label": "Monarchidae",
+            "rank": "family",
+            "summary": "Monarch Flycatchers, Paradise Flycatchers, and Shrikebills recognized by AviList v2025 with 105 species across 15 genera."
+        },
+        "corcoracidae": {
+            "id": "corcoracidae",
+            "type": "taxon",
+            "label": "Corcoracidae",
+            "rank": "family",
+            "summary": "White-winged Chough and Apostlebird recognized by AviList v2025 with 2 species across 2 genera."
+        },
+        "ifritidae": {
+            "id": "ifritidae",
+            "type": "taxon",
+            "label": "Ifritidae",
+            "rank": "family",
+            "summary": "Ifrit recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "paradisaeidae": {
+            "id": "paradisaeidae",
+            "type": "taxon",
+            "label": "Paradisaeidae",
+            "rank": "family",
+            "summary": "Birds-of-paradise recognized by AviList v2025 with 44 species across 17 genera."
+        },
+        "paradisaea": {
+            "id": "paradisaea",
+            "type": "taxon",
+            "label": "Paradisaea",
+            "rank": "genus",
+            "summary": "Paradisaea represented here as a genus branch within Paradisaeidae."
+        },
+        "greater-bird-of-paradise": {
+            "id": "greater-bird-of-paradise",
+            "type": "species",
+            "label": "Greater Bird-of-paradise",
+            "rank": "species",
+            "summary": "A spectacular lekking species with elongated flank plumes and elaborate display behavior.",
+            "profile": {
+                "scientificName": "Paradisaea apoda",
+                "habitat": "Lowland and hill rainforest in New Guinea and nearby islands.",
+                "diet": "Fruit and arthropods.",
+                "wingspan": "43 to 48 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Males gather at display trees and perform coordinated visual displays."
+        },
+        "melampittidae": {
+            "id": "melampittidae",
+            "type": "taxon",
+            "label": "Melampittidae",
+            "rank": "family",
+            "summary": "Melampittas recognized by AviList v2025 with 2 species across 2 genera."
+        },
+        "platylophidae": {
+            "id": "platylophidae",
+            "type": "taxon",
+            "label": "Platylophidae",
+            "rank": "family",
+            "summary": "Jayshrike recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "laniidae": {
+            "id": "laniidae",
+            "type": "taxon",
+            "label": "Laniidae",
+            "rank": "family",
+            "summary": "Shrikes recognized by AviList v2025 with 34 species across 4 genera."
+        },
+        "corvidae": {
+            "id": "corvidae",
+            "type": "taxon",
+            "label": "Corvidae",
+            "rank": "family",
+            "summary": "Crows, Jays, and Magpies recognized by AviList v2025 with 135 species across 22 genera."
+        },
+        "corvus": {
+            "id": "corvus",
+            "type": "taxon",
+            "label": "Corvus",
+            "rank": "genus",
+            "summary": "Corvus represented here as a genus branch within Corvidae."
+        },
+        "cyanocitta": {
+            "id": "cyanocitta",
+            "type": "taxon",
+            "label": "Cyanocitta",
+            "rank": "genus",
+            "summary": "Cyanocitta represented here as a genus branch within Corvidae."
+        },
+        "blue-jay": {
+            "id": "blue-jay",
+            "type": "species",
+            "label": "Blue Jay",
+            "rank": "species",
+            "summary": "A crested jay with bold patterning and a strong role in woodland acorn dispersal.",
+            "profile": {
+                "scientificName": "Cyanocitta cristata",
+                "habitat": "Mixed woodland, parks, and suburban edges in eastern North America.",
+                "diet": "Seeds, nuts, insects, and occasional eggs or small vertebrates.",
+                "wingspan": "34 to 43 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Blue Jays often cache food and can mimic the calls of hawks."
+        },
+        "cnemophilidae": {
+            "id": "cnemophilidae",
+            "type": "taxon",
+            "label": "Cnemophilidae",
+            "rank": "family",
+            "summary": "Satinbirds recognized by AviList v2025 with 3 species across 2 genera."
+        },
+        "melanocharitidae": {
+            "id": "melanocharitidae",
+            "type": "taxon",
+            "label": "Melanocharitidae",
+            "rank": "family",
+            "summary": "Longbills and Berrypeckers recognized by AviList v2025 with 12 species across 3 genera."
+        },
+        "notiomystidae": {
+            "id": "notiomystidae",
+            "type": "taxon",
+            "label": "Notiomystidae",
+            "rank": "family",
+            "summary": "Stitchbird recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "callaeidae": {
+            "id": "callaeidae",
+            "type": "taxon",
+            "label": "Callaeidae",
+            "rank": "family",
+            "summary": "New Zealand Wattlebirds recognized by AviList v2025 with 5 species across 3 genera."
+        },
+        "eupetidae": {
+            "id": "eupetidae",
+            "type": "taxon",
+            "label": "Eupetidae",
+            "rank": "family",
+            "summary": "Rail-babbler recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "chaetopidae": {
+            "id": "chaetopidae",
+            "type": "taxon",
+            "label": "Chaetopidae",
+            "rank": "family",
+            "summary": "Rockjumpers recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "picathartidae": {
+            "id": "picathartidae",
+            "type": "taxon",
+            "label": "Picathartidae",
+            "rank": "family",
+            "summary": "Rockfowl recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "petroicidae": {
+            "id": "petroicidae",
+            "type": "taxon",
+            "label": "Petroicidae",
+            "rank": "family",
+            "summary": "Australasian Robins recognized by AviList v2025 with 51 species across 16 genera."
+        },
+        "stenostiridae": {
+            "id": "stenostiridae",
+            "type": "taxon",
+            "label": "Stenostiridae",
+            "rank": "family",
+            "summary": "Fairy Flycatchers recognized by AviList v2025 with 9 species across 4 genera."
+        },
+        "hyliotidae": {
+            "id": "hyliotidae",
+            "type": "taxon",
+            "label": "Hyliotidae",
+            "rank": "family",
+            "summary": "Hyliotas recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "remizidae": {
+            "id": "remizidae",
+            "type": "taxon",
+            "label": "Remizidae",
+            "rank": "family",
+            "summary": "Penduline Tits recognized by AviList v2025 with 11 species across 3 genera."
+        },
+        "paridae": {
+            "id": "paridae",
+            "type": "taxon",
+            "label": "Paridae",
+            "rank": "family",
+            "summary": "Tits, Chickadees, and Titmice recognized by AviList v2025 with 62 species across 13 genera."
+        },
+        "poecile": {
+            "id": "poecile",
+            "type": "taxon",
+            "label": "Poecile",
+            "rank": "genus",
+            "summary": "Poecile represented here as a genus branch within Paridae."
+        },
+        "black-capped-chickadee": {
+            "id": "black-capped-chickadee",
+            "type": "species",
+            "label": "Black-capped Chickadee",
+            "rank": "species",
+            "summary": "A small active tit that anchors mixed winter flocks in North America.",
+            "profile": {
+                "scientificName": "Poecile atricapillus",
+                "habitat": "Woodland, parks, suburban trees, and riparian edges.",
+                "diet": "Insects, seeds, and berries.",
+                "wingspan": "16 to 21 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It stores food widely and remembers cache locations with impressive precision."
+        },
+        "panuridae": {
+            "id": "panuridae",
+            "type": "taxon",
+            "label": "Panuridae",
+            "rank": "family",
+            "summary": "Reedling recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "alaudidae": {
+            "id": "alaudidae",
+            "type": "taxon",
+            "label": "Alaudidae",
+            "rank": "family",
+            "summary": "Larks recognized by AviList v2025 with 98 species across 24 genera."
+        },
+        "nicatoridae": {
+            "id": "nicatoridae",
+            "type": "taxon",
+            "label": "Nicatoridae",
+            "rank": "family",
+            "summary": "Nicators recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "macrosphenidae": {
+            "id": "macrosphenidae",
+            "type": "taxon",
+            "label": "Macrosphenidae",
+            "rank": "family",
+            "summary": "Longbills, Crombecs, and Allies recognized by AviList v2025 with 18 species across 6 genera."
+        },
+        "cisticolidae": {
+            "id": "cisticolidae",
+            "type": "taxon",
+            "label": "Cisticolidae",
+            "rank": "family",
+            "summary": "Cisticolas and Allies recognized by AviList v2025 with 164 species across 26 genera."
+        },
+        "acrocephalidae": {
+            "id": "acrocephalidae",
+            "type": "taxon",
+            "label": "Acrocephalidae",
+            "rank": "family",
+            "summary": "Reed Warblers and Allies recognized by AviList v2025 with 60 species across 7 genera."
+        },
+        "donacobiidae": {
+            "id": "donacobiidae",
+            "type": "taxon",
+            "label": "Donacobiidae",
+            "rank": "family",
+            "summary": "Donacobius recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "bernieridae": {
+            "id": "bernieridae",
+            "type": "taxon",
+            "label": "Bernieridae",
+            "rank": "family",
+            "summary": "Malagasy Warblers and Tetrakas recognized by AviList v2025 with 11 species across 8 genera."
+        },
+        "locustellidae": {
+            "id": "locustellidae",
+            "type": "taxon",
+            "label": "Locustellidae",
+            "rank": "family",
+            "summary": "Grasshopper Warblers, Grassbirds, and Allies recognized by AviList v2025 with 67 species across 11 genera."
+        },
+        "pnoepygidae": {
+            "id": "pnoepygidae",
+            "type": "taxon",
+            "label": "Pnoepygidae",
+            "rank": "family",
+            "summary": "Cupwings recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "hirundinidae": {
+            "id": "hirundinidae",
+            "type": "taxon",
+            "label": "Hirundinidae",
+            "rank": "family",
+            "summary": "Swallows recognized by AviList v2025 with 92 species across 21 genera."
+        },
+        "hirundo": {
+            "id": "hirundo",
+            "type": "taxon",
+            "label": "Hirundo",
+            "rank": "genus",
+            "summary": "Hirundo represented here as a genus branch within Hirundinidae."
+        },
+        "barn-swallow": {
+            "id": "barn-swallow",
+            "type": "species",
+            "label": "Barn Swallow",
+            "rank": "species",
+            "summary": "A graceful migrant with deeply forked tail streamers and agile aerial feeding.",
+            "profile": {
+                "scientificName": "Hirundo rustica",
+                "habitat": "Open country, farmland, wetlands, and human structures.",
+                "diet": "Flying insects taken on the wing.",
+                "wingspan": "29 to 32 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It often nests inside barns, sheds, and bridges."
+        },
+        "hyliidae": {
+            "id": "hyliidae",
+            "type": "taxon",
+            "label": "Hyliidae",
+            "rank": "family",
+            "summary": "Hylias recognized by AviList v2025 with 2 species across 2 genera."
+        },
+        "aegithalidae": {
+            "id": "aegithalidae",
+            "type": "taxon",
+            "label": "Aegithalidae",
+            "rank": "family",
+            "summary": "Tit-warblers, Bushtits, and Long-tailed Tit recognized by AviList v2025 with 11 species across 3 genera."
+        },
+        "erythrocercidae": {
+            "id": "erythrocercidae",
+            "type": "taxon",
+            "label": "Erythrocercidae",
+            "rank": "family",
+            "summary": "Yellow Flycatchers recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "cettiidae": {
+            "id": "cettiidae",
+            "type": "taxon",
+            "label": "Cettiidae",
+            "rank": "family",
+            "summary": "Bush Warblers and Allies recognized by AviList v2025 with 32 species across 9 genera."
+        },
+        "phylloscopidae": {
+            "id": "phylloscopidae",
+            "type": "taxon",
+            "label": "Phylloscopidae",
+            "rank": "family",
+            "summary": "Leaf Warblers recognized by AviList v2025 with 80 species across 1 genera."
+        },
+        "pycnonotidae": {
+            "id": "pycnonotidae",
+            "type": "taxon",
+            "label": "Pycnonotidae",
+            "rank": "family",
+            "summary": "Bulbuls recognized by AviList v2025 with 161 species across 28 genera."
+        },
+        "sylviidae": {
+            "id": "sylviidae",
+            "type": "taxon",
+            "label": "Sylviidae",
+            "rank": "family",
+            "summary": "Sylviid Warblers and Allies recognized by AviList v2025 with 32 species across 2 genera."
+        },
+        "paradoxornithidae": {
+            "id": "paradoxornithidae",
+            "type": "taxon",
+            "label": "Paradoxornithidae",
+            "rank": "family",
+            "summary": "Parrotbills and Allies recognized by AviList v2025 with 38 species across 9 genera."
+        },
+        "zosteropidae": {
+            "id": "zosteropidae",
+            "type": "taxon",
+            "label": "Zosteropidae",
+            "rank": "family",
+            "summary": "White-eyes, Yuhinas, and Allies recognized by AviList v2025 with 147 species across 13 genera."
+        },
+        "timaliidae": {
+            "id": "timaliidae",
+            "type": "taxon",
+            "label": "Timaliidae",
+            "rank": "family",
+            "summary": "Tree Babblers, Scimitar Babblers, and Allies recognized by AviList v2025 with 58 species across 10 genera."
+        },
+        "pellorneidae": {
+            "id": "pellorneidae",
+            "type": "taxon",
+            "label": "Pellorneidae",
+            "rank": "family",
+            "summary": "Ground Babblers and Allies recognized by AviList v2025 with 65 species across 13 genera."
+        },
+        "leiothrichidae": {
+            "id": "leiothrichidae",
+            "type": "taxon",
+            "label": "Leiothrichidae",
+            "rank": "family",
+            "summary": "Laughingthrushes and Allies recognized by AviList v2025 with 143 species across 17 genera."
+        },
+        "dulidae": {
+            "id": "dulidae",
+            "type": "taxon",
+            "label": "Dulidae",
+            "rank": "family",
+            "summary": "Palmchat recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "bombycillidae": {
+            "id": "bombycillidae",
+            "type": "taxon",
+            "label": "Bombycillidae",
+            "rank": "family",
+            "summary": "Waxwings recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "ptiliogonatidae": {
+            "id": "ptiliogonatidae",
+            "type": "taxon",
+            "label": "Ptiliogonatidae",
+            "rank": "family",
+            "summary": "Silky-flycatchers recognized by AviList v2025 with 4 species across 3 genera."
+        },
+        "hylocitreidae": {
+            "id": "hylocitreidae",
+            "type": "taxon",
+            "label": "Hylocitreidae",
+            "rank": "family",
+            "summary": "Hylocitrea recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "hypocoliidae": {
+            "id": "hypocoliidae",
+            "type": "taxon",
+            "label": "Hypocoliidae",
+            "rank": "family",
+            "summary": "Hypocolius recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "mohoidae": {
+            "id": "mohoidae",
+            "type": "taxon",
+            "label": "Mohoidae",
+            "rank": "family",
+            "summary": "Hawaiian Honeyeaters recognized by AviList v2025 with 5 species across 2 genera."
+        },
+        "regulidae": {
+            "id": "regulidae",
+            "type": "taxon",
+            "label": "Regulidae",
+            "rank": "family",
+            "summary": "Kinglets recognized by AviList v2025 with 6 species across 2 genera."
+        },
+        "tichodromidae": {
+            "id": "tichodromidae",
+            "type": "taxon",
+            "label": "Tichodromidae",
+            "rank": "family",
+            "summary": "Wallcreeper recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "sittidae": {
+            "id": "sittidae",
+            "type": "taxon",
+            "label": "Sittidae",
+            "rank": "family",
+            "summary": "Nuthatches recognized by AviList v2025 with 29 species across 1 genera."
+        },
+        "salpornithidae": {
+            "id": "salpornithidae",
+            "type": "taxon",
+            "label": "Salpornithidae",
+            "rank": "family",
+            "summary": "Spotted Creepers recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "certhiidae": {
+            "id": "certhiidae",
+            "type": "taxon",
+            "label": "Certhiidae",
+            "rank": "family",
+            "summary": "Treecreepers recognized by AviList v2025 with 9 species across 1 genera."
+        },
+        "polioptilidae": {
+            "id": "polioptilidae",
+            "type": "taxon",
+            "label": "Polioptilidae",
+            "rank": "family",
+            "summary": "Gnatwrens and Gnatcatchers recognized by AviList v2025 with 20 species across 3 genera."
+        },
+        "troglodytidae": {
+            "id": "troglodytidae",
+            "type": "taxon",
+            "label": "Troglodytidae",
+            "rank": "family",
+            "summary": "Wrens recognized by AviList v2025 with 96 species across 19 genera."
+        },
+        "troglodytes": {
+            "id": "troglodytes",
+            "type": "taxon",
+            "label": "Troglodytes",
+            "rank": "genus",
+            "summary": "Troglodytes represented here as a genus branch within Troglodytidae."
+        },
+        "house-wren": {
+            "id": "house-wren",
+            "type": "species",
+            "label": "House Wren",
+            "rank": "species",
+            "summary": "A small loud wren that readily nests around houses and gardens.",
+            "profile": {
+                "scientificName": "Troglodytes aedon",
+                "habitat": "Shrubby edges, woodland openings, gardens, and towns.",
+                "diet": "Insects and spiders.",
+                "wingspan": "12 to 15 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Males often start multiple nests before a female chooses one."
+        },
+        "elachuridae": {
+            "id": "elachuridae",
+            "type": "taxon",
+            "label": "Elachuridae",
+            "rank": "family",
+            "summary": "Elachura recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "buphagidae": {
+            "id": "buphagidae",
+            "type": "taxon",
+            "label": "Buphagidae",
+            "rank": "family",
+            "summary": "Oxpeckers recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "mimidae": {
+            "id": "mimidae",
+            "type": "taxon",
+            "label": "Mimidae",
+            "rank": "family",
+            "summary": "Mockingbirds and Thrashers recognized by AviList v2025 with 35 species across 10 genera."
+        },
+        "mimus": {
+            "id": "mimus",
+            "type": "taxon",
+            "label": "Mimus",
+            "rank": "genus",
+            "summary": "Mimus represented here as a genus branch within Mimidae."
+        },
+        "northern-mockingbird": {
+            "id": "northern-mockingbird",
+            "type": "species",
+            "label": "Northern Mockingbird",
+            "rank": "species",
+            "summary": "A bold songster with an enormous repertoire and strong territorial behavior.",
+            "profile": {
+                "scientificName": "Mimus polyglottos",
+                "habitat": "Suburbs, parks, thorn scrub, and open woodland.",
+                "diet": "Insects, berries, and other fruit.",
+                "wingspan": "31 to 38 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It is famous for repeating and recombining phrases from other birds and noises."
+        },
+        "sturnidae": {
+            "id": "sturnidae",
+            "type": "taxon",
+            "label": "Sturnidae",
+            "rank": "family",
+            "summary": "Rhabdornis, Starlings, and Mynas recognized by AviList v2025 with 123 species across 36 genera."
+        },
+        "cinclidae": {
+            "id": "cinclidae",
+            "type": "taxon",
+            "label": "Cinclidae",
+            "rank": "family",
+            "summary": "Dippers recognized by AviList v2025 with 5 species across 1 genera."
+        },
+        "turdidae": {
+            "id": "turdidae",
+            "type": "taxon",
+            "label": "Turdidae",
+            "rank": "family",
+            "summary": "Thrushes and Allies recognized by AviList v2025 with 194 species across 17 genera."
+        },
+        "turdus": {
+            "id": "turdus",
+            "type": "taxon",
+            "label": "Turdus",
+            "rank": "genus",
+            "summary": "Turdus represented here as a genus branch within Turdidae."
+        },
+        "american-robin": {
+            "id": "american-robin",
+            "type": "species",
+            "label": "American Robin",
+            "rank": "species",
+            "summary": "A familiar thrush with a warm orange breast and an early dawn song.",
+            "profile": {
+                "scientificName": "Turdus migratorius",
+                "habitat": "Lawns, woodland edges, parks, and suburbs.",
+                "diet": "Earthworms, insects, and fruit.",
+                "wingspan": "31 to 41 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Robins shift seasonally from ground foraging to fruit-heavy diets."
+        },
+        "muscicapidae": {
+            "id": "muscicapidae",
+            "type": "taxon",
+            "label": "Muscicapidae",
+            "rank": "family",
+            "summary": "Chats, Old World Flycatchers, and Allies recognized by AviList v2025 with 352 species across 57 genera."
+        },
+        "erithacus": {
+            "id": "erithacus",
+            "type": "taxon",
+            "label": "Erithacus",
+            "rank": "genus",
+            "summary": "Erithacus represented here as a genus branch within Muscicapidae."
+        },
+        "european-robin": {
+            "id": "european-robin",
+            "type": "species",
+            "label": "European Robin",
+            "rank": "species",
+            "summary": "A small chat-like flycatcher with a bright face and confiding behavior.",
+            "profile": {
+                "scientificName": "Erithacus rubecula",
+                "habitat": "Woodland, hedgerows, parks, and gardens.",
+                "diet": "Insects, spiders, and berries.",
+                "wingspan": "20 to 22 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Despite its tame image, it is often fiercely territorial."
+        },
+        "promeropidae": {
+            "id": "promeropidae",
+            "type": "taxon",
+            "label": "Promeropidae",
+            "rank": "family",
+            "summary": "Sugarbirds recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "modulatricidae": {
+            "id": "modulatricidae",
+            "type": "taxon",
+            "label": "Modulatricidae",
+            "rank": "family",
+            "summary": "Dapple-throat and Allies recognized by AviList v2025 with 3 species across 3 genera."
+        },
+        "dicaeidae": {
+            "id": "dicaeidae",
+            "type": "taxon",
+            "label": "Dicaeidae",
+            "rank": "family",
+            "summary": "Flowerpeckers recognized by AviList v2025 with 56 species across 3 genera."
+        },
+        "nectariniidae": {
+            "id": "nectariniidae",
+            "type": "taxon",
+            "label": "Nectariniidae",
+            "rank": "family",
+            "summary": "Spiderhunters and Sunbirds recognized by AviList v2025 with 151 species across 16 genera."
+        },
+        "cinnyris": {
+            "id": "cinnyris",
+            "type": "taxon",
+            "label": "Cinnyris",
+            "rank": "genus",
+            "summary": "Cinnyris represented here as a genus branch within Nectariniidae."
+        },
+        "olive-backed-sunbird": {
+            "id": "olive-backed-sunbird",
+            "type": "species",
+            "label": "Olive-backed Sunbird",
+            "rank": "species",
+            "summary": "A small nectar-feeding passerine with a decurved bill and broad tropical range.",
+            "profile": {
+                "scientificName": "Cinnyris jugularis",
+                "habitat": "Gardens, mangroves, forest edge, and disturbed tropical habitats.",
+                "diet": "Nectar, spiders, and small insects.",
+                "wingspan": "11 to 13 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Sunbirds often hover briefly but usually feed while perched."
+        },
+        "chloropseidae": {
+            "id": "chloropseidae",
+            "type": "taxon",
+            "label": "Chloropseidae",
+            "rank": "family",
+            "summary": "Leafbirds recognized by AviList v2025 with 12 species across 1 genera."
+        },
+        "irenidae": {
+            "id": "irenidae",
+            "type": "taxon",
+            "label": "Irenidae",
+            "rank": "family",
+            "summary": "Fairy-bluebirds recognized by AviList v2025 with 3 species across 1 genera."
+        },
+        "peucedramidae": {
+            "id": "peucedramidae",
+            "type": "taxon",
+            "label": "Peucedramidae",
+            "rank": "family",
+            "summary": "Olive Warbler recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "urocynchramidae": {
+            "id": "urocynchramidae",
+            "type": "taxon",
+            "label": "Urocynchramidae",
+            "rank": "family",
+            "summary": "Przevalski's Finch recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "ploceidae": {
+            "id": "ploceidae",
+            "type": "taxon",
+            "label": "Ploceidae",
+            "rank": "family",
+            "summary": "Weavers and Allies recognized by AviList v2025 with 122 species across 16 genera."
+        },
+        "viduidae": {
+            "id": "viduidae",
+            "type": "taxon",
+            "label": "Viduidae",
+            "rank": "family",
+            "summary": "Whydahs and Indigobirds recognized by AviList v2025 with 20 species across 2 genera."
+        },
+        "estrildidae": {
+            "id": "estrildidae",
+            "type": "taxon",
+            "label": "Estrildidae",
+            "rank": "family",
+            "summary": "Munias, Parrotfinches, Waxbills, and Allies recognized by AviList v2025 with 138 species across 39 genera."
+        },
+        "prunellidae": {
+            "id": "prunellidae",
+            "type": "taxon",
+            "label": "Prunellidae",
+            "rank": "family",
+            "summary": "Accentors recognized by AviList v2025 with 12 species across 1 genera."
+        },
+        "passeridae": {
+            "id": "passeridae",
+            "type": "taxon",
+            "label": "Passeridae",
+            "rank": "family",
+            "summary": "Snowfinches and Old World Sparrows recognized by AviList v2025 with 43 species across 8 genera."
+        },
+        "motacillidae": {
+            "id": "motacillidae",
+            "type": "taxon",
+            "label": "Motacillidae",
+            "rank": "family",
+            "summary": "Wagtails and Pipits recognized by AviList v2025 with 70 species across 6 genera."
+        },
+        "fringillidae": {
+            "id": "fringillidae",
+            "type": "taxon",
+            "label": "Fringillidae",
+            "rank": "family",
+            "summary": "Finches, Euphonias, and Allies recognized by AviList v2025 with 236 species across 50 genera."
+        },
+        "carduelis": {
+            "id": "carduelis",
+            "type": "taxon",
+            "label": "Carduelis",
+            "rank": "genus",
+            "summary": "Carduelis represented here as a genus branch within Fringillidae."
+        },
+        "european-goldfinch": {
+            "id": "european-goldfinch",
+            "type": "species",
+            "label": "European Goldfinch",
+            "rank": "species",
+            "summary": "A bright finch with a red face mask and strong association with thistle seed.",
+            "profile": {
+                "scientificName": "Carduelis carduelis",
+                "habitat": "Open woodland, orchards, farmland, and gardens.",
+                "diet": "Seeds, especially from thistles and teasels.",
+                "wingspan": "21 to 25 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Its fine bill is especially well suited to extracting small seeds."
+        },
+        "rhodinocichlidae": {
+            "id": "rhodinocichlidae",
+            "type": "taxon",
+            "label": "Rhodinocichlidae",
+            "rank": "family",
+            "summary": "Thrush-tanager recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "calcariidae": {
+            "id": "calcariidae",
+            "type": "taxon",
+            "label": "Calcariidae",
+            "rank": "family",
+            "summary": "Longspurs and Snow Buntings recognized by AviList v2025 with 6 species across 3 genera."
+        },
+        "emberizidae": {
+            "id": "emberizidae",
+            "type": "taxon",
+            "label": "Emberizidae",
+            "rank": "family",
+            "summary": "Old World Buntings recognized by AviList v2025 with 44 species across 1 genera."
+        },
+        "passerellidae": {
+            "id": "passerellidae",
+            "type": "taxon",
+            "label": "Passerellidae",
+            "rank": "family",
+            "summary": "New World Sparrows recognized by AviList v2025 with 138 species across 30 genera."
+        },
+        "melospiza": {
+            "id": "melospiza",
+            "type": "taxon",
+            "label": "Melospiza",
+            "rank": "genus",
+            "summary": "Melospiza represented here as a genus branch within Passerellidae."
+        },
+        "song-sparrow": {
+            "id": "song-sparrow",
+            "type": "species",
+            "label": "Song Sparrow",
+            "rank": "species",
+            "summary": "A widespread sparrow with rich regional variation in song and plumage.",
+            "profile": {
+                "scientificName": "Melospiza melodia",
+                "habitat": "Marsh edges, shrubby fields, riparian cover, and gardens.",
+                "diet": "Seeds, insects, and small invertebrates.",
+                "wingspan": "18 to 25 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Song structure varies strongly across populations and regions."
+        },
+        "calyptophilidae": {
+            "id": "calyptophilidae",
+            "type": "taxon",
+            "label": "Calyptophilidae",
+            "rank": "family",
+            "summary": "Chat-tanagers recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "zeledoniidae": {
+            "id": "zeledoniidae",
+            "type": "taxon",
+            "label": "Zeledoniidae",
+            "rank": "family",
+            "summary": "Wrenthrush recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "phaenicophilidae": {
+            "id": "phaenicophilidae",
+            "type": "taxon",
+            "label": "Phaenicophilidae",
+            "rank": "family",
+            "summary": "Hispaniolan Tanagers recognized by AviList v2025 with 4 species across 3 genera."
+        },
+        "nesospingidae": {
+            "id": "nesospingidae",
+            "type": "taxon",
+            "label": "Nesospingidae",
+            "rank": "family",
+            "summary": "Puerto Rican Tanager recognized by AviList v2025 with 1 species across 1 genera."
+        },
+        "spindalidae": {
+            "id": "spindalidae",
+            "type": "taxon",
+            "label": "Spindalidae",
+            "rank": "family",
+            "summary": "Spindalises recognized by AviList v2025 with 4 species across 1 genera."
+        },
+        "teretistridae": {
+            "id": "teretistridae",
+            "type": "taxon",
+            "label": "Teretistridae",
+            "rank": "family",
+            "summary": "Cuban Warblers recognized by AviList v2025 with 2 species across 1 genera."
+        },
+        "icteridae": {
+            "id": "icteridae",
+            "type": "taxon",
+            "label": "Icteridae",
+            "rank": "family",
+            "summary": "New World Blackbirds, Troupials, and Allies recognized by AviList v2025 with 108 species across 31 genera."
+        },
+        "agelaius": {
+            "id": "agelaius",
+            "type": "taxon",
+            "label": "Agelaius",
+            "rank": "genus",
+            "summary": "Agelaius represented here as a genus branch within Icteridae."
+        },
+        "red-winged-blackbird": {
+            "id": "red-winged-blackbird",
+            "type": "species",
+            "label": "Red-winged Blackbird",
+            "rank": "species",
+            "summary": "A marshland icterid whose males defend reedbeds with flashing shoulder patches.",
+            "profile": {
+                "scientificName": "Agelaius phoeniceus",
+                "habitat": "Marshes, wet meadows, roadside ditches, and agricultural fields.",
+                "diet": "Seeds, grains, and insects.",
+                "wingspan": "31 to 40 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Outside breeding season it often gathers in very large flocks."
+        },
+        "parulidae": {
+            "id": "parulidae",
+            "type": "taxon",
+            "label": "Parulidae",
+            "rank": "family",
+            "summary": "New World Warblers recognized by AviList v2025 with 116 species across 18 genera."
+        },
+        "setophaga": {
+            "id": "setophaga",
+            "type": "taxon",
+            "label": "Setophaga",
+            "rank": "genus",
+            "summary": "Setophaga represented here as a genus branch within Parulidae."
+        },
+        "yellow-warbler": {
+            "id": "yellow-warbler",
+            "type": "species",
+            "label": "Yellow Warbler",
+            "rank": "species",
+            "summary": "A bright migratory warbler common in wet shrubs and riparian thickets.",
+            "profile": {
+                "scientificName": "Setophaga petechia",
+                "habitat": "Willows, wetlands, shrubby stream edges, and second growth.",
+                "diet": "Insects and other small arthropods.",
+                "wingspan": "16 to 22 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Females may bury cowbird eggs under fresh nest lining."
+        },
+        "cardinalidae": {
+            "id": "cardinalidae",
+            "type": "taxon",
+            "label": "Cardinalidae",
+            "rank": "family",
+            "summary": "Cardinals and Allies recognized by AviList v2025 with 52 species across 14 genera."
+        },
+        "cardinalis": {
+            "id": "cardinalis",
+            "type": "taxon",
+            "label": "Cardinalis",
+            "rank": "genus",
+            "summary": "Cardinalis represented here as a genus branch within Cardinalidae."
+        },
+        "northern-cardinal": {
+            "id": "northern-cardinal",
+            "type": "species",
+            "label": "Northern Cardinal",
+            "rank": "species",
+            "summary": "A conspicuous songbird with a crest, stout bill, and strong pair bonds.",
+            "profile": {
+                "scientificName": "Cardinalis cardinalis",
+                "habitat": "Gardens, woodland edge, shrubland, and suburban neighborhoods.",
+                "diet": "Seeds, fruit, and insects.",
+                "wingspan": "25 to 31 cm",
+                "status": "Least Concern"
+            },
+            "notes": "Both sexes sing, and pairs may duet in the breeding season."
+        },
+        "mitrospingidae": {
+            "id": "mitrospingidae",
+            "type": "taxon",
+            "label": "Mitrospingidae",
+            "rank": "family",
+            "summary": "Mitrospingid Tanagers recognized by AviList v2025 with 4 species across 3 genera."
+        },
+        "thraupidae": {
+            "id": "thraupidae",
+            "type": "taxon",
+            "label": "Thraupidae",
+            "rank": "family",
+            "summary": "Tanagers and Allies recognized by AviList v2025 with 390 species across 107 genera."
+        },
+        "thraupis": {
+            "id": "thraupis",
+            "type": "taxon",
+            "label": "Thraupis",
+            "rank": "genus",
+            "summary": "Thraupis represented here as a genus branch within Thraupidae."
+        },
+        "blue-gray-tanager": {
+            "id": "blue-gray-tanager",
+            "type": "species",
+            "label": "Blue-gray Tanager",
+            "rank": "species",
+            "summary": "A widespread Neotropical tanager comfortable in edges, parks, and cities.",
+            "profile": {
+                "scientificName": "Thraupis episcopus",
+                "habitat": "Forest edge, gardens, plantations, and urban green space.",
+                "diet": "Fruit, nectar, and insects.",
+                "wingspan": "26 to 30 cm",
+                "status": "Least Concern"
+            },
+            "notes": "It is one of the most familiar garden birds in much of tropical America."
+        },
+        "parus": {
+            "id": "parus",
+            "type": "taxon",
+            "label": "Parus",
+            "rank": "Parus",
+            "summary": ""
+        },
+        "major": {
+            "id": "major",
+            "type": "species",
+            "label": "Great tit",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Parus Major",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "cyanistes": {
+            "id": "cyanistes",
+            "type": "taxon",
+            "label": "Cyanistes",
+            "rank": "genus",
+            "summary": ""
+        },
+        "blue-tit": {
+            "id": "blue-tit",
+            "type": "species",
+            "label": "Blue Tit",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Cyanistes Caeruleus",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "rook": {
+            "id": "rook",
+            "type": "species",
+            "label": "Rook",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Corvus Frugilegus",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "grey-heron": {
+            "id": "grey-heron",
+            "type": "species",
+            "label": "Grey Heron",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Ardea Cinerea",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "sturnus": {
+            "id": "sturnus",
+            "type": "taxon",
+            "label": "Sturnus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "common-starling": {
+            "id": "common-starling",
+            "type": "species",
+            "label": "Common Starling",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Sturnus Vulgaris",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "phoenicurus": {
+            "id": "phoenicurus",
+            "type": "taxon",
+            "label": "Phoenicurus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "black-redstart": {
+            "id": "black-redstart",
+            "type": "species",
+            "label": "Black Redstart",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Phoenicurus Ochruros",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "coloeus": {
+            "id": "coloeus",
+            "type": "taxon",
+            "label": "Coloeus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "european-jackdaw": {
+            "id": "european-jackdaw",
+            "type": "species",
+            "label": "European jackdaw",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Coloeus Monedula",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "eurasian-blackbird": {
+            "id": "eurasian-blackbird",
+            "type": "species",
+            "label": "Eurasian blackbird",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Turdus Merula",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "motacilla": {
+            "id": "motacilla",
+            "type": "taxon",
+            "label": "Motacilla",
+            "rank": "genus",
+            "summary": ""
+        },
+        "white-wagtail": {
+            "id": "white-wagtail",
+            "type": "species",
+            "label": "White Wagtail",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Motacilla Alba",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "phylloscopus": {
+            "id": "phylloscopus",
+            "type": "taxon",
+            "label": "Phylloscopus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "common-chiffchaff": {
+            "id": "common-chiffchaff",
+            "type": "species",
+            "label": "Common Chiffchaff",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Phylloscopus Collybita",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "pica": {
+            "id": "pica",
+            "type": "taxon",
+            "label": "Pica",
+            "rank": "genus",
+            "summary": ""
+        },
+        "eurasian-magpie": {
+            "id": "eurasian-magpie",
+            "type": "species",
+            "label": "Eurasian Magpie",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Pica Pica",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "wood-pigeon": {
+            "id": "wood-pigeon",
+            "type": "species",
+            "label": "Wood Pigeon",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Columba Palumbus",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": "Rock Pigeons navigate exceptionally well and have long been used as messengers."
+        },
+        "canada-goose": {
+            "id": "canada-goose",
+            "type": "species",
+            "label": "Canada Goose",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Branta Canadensis",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "fulica": {
+            "id": "fulica",
+            "type": "taxon",
+            "label": "Fulica",
+            "rank": "genus",
+            "summary": ""
+        },
+        "eurasian-coot": {
+            "id": "eurasian-coot",
+            "type": "species",
+            "label": "Eurasian Coot",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Fulica Atra",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "anser": {
+            "id": "anser",
+            "type": "taxon",
+            "label": "Anser",
+            "rank": "genus",
+            "summary": ""
+        },
+        "greylag-goose": {
+            "id": "greylag-goose",
+            "type": "species",
+            "label": "Greylag Goose",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Anser Anser",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "hooded-crow": {
+            "id": "hooded-crow",
+            "type": "species",
+            "label": "Hooded Crow",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Corvus Cornix",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "phasianus": {
+            "id": "phasianus",
+            "type": "taxon",
+            "label": "Phasianus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "common-pheasant": {
+            "id": "common-pheasant",
+            "type": "species",
+            "label": "Common Pheasant",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Phasianus Colchicus",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "fringilla": {
+            "id": "fringilla",
+            "type": "taxon",
+            "label": "Fringilla",
+            "rank": "genus",
+            "summary": ""
+        },
+        "eurasian-chaffinch": {
+            "id": "eurasian-chaffinch",
+            "type": "species",
+            "label": "Eurasian Chaffinch",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Fringilla Coelebs",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "alopochen": {
+            "id": "alopochen",
+            "type": "taxon",
+            "label": "Alopochen",
+            "rank": "genus",
+            "summary": ""
+        },
+        "egyptian-goose": {
+            "id": "egyptian-goose",
+            "type": "species",
+            "label": "Egyptian Goose",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Alopochen Aegyptiaca",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "aythya": {
+            "id": "aythya",
+            "type": "taxon",
+            "label": "Aythya",
+            "rank": "genus",
+            "summary": ""
+        },
+        "common-pochard": {
+            "id": "common-pochard",
+            "type": "species",
+            "label": "Common Pochard",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Aythya Ferina",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "larus": {
+            "id": "larus",
+            "type": "taxon",
+            "label": "Larus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "european-herring-gull": {
+            "id": "european-herring-gull",
+            "type": "species",
+            "label": "European Herring Gull",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Larus Argentatus",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "carrion-crow": {
+            "id": "carrion-crow",
+            "type": "species",
+            "label": "Carrion Crow",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Corvus Corone",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "gulosus": {
+            "id": "gulosus",
+            "type": "taxon",
+            "label": "Gulosus",
+            "rank": "genus",
+            "summary": ""
+        },
+        "european-shag": {
+            "id": "european-shag",
+            "type": "species",
+            "label": "European Shag",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Gulosus Aristotelis",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        }
+    },
+    "children": {
+        "all-birds": [
+            "accipitriformes",
+            "aegotheliformes",
+            "anseriformes",
+            "apodiformes",
+            "apterygiformes",
+            "bucerotiformes",
+            "caprimulgiformes",
+            "cariamiformes",
+            "casuariiformes",
+            "cathartiformes",
+            "charadriiformes",
+            "ciconiiformes",
+            "coliiformes",
+            "columbiformes",
+            "coraciiformes",
+            "cuculiformes",
+            "eurypygiformes",
+            "falconiformes",
+            "galbuliformes",
+            "galliformes",
+            "gaviiformes",
+            "gruiformes",
+            "leptosomiformes",
+            "mesitornithiformes",
+            "musophagiformes",
+            "nyctibiiformes",
+            "opisthocomiformes",
+            "otidiformes",
+            "passeriformes",
+            "pelecaniformes",
+            "phaethontiformes",
+            "phoenicopteriformes",
+            "piciformes",
+            "podargiformes",
+            "podicipediformes",
+            "procellariiformes",
+            "psittaciformes",
+            "pterocliformes",
+            "rheiformes",
+            "sphenisciformes",
+            "steatornithiformes",
+            "strigiformes",
+            "struthioniformes",
+            "suliformes",
+            "tinamiformes",
+            "trogoniformes"
+        ],
+        "struthioniformes": [
+            "struthionidae"
+        ],
+        "struthionidae": [
+            "struthio"
+        ],
+        "struthio": [
+            "common-ostrich"
+        ],
+        "casuariiformes": [
+            "casuariidae"
+        ],
+        "casuariidae": [
+            "dromaius"
+        ],
+        "dromaius": [
+            "emu"
+        ],
+        "apterygiformes": [
+            "apterygidae"
+        ],
+        "apterygidae": [
+            "apteryx"
+        ],
+        "apteryx": [
+            "north-island-brown-kiwi"
+        ],
+        "rheiformes": [
+            "rheidae"
+        ],
+        "tinamiformes": [
+            "tinamidae"
+        ],
+        "anseriformes": [
+            "anatidae",
+            "anhimidae",
+            "anseranatidae"
+        ],
+        "anatidae": [
+            "alopochen",
+            "anser",
+            "aythya",
+            "anas"
+        ],
+        "anas": [
+            "canada-goose"
+        ],
+        "galliformes": [
+            "cracidae",
+            "megapodiidae",
+            "numididae",
+            "odontophoridae",
+            "phasianidae"
+        ],
+        "phasianidae": [
+            "pavo",
+            "phasianus"
+        ],
+        "pavo": [
+            "indian-peafowl"
+        ],
+        "phoenicopteriformes": [
+            "phoenicopteridae"
+        ],
+        "phoenicopteridae": [
+            "phoenicopterus"
+        ],
+        "phoenicopterus": [
+            "greater-flamingo"
+        ],
+        "podicipediformes": [
+            "podicipedidae"
+        ],
+        "musophagiformes": [
+            "musophagidae"
+        ],
+        "otidiformes": [
+            "otididae"
+        ],
+        "cuculiformes": [
+            "cuculidae"
+        ],
+        "mesitornithiformes": [
+            "mesitornithidae"
+        ],
+        "pterocliformes": [
+            "pteroclidae"
+        ],
+        "columbiformes": [
+            "columbidae"
+        ],
+        "columbidae": [
+            "columba"
+        ],
+        "columba": [
+            "wood-pigeon"
+        ],
+        "opisthocomiformes": [
+            "opisthocomidae"
+        ],
+        "gruiformes": [
+            "aramidae",
+            "gruidae",
+            "heliornithidae",
+            "psophiidae",
+            "rallidae",
+            "sarothruridae"
+        ],
+        "rallidae": [
+            "fulica",
+            "gallinula"
+        ],
+        "gallinula": [
+            "common-moorhen"
+        ],
+        "charadriiformes": [
+            "alcidae",
+            "burhinidae",
+            "charadriidae",
+            "chionidae",
+            "dromadidae",
+            "glareolidae",
+            "haematopodidae",
+            "ibidorhynchidae",
+            "jacanidae",
+            "laridae",
+            "pedionomidae",
+            "pluvianellidae",
+            "pluvianidae",
+            "recurvirostridae",
+            "rostratulidae",
+            "scolopacidae",
+            "stercorariidae",
+            "thinocoridae",
+            "turnicidae"
+        ],
+        "alcidae": [
+            "fratercula"
+        ],
+        "fratercula": [
+            "atlantic-puffin"
+        ],
+        "eurypygiformes": [
+            "eurypygidae",
+            "rhynochetidae"
+        ],
+        "phaethontiformes": [
+            "phaethontidae"
+        ],
+        "gaviiformes": [
+            "gaviidae"
+        ],
+        "sphenisciformes": [
+            "spheniscidae"
+        ],
+        "spheniscidae": [
+            "aptenodytes"
+        ],
+        "aptenodytes": [
+            "emperor-penguin"
+        ],
+        "procellariiformes": [
+            "diomedeidae",
+            "hydrobatidae",
+            "oceanitidae",
+            "procellariidae"
+        ],
+        "diomedeidae": [
+            "diomedea"
+        ],
+        "diomedea": [
+            "wandering-albatross"
+        ],
+        "ciconiiformes": [
+            "ciconiidae"
+        ],
+        "suliformes": [
+            "anhingidae",
+            "fregatidae",
+            "phalacrocoracidae",
+            "sulidae"
+        ],
+        "pelecaniformes": [
+            "ardeidae",
+            "balaenicipitidae",
+            "pelecanidae",
+            "scopidae",
+            "threskiornithidae"
+        ],
+        "ardeidae": [
+            "ardea"
+        ],
+        "ardea": [
+            "great-blue-heron",
+            "grey-heron"
+        ],
+        "caprimulgiformes": [
+            "caprimulgidae"
+        ],
+        "steatornithiformes": [
+            "steatornithidae"
+        ],
+        "nyctibiiformes": [
+            "nyctibiidae"
+        ],
+        "podargiformes": [
+            "podargidae"
+        ],
+        "aegotheliformes": [
+            "aegothelidae"
+        ],
+        "apodiformes": [
+            "apodidae",
+            "hemiprocnidae",
+            "trochilidae"
+        ],
+        "trochilidae": [
+            "archilochus"
+        ],
+        "archilochus": [
+            "ruby-throated-hummingbird"
+        ],
+        "strigiformes": [
+            "strigidae",
+            "tytonidae"
+        ],
+        "strigidae": [
+            "bubo"
+        ],
+        "bubo": [
+            "great-horned-owl"
+        ],
+        "cathartiformes": [
+            "cathartidae"
+        ],
+        "accipitriformes": [
+            "accipitridae",
+            "pandionidae",
+            "sagittariidae"
+        ],
+        "accipitridae": [
+            "buteo",
+            "haliaeetus"
+        ],
+        "buteo": [
+            "red-tailed-hawk"
+        ],
+        "haliaeetus": [
+            "bald-eagle"
+        ],
+        "coliiformes": [
+            "coliidae"
+        ],
+        "leptosomiformes": [
+            "leptosomidae"
+        ],
+        "trogoniformes": [
+            "trogonidae"
+        ],
+        "bucerotiformes": [
+            "bucerotidae",
+            "phoeniculidae",
+            "upupidae"
+        ],
+        "bucerotidae": [
+            "buceros"
+        ],
+        "buceros": [
+            "great-hornbill"
+        ],
+        "coraciiformes": [
+            "alcedinidae",
+            "brachypteraciidae",
+            "coraciidae",
+            "meropidae",
+            "momotidae",
+            "todidae"
+        ],
+        "alcedinidae": [
+            "alcedo"
+        ],
+        "alcedo": [
+            "common-kingfisher"
+        ],
+        "galbuliformes": [
+            "bucconidae",
+            "galbulidae"
+        ],
+        "piciformes": [
+            "capitonidae",
+            "indicatoridae",
+            "lybiidae",
+            "megalaimidae",
+            "picidae",
+            "ramphastidae",
+            "semnornithidae"
+        ],
+        "ramphastidae": [
+            "ramphastos"
+        ],
+        "ramphastos": [
+            "toco-toucan"
+        ],
+        "picidae": [
+            "dendrocopos"
+        ],
+        "dendrocopos": [
+            "great-spotted-woodpecker"
+        ],
+        "cariamiformes": [
+            "cariamidae"
+        ],
+        "falconiformes": [
+            "falconidae"
+        ],
+        "falconidae": [
+            "falco"
+        ],
+        "falco": [
+            "peregrine-falcon"
+        ],
+        "psittaciformes": [
+            "cacatuidae",
+            "psittacidae",
+            "psittaculidae",
+            "strigopidae"
+        ],
+        "psittacidae": [
+            "ara"
+        ],
+        "ara": [
+            "scarlet-macaw"
+        ],
+        "psittaculidae": [
+            "psittacula"
+        ],
+        "psittacula": [
+            "rose-ringed-parakeet"
+        ],
+        "passeriformes": [
+            "acanthisittidae",
+            "acanthizidae",
+            "acrocephalidae",
+            "aegithalidae",
+            "aegithinidae",
+            "alaudidae",
+            "artamidae",
+            "atrichornithidae",
+            "bernieridae",
+            "bombycillidae",
+            "buphagidae",
+            "calcariidae",
+            "callaeidae",
+            "calyptomenidae",
+            "calyptophilidae",
+            "campephagidae",
+            "cardinalidae",
+            "certhiidae",
+            "cettiidae",
+            "chaetopidae",
+            "chloropseidae",
+            "cinclidae",
+            "cinclosomatidae",
+            "cisticolidae",
+            "climacteridae",
+            "cnemophilidae",
+            "conopophagidae",
+            "corcoracidae",
+            "corvidae",
+            "cotingidae",
+            "dasyornithidae",
+            "dicaeidae",
+            "dicruridae",
+            "donacobiidae",
+            "dulidae",
+            "elachuridae",
+            "emberizidae",
+            "erythrocercidae",
+            "estrildidae",
+            "eulacestomatidae",
+            "eupetidae",
+            "eurylaimidae",
+            "falcunculidae",
+            "formicariidae",
+            "fringillidae",
+            "furnariidae",
+            "grallariidae",
+            "hirundinidae",
+            "hyliidae",
+            "hyliotidae",
+            "hylocitreidae",
+            "hypocoliidae",
+            "icteridae",
+            "ifritidae",
+            "irenidae",
+            "laniidae",
+            "leiothrichidae",
+            "locustellidae",
+            "machaerirhynchidae",
+            "macrosphenidae",
+            "malaconotidae",
+            "maluridae",
+            "melampittidae",
+            "melanocharitidae",
+            "melanopareiidae",
+            "meliphagidae",
+            "menuridae",
+            "mimidae",
+            "mitrospingidae",
+            "modulatricidae",
+            "mohoidae",
+            "mohouidae",
+            "monarchidae",
+            "motacillidae",
+            "muscicapidae",
+            "nectariniidae",
+            "neosittidae",
+            "nesospingidae",
+            "nicatoridae",
+            "notiomystidae",
+            "onychorhynchidae",
+            "oreoicidae",
+            "oriolidae",
+            "orthonychidae",
+            "oxyruncidae",
+            "pachycephalidae",
+            "panuridae",
+            "paradisaeidae",
+            "paradoxornithidae",
+            "paramythiidae",
+            "pardalotidae",
+            "paridae",
+            "parulidae",
+            "passerellidae",
+            "passeridae",
+            "pellorneidae",
+            "petroicidae",
+            "peucedramidae",
+            "phaenicophilidae",
+            "philepittidae",
+            "phylloscopidae",
+            "picathartidae",
+            "pipridae",
+            "pittidae",
+            "pityriasidae",
+            "platylophidae",
+            "platysteiridae",
+            "ploceidae",
+            "pnoepygidae",
+            "polioptilidae",
+            "pomatostomidae",
+            "promeropidae",
+            "prunellidae",
+            "psophodidae",
+            "ptiliogonatidae",
+            "ptilonorhynchidae",
+            "pycnonotidae",
+            "regulidae",
+            "remizidae",
+            "rhagologidae",
+            "rhinocryptidae",
+            "rhipiduridae",
+            "rhodinocichlidae",
+            "salpornithidae",
+            "sapayoidae",
+            "sittidae",
+            "spindalidae",
+            "stenostiridae",
+            "sturnidae",
+            "sylviidae",
+            "teretistridae",
+            "thamnophilidae",
+            "thraupidae",
+            "tichodromidae",
+            "timaliidae",
+            "tityridae",
+            "troglodytidae",
+            "turdidae",
+            "tyrannidae",
+            "urocynchramidae",
+            "vangidae",
+            "viduidae",
+            "vireonidae",
+            "zeledoniidae",
+            "zosteropidae"
+        ],
+        "tyrannidae": [
+            "sayornis"
+        ],
+        "sayornis": [
+            "eastern-phoebe"
+        ],
+        "furnariidae": [
+            "furnarius"
+        ],
+        "furnarius": [
+            "rufous-hornero"
+        ],
+        "paradisaeidae": [
+            "paradisaea"
+        ],
+        "paradisaea": [
+            "greater-bird-of-paradise"
+        ],
+        "corvidae": [
+            "coloeus",
+            "corvus",
+            "cyanocitta",
+            "pica"
+        ],
+        "corvus": [
+            "carrion-crow",
+            "hooded-crow",
+            "rook"
+        ],
+        "cyanocitta": [
+            "blue-jay"
+        ],
+        "paridae": [
+            "cyanistes",
+            "parus",
+            "poecile"
+        ],
+        "poecile": [
+            "black-capped-chickadee"
+        ],
+        "hirundinidae": [
+            "hirundo"
+        ],
+        "hirundo": [
+            "barn-swallow"
+        ],
+        "troglodytidae": [
+            "troglodytes"
+        ],
+        "troglodytes": [
+            "house-wren"
+        ],
+        "mimidae": [
+            "mimus"
+        ],
+        "mimus": [
+            "northern-mockingbird"
+        ],
+        "turdidae": [
+            "turdus"
+        ],
+        "turdus": [
+            "american-robin",
+            "eurasian-blackbird"
+        ],
+        "muscicapidae": [
+            "erithacus",
+            "phoenicurus"
+        ],
+        "erithacus": [
+            "european-robin"
+        ],
+        "nectariniidae": [
+            "cinnyris"
+        ],
+        "cinnyris": [
+            "olive-backed-sunbird"
+        ],
+        "fringillidae": [
+            "carduelis",
+            "fringilla"
+        ],
+        "carduelis": [
+            "european-goldfinch"
+        ],
+        "passerellidae": [
+            "melospiza"
+        ],
+        "melospiza": [
+            "song-sparrow"
+        ],
+        "icteridae": [
+            "agelaius"
+        ],
+        "agelaius": [
+            "red-winged-blackbird"
+        ],
+        "parulidae": [
+            "setophaga"
+        ],
+        "setophaga": [
+            "yellow-warbler"
+        ],
+        "cardinalidae": [
+            "cardinalis"
+        ],
+        "cardinalis": [
+            "northern-cardinal"
+        ],
+        "thraupidae": [
+            "thraupis"
+        ],
+        "thraupis": [
+            "blue-gray-tanager"
+        ],
+        "parus": [
+            "major"
+        ],
+        "cyanistes": [
+            "blue-tit"
+        ],
+        "sturnidae": [
+            "sturnus"
+        ],
+        "sturnus": [
+            "common-starling"
+        ],
+        "phoenicurus": [
+            "black-redstart"
+        ],
+        "coloeus": [
+            "european-jackdaw"
+        ],
+        "motacillidae": [
+            "motacilla"
+        ],
+        "motacilla": [
+            "white-wagtail"
+        ],
+        "phylloscopidae": [
+            "phylloscopus"
+        ],
+        "phylloscopus": [
+            "common-chiffchaff"
+        ],
+        "pica": [
+            "eurasian-magpie"
+        ],
+        "fulica": [
+            "eurasian-coot"
+        ],
+        "anser": [
+            "greylag-goose"
+        ],
+        "phasianus": [
+            "common-pheasant"
+        ],
+        "fringilla": [
+            "eurasian-chaffinch"
+        ],
+        "alopochen": [
+            "egyptian-goose"
+        ],
+        "aythya": [
+            "common-pochard"
+        ],
+        "laridae": [
+            "larus"
+        ],
+        "larus": [
+            "european-herring-gull"
+        ],
+        "phalacrocoracidae": [
+            "gulosus"
+        ],
+        "gulosus": [
+            "european-shag"
+        ]
+    },
+    "parents": {
+        "accipitriformes": "all-birds",
+        "aegotheliformes": "all-birds",
+        "anseriformes": "all-birds",
+        "apodiformes": "all-birds",
+        "apterygiformes": "all-birds",
+        "bucerotiformes": "all-birds",
+        "caprimulgiformes": "all-birds",
+        "cariamiformes": "all-birds",
+        "casuariiformes": "all-birds",
+        "cathartiformes": "all-birds",
+        "charadriiformes": "all-birds",
+        "ciconiiformes": "all-birds",
+        "coliiformes": "all-birds",
+        "columbiformes": "all-birds",
+        "coraciiformes": "all-birds",
+        "cuculiformes": "all-birds",
+        "eurypygiformes": "all-birds",
+        "falconiformes": "all-birds",
+        "galbuliformes": "all-birds",
+        "galliformes": "all-birds",
+        "gaviiformes": "all-birds",
+        "gruiformes": "all-birds",
+        "leptosomiformes": "all-birds",
+        "mesitornithiformes": "all-birds",
+        "musophagiformes": "all-birds",
+        "nyctibiiformes": "all-birds",
+        "opisthocomiformes": "all-birds",
+        "otidiformes": "all-birds",
+        "passeriformes": "all-birds",
+        "pelecaniformes": "all-birds",
+        "phaethontiformes": "all-birds",
+        "phoenicopteriformes": "all-birds",
+        "piciformes": "all-birds",
+        "podargiformes": "all-birds",
+        "podicipediformes": "all-birds",
+        "procellariiformes": "all-birds",
+        "psittaciformes": "all-birds",
+        "pterocliformes": "all-birds",
+        "rheiformes": "all-birds",
+        "sphenisciformes": "all-birds",
+        "steatornithiformes": "all-birds",
+        "strigiformes": "all-birds",
+        "struthioniformes": "all-birds",
+        "suliformes": "all-birds",
+        "tinamiformes": "all-birds",
+        "trogoniformes": "all-birds",
+        "struthionidae": "struthioniformes",
+        "struthio": "struthionidae",
+        "common-ostrich": "struthio",
+        "casuariidae": "casuariiformes",
+        "dromaius": "casuariidae",
+        "emu": "dromaius",
+        "apterygidae": "apterygiformes",
+        "apteryx": "apterygidae",
+        "north-island-brown-kiwi": "apteryx",
+        "rheidae": "rheiformes",
+        "tinamidae": "tinamiformes",
+        "anatidae": "anseriformes",
+        "anhimidae": "anseriformes",
+        "anseranatidae": "anseriformes",
+        "alopochen": "anatidae",
+        "anser": "anatidae",
+        "aythya": "anatidae",
+        "anas": "anatidae",
+        "canada-goose": "anas",
+        "cracidae": "galliformes",
+        "megapodiidae": "galliformes",
+        "numididae": "galliformes",
+        "odontophoridae": "galliformes",
+        "phasianidae": "galliformes",
+        "pavo": "phasianidae",
+        "phasianus": "phasianidae",
+        "indian-peafowl": "pavo",
+        "phoenicopteridae": "phoenicopteriformes",
+        "phoenicopterus": "phoenicopteridae",
+        "greater-flamingo": "phoenicopterus",
+        "podicipedidae": "podicipediformes",
+        "musophagidae": "musophagiformes",
+        "otididae": "otidiformes",
+        "cuculidae": "cuculiformes",
+        "mesitornithidae": "mesitornithiformes",
+        "pteroclidae": "pterocliformes",
+        "columbidae": "columbiformes",
+        "columba": "columbidae",
+        "wood-pigeon": "columba",
+        "opisthocomidae": "opisthocomiformes",
+        "aramidae": "gruiformes",
+        "gruidae": "gruiformes",
+        "heliornithidae": "gruiformes",
+        "psophiidae": "gruiformes",
+        "rallidae": "gruiformes",
+        "sarothruridae": "gruiformes",
+        "fulica": "rallidae",
+        "gallinula": "rallidae",
+        "common-moorhen": "gallinula",
+        "alcidae": "charadriiformes",
+        "burhinidae": "charadriiformes",
+        "charadriidae": "charadriiformes",
+        "chionidae": "charadriiformes",
+        "dromadidae": "charadriiformes",
+        "glareolidae": "charadriiformes",
+        "haematopodidae": "charadriiformes",
+        "ibidorhynchidae": "charadriiformes",
+        "jacanidae": "charadriiformes",
+        "laridae": "charadriiformes",
+        "pedionomidae": "charadriiformes",
+        "pluvianellidae": "charadriiformes",
+        "pluvianidae": "charadriiformes",
+        "recurvirostridae": "charadriiformes",
+        "rostratulidae": "charadriiformes",
+        "scolopacidae": "charadriiformes",
+        "stercorariidae": "charadriiformes",
+        "thinocoridae": "charadriiformes",
+        "turnicidae": "charadriiformes",
+        "fratercula": "alcidae",
+        "atlantic-puffin": "fratercula",
+        "eurypygidae": "eurypygiformes",
+        "rhynochetidae": "eurypygiformes",
+        "phaethontidae": "phaethontiformes",
+        "gaviidae": "gaviiformes",
+        "spheniscidae": "sphenisciformes",
+        "aptenodytes": "spheniscidae",
+        "emperor-penguin": "aptenodytes",
+        "diomedeidae": "procellariiformes",
+        "hydrobatidae": "procellariiformes",
+        "oceanitidae": "procellariiformes",
+        "procellariidae": "procellariiformes",
+        "diomedea": "diomedeidae",
+        "wandering-albatross": "diomedea",
+        "ciconiidae": "ciconiiformes",
+        "anhingidae": "suliformes",
+        "fregatidae": "suliformes",
+        "phalacrocoracidae": "suliformes",
+        "sulidae": "suliformes",
+        "ardeidae": "pelecaniformes",
+        "balaenicipitidae": "pelecaniformes",
+        "pelecanidae": "pelecaniformes",
+        "scopidae": "pelecaniformes",
+        "threskiornithidae": "pelecaniformes",
+        "ardea": "ardeidae",
+        "great-blue-heron": "ardea",
+        "grey-heron": "ardea",
+        "caprimulgidae": "caprimulgiformes",
+        "steatornithidae": "steatornithiformes",
+        "nyctibiidae": "nyctibiiformes",
+        "podargidae": "podargiformes",
+        "aegothelidae": "aegotheliformes",
+        "apodidae": "apodiformes",
+        "hemiprocnidae": "apodiformes",
+        "trochilidae": "apodiformes",
+        "archilochus": "trochilidae",
+        "ruby-throated-hummingbird": "archilochus",
+        "strigidae": "strigiformes",
+        "tytonidae": "strigiformes",
+        "bubo": "strigidae",
+        "great-horned-owl": "bubo",
+        "cathartidae": "cathartiformes",
+        "accipitridae": "accipitriformes",
+        "pandionidae": "accipitriformes",
+        "sagittariidae": "accipitriformes",
+        "buteo": "accipitridae",
+        "haliaeetus": "accipitridae",
+        "red-tailed-hawk": "buteo",
+        "bald-eagle": "haliaeetus",
+        "coliidae": "coliiformes",
+        "leptosomidae": "leptosomiformes",
+        "trogonidae": "trogoniformes",
+        "bucerotidae": "bucerotiformes",
+        "phoeniculidae": "bucerotiformes",
+        "upupidae": "bucerotiformes",
+        "buceros": "bucerotidae",
+        "great-hornbill": "buceros",
+        "alcedinidae": "coraciiformes",
+        "brachypteraciidae": "coraciiformes",
+        "coraciidae": "coraciiformes",
+        "meropidae": "coraciiformes",
+        "momotidae": "coraciiformes",
+        "todidae": "coraciiformes",
+        "alcedo": "alcedinidae",
+        "common-kingfisher": "alcedo",
+        "bucconidae": "galbuliformes",
+        "galbulidae": "galbuliformes",
+        "capitonidae": "piciformes",
+        "indicatoridae": "piciformes",
+        "lybiidae": "piciformes",
+        "megalaimidae": "piciformes",
+        "picidae": "piciformes",
+        "ramphastidae": "piciformes",
+        "semnornithidae": "piciformes",
+        "ramphastos": "ramphastidae",
+        "toco-toucan": "ramphastos",
+        "dendrocopos": "picidae",
+        "great-spotted-woodpecker": "dendrocopos",
+        "cariamidae": "cariamiformes",
+        "falconidae": "falconiformes",
+        "falco": "falconidae",
+        "peregrine-falcon": "falco",
+        "cacatuidae": "psittaciformes",
+        "psittacidae": "psittaciformes",
+        "psittaculidae": "psittaciformes",
+        "strigopidae": "psittaciformes",
+        "ara": "psittacidae",
+        "scarlet-macaw": "ara",
+        "psittacula": "psittaculidae",
+        "rose-ringed-parakeet": "psittacula",
+        "acanthisittidae": "passeriformes",
+        "acanthizidae": "passeriformes",
+        "acrocephalidae": "passeriformes",
+        "aegithalidae": "passeriformes",
+        "aegithinidae": "passeriformes",
+        "alaudidae": "passeriformes",
+        "artamidae": "passeriformes",
+        "atrichornithidae": "passeriformes",
+        "bernieridae": "passeriformes",
+        "bombycillidae": "passeriformes",
+        "buphagidae": "passeriformes",
+        "calcariidae": "passeriformes",
+        "callaeidae": "passeriformes",
+        "calyptomenidae": "passeriformes",
+        "calyptophilidae": "passeriformes",
+        "campephagidae": "passeriformes",
+        "cardinalidae": "passeriformes",
+        "certhiidae": "passeriformes",
+        "cettiidae": "passeriformes",
+        "chaetopidae": "passeriformes",
+        "chloropseidae": "passeriformes",
+        "cinclidae": "passeriformes",
+        "cinclosomatidae": "passeriformes",
+        "cisticolidae": "passeriformes",
+        "climacteridae": "passeriformes",
+        "cnemophilidae": "passeriformes",
+        "conopophagidae": "passeriformes",
+        "corcoracidae": "passeriformes",
+        "corvidae": "passeriformes",
+        "cotingidae": "passeriformes",
+        "dasyornithidae": "passeriformes",
+        "dicaeidae": "passeriformes",
+        "dicruridae": "passeriformes",
+        "donacobiidae": "passeriformes",
+        "dulidae": "passeriformes",
+        "elachuridae": "passeriformes",
+        "emberizidae": "passeriformes",
+        "erythrocercidae": "passeriformes",
+        "estrildidae": "passeriformes",
+        "eulacestomatidae": "passeriformes",
+        "eupetidae": "passeriformes",
+        "eurylaimidae": "passeriformes",
+        "falcunculidae": "passeriformes",
+        "formicariidae": "passeriformes",
+        "fringillidae": "passeriformes",
+        "furnariidae": "passeriformes",
+        "grallariidae": "passeriformes",
+        "hirundinidae": "passeriformes",
+        "hyliidae": "passeriformes",
+        "hyliotidae": "passeriformes",
+        "hylocitreidae": "passeriformes",
+        "hypocoliidae": "passeriformes",
+        "icteridae": "passeriformes",
+        "ifritidae": "passeriformes",
+        "irenidae": "passeriformes",
+        "laniidae": "passeriformes",
+        "leiothrichidae": "passeriformes",
+        "locustellidae": "passeriformes",
+        "machaerirhynchidae": "passeriformes",
+        "macrosphenidae": "passeriformes",
+        "malaconotidae": "passeriformes",
+        "maluridae": "passeriformes",
+        "melampittidae": "passeriformes",
+        "melanocharitidae": "passeriformes",
+        "melanopareiidae": "passeriformes",
+        "meliphagidae": "passeriformes",
+        "menuridae": "passeriformes",
+        "mimidae": "passeriformes",
+        "mitrospingidae": "passeriformes",
+        "modulatricidae": "passeriformes",
+        "mohoidae": "passeriformes",
+        "mohouidae": "passeriformes",
+        "monarchidae": "passeriformes",
+        "motacillidae": "passeriformes",
+        "muscicapidae": "passeriformes",
+        "nectariniidae": "passeriformes",
+        "neosittidae": "passeriformes",
+        "nesospingidae": "passeriformes",
+        "nicatoridae": "passeriformes",
+        "notiomystidae": "passeriformes",
+        "onychorhynchidae": "passeriformes",
+        "oreoicidae": "passeriformes",
+        "oriolidae": "passeriformes",
+        "orthonychidae": "passeriformes",
+        "oxyruncidae": "passeriformes",
+        "pachycephalidae": "passeriformes",
+        "panuridae": "passeriformes",
+        "paradisaeidae": "passeriformes",
+        "paradoxornithidae": "passeriformes",
+        "paramythiidae": "passeriformes",
+        "pardalotidae": "passeriformes",
+        "paridae": "passeriformes",
+        "parulidae": "passeriformes",
+        "passerellidae": "passeriformes",
+        "passeridae": "passeriformes",
+        "pellorneidae": "passeriformes",
+        "petroicidae": "passeriformes",
+        "peucedramidae": "passeriformes",
+        "phaenicophilidae": "passeriformes",
+        "philepittidae": "passeriformes",
+        "phylloscopidae": "passeriformes",
+        "picathartidae": "passeriformes",
+        "pipridae": "passeriformes",
+        "pittidae": "passeriformes",
+        "pityriasidae": "passeriformes",
+        "platylophidae": "passeriformes",
+        "platysteiridae": "passeriformes",
+        "ploceidae": "passeriformes",
+        "pnoepygidae": "passeriformes",
+        "polioptilidae": "passeriformes",
+        "pomatostomidae": "passeriformes",
+        "promeropidae": "passeriformes",
+        "prunellidae": "passeriformes",
+        "psophodidae": "passeriformes",
+        "ptiliogonatidae": "passeriformes",
+        "ptilonorhynchidae": "passeriformes",
+        "pycnonotidae": "passeriformes",
+        "regulidae": "passeriformes",
+        "remizidae": "passeriformes",
+        "rhagologidae": "passeriformes",
+        "rhinocryptidae": "passeriformes",
+        "rhipiduridae": "passeriformes",
+        "rhodinocichlidae": "passeriformes",
+        "salpornithidae": "passeriformes",
+        "sapayoidae": "passeriformes",
+        "sittidae": "passeriformes",
+        "spindalidae": "passeriformes",
+        "stenostiridae": "passeriformes",
+        "sturnidae": "passeriformes",
+        "sylviidae": "passeriformes",
+        "teretistridae": "passeriformes",
+        "thamnophilidae": "passeriformes",
+        "thraupidae": "passeriformes",
+        "tichodromidae": "passeriformes",
+        "timaliidae": "passeriformes",
+        "tityridae": "passeriformes",
+        "troglodytidae": "passeriformes",
+        "turdidae": "passeriformes",
+        "tyrannidae": "passeriformes",
+        "urocynchramidae": "passeriformes",
+        "vangidae": "passeriformes",
+        "viduidae": "passeriformes",
+        "vireonidae": "passeriformes",
+        "zeledoniidae": "passeriformes",
+        "zosteropidae": "passeriformes",
+        "sayornis": "tyrannidae",
+        "eastern-phoebe": "sayornis",
+        "furnarius": "furnariidae",
+        "rufous-hornero": "furnarius",
+        "paradisaea": "paradisaeidae",
+        "greater-bird-of-paradise": "paradisaea",
+        "coloeus": "corvidae",
+        "corvus": "corvidae",
+        "cyanocitta": "corvidae",
+        "pica": "corvidae",
+        "carrion-crow": "corvus",
+        "hooded-crow": "corvus",
+        "rook": "corvus",
+        "blue-jay": "cyanocitta",
+        "cyanistes": "paridae",
+        "parus": "paridae",
+        "poecile": "paridae",
+        "black-capped-chickadee": "poecile",
+        "hirundo": "hirundinidae",
+        "barn-swallow": "hirundo",
+        "troglodytes": "troglodytidae",
+        "house-wren": "troglodytes",
+        "mimus": "mimidae",
+        "northern-mockingbird": "mimus",
+        "turdus": "turdidae",
+        "american-robin": "turdus",
+        "eurasian-blackbird": "turdus",
+        "erithacus": "muscicapidae",
+        "phoenicurus": "muscicapidae",
+        "european-robin": "erithacus",
+        "cinnyris": "nectariniidae",
+        "olive-backed-sunbird": "cinnyris",
+        "carduelis": "fringillidae",
+        "fringilla": "fringillidae",
+        "european-goldfinch": "carduelis",
+        "melospiza": "passerellidae",
+        "song-sparrow": "melospiza",
+        "agelaius": "icteridae",
+        "red-winged-blackbird": "agelaius",
+        "setophaga": "parulidae",
+        "yellow-warbler": "setophaga",
+        "cardinalis": "cardinalidae",
+        "northern-cardinal": "cardinalis",
+        "thraupis": "thraupidae",
+        "blue-gray-tanager": "thraupis",
+        "major": "parus",
+        "blue-tit": "cyanistes",
+        "sturnus": "sturnidae",
+        "common-starling": "sturnus",
+        "black-redstart": "phoenicurus",
+        "european-jackdaw": "coloeus",
+        "motacilla": "motacillidae",
+        "white-wagtail": "motacilla",
+        "phylloscopus": "phylloscopidae",
+        "common-chiffchaff": "phylloscopus",
+        "eurasian-magpie": "pica",
+        "eurasian-coot": "fulica",
+        "greylag-goose": "anser",
+        "common-pheasant": "phasianus",
+        "eurasian-chaffinch": "fringilla",
+        "egyptian-goose": "alopochen",
+        "common-pochard": "aythya",
+        "larus": "laridae",
+        "european-herring-gull": "larus",
+        "gulosus": "phalacrocoracidae",
+        "european-shag": "gulosus"
+    }
+}

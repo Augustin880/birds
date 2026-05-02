@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bird Atlas Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles-dark.css" />
+  </head>
+  <body class="edit-page">
+    <section class="app-screen editor-shell">
+      <header class="topbar">
+        <div class="topbar__meta">
+          <p class="eyebrow">Bird Atlas</p>
+          <h1 class="topbar__title">Edit Taxonomy</h1>
+          <p class="eyebrow">Current path</p>
+          <nav id="breadcrumb" class="breadcrumb" aria-label="Breadcrumb"></nav>
+        </div>
+        <div class="topbar__actions">
+          <a class="ghost-button" id="open-browse-link" href="./browse.html">
+            Back To Browse
+          </a>
+          <button class="ghost-button" id="export-button" type="button">
+            Export JSON
+          </button>
+        </div>
+      </header>
+      <p class="eyebrow topbar-status" id="file-status"></p>
+
+      <main class="main-grid">
+        <section class="content-panel">
+          <div id="view"></div>
+        </section>
+
+        <aside class="editor-panel">
+          <div class="editor-panel__header">
+            <p class="eyebrow">Taxonomy editor</p>
+            <h2>Grow the tree</h2>
+            <p>
+              Add new branches or species under the current taxon. The browse
+              page stays clean while this page handles structure work.
+            </p>
+          </div>
+
+          <section class="delete-panel">
+            <p class="eyebrow">Edit existing entry</p>
+            <p class="delete-copy">
+              Load a branch or species into the form, update its details, then
+              save the changes.
+            </p>
+            <label>
+              Entry to edit
+              <select id="edit-node-id" name="editNodeId"></select>
+            </label>
+            <div class="topbar__actions">
+              <button class="ghost-button" id="load-entry-button" type="button">
+                Load Entry
+              </button>
+              <button
+                class="ghost-button hidden"
+                id="cancel-edit-button"
+                type="button"
+              >
+                Create New
+              </button>
+            </div>
+          </section>
+
+          <form id="editor-form" class="editor-form">
+            <label>
+              Parent node
+              <select id="parent-id" name="parentId" required></select>
+            </label>
+
+            <label>
+              Entry type
+              <select id="node-type" name="nodeType">
+                <option value="taxon">Branch</option>
+                <option value="species">Leaf</option>
+              </select>
+            </label>
+
+            <label>
+              Name
+              <input id="label" name="label" type="text" placeholder="Corvidae" required />
+            </label>
+
+            <label>
+              Rank
+              <input id="rank" name="rank" type="text" placeholder="Automatic" required readonly />
+            </label>
+
+            <label>
+              Summary
+              <textarea
+                id="summary"
+                name="summary"
+                rows="3"
+                placeholder="Short description for this branch or species."
+              ></textarea>
+            </label>
+
+            <p class="delete-copy">
+              Rank is derived from the selected parent. Images are resolved
+              automatically from
+              <code>img/Aves/Order/Family/Genus/SpeciesEpithet/0.png</code>
+              and the following numbered PNGs in that same folder.
+            </p>
+
+            <div id="leaf-fields" class="leaf-fields"></div>
+
+            <label id="species-extra" class="hidden">
+              Notes
+              <textarea
+                id="notes"
+                name="notes"
+                rows="3"
+                placeholder="Behavior, migration, breeding, or your own observations."
+              ></textarea>
+            </label>
+
+            <button class="primary-button" id="submit-button" type="submit">
+              Add to Taxonomy
+            </button>
+          </form>
+
+          <section class="delete-panel">
+            <p class="eyebrow">Delete entry</p>
+            <p class="delete-copy">
+              Remove a branch or a species from the taxonomy. Deleting a branch
+              also removes all of its descendants.
+            </p>
+            <p class="delete-copy">
+              Branch images are inherited from the first descendant species
+              folder that contains <code>0.png</code>, following the current
+              child order.
+            </p>
+            <form id="delete-form" class="delete-form">
+              <label>
+                Entry to delete
+                <select id="delete-node-id" name="deleteNodeId"></select>
+              </label>
+              <button class="danger-button" type="submit">Delete Selected Entry</button>
+            </form>
+          </section>
+
+          <div class="storage-note">
+            <p class="eyebrow">Storage model</p>
+            <p>
+              Nodes are normalized by id, child lists are kept alphabetically
+              sorted, and edits are written back to
+              <code>data/taxonomy.json</code> through the PHP endpoint when the
+              app is served by PHP.
+            </p>
+          </div>
+        </aside>
+      </main>
+    </section>
+
+    <template id="leaf-field-template">
+      <label class="dynamic-field">
+        <span></span>
+        <input type="text" />
+      </label>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
