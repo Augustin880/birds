@@ -108,8 +108,10 @@
             <p class="delete-copy">
               Rank is derived from the selected parent. Images are resolved
               automatically from
-              <code>img/Aves/Order/Family/Genus/SpeciesEpithet/0.png</code>
-              and the following numbered PNGs in that same folder.
+              <code>img/Aves/Order/Family/Genus/SpeciesEpithet/0.&lt;ext&gt;</code>
+              and the following numbered images in that same folder, using
+              common web image extensions such as PNG, JPG, JPEG, WebP, GIF,
+              AVIF, BMP, or SVG.
             </p>
 
             <div id="leaf-fields" class="leaf-fields"></div>
@@ -137,8 +139,8 @@
             </p>
             <p class="delete-copy">
               Branch images are inherited from the first descendant species
-              folder that contains <code>0.png</code>, following the current
-              child order.
+              folder that contains a numbered image such as
+              <code>0.&lt;ext&gt;</code>, following the current child order.
             </p>
             <form id="delete-form" class="delete-form">
               <label>

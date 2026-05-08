@@ -111,7 +111,7 @@ function respondWithImageList(string $requestedFolder): void
     $imageFiles = array_values(
         array_filter(
             $entries,
-            static fn(string $entry): bool => preg_match('/^\d+\.png$/i', $entry) === 1
+            static fn(string $entry): bool => isSupportedImageEntry($entry)
         )
     );
 
@@ -132,4 +132,9 @@ function respondWithImageList(string $requestedFolder): void
     );
 
     respondWithJson(['images' => $imagePaths], 200);
+}
+
+function isSupportedImageEntry(string $entry): bool
+{
+    return preg_match('/^\d+\.(png|jpe?g|webp|gif|avif|bmp|svg)$/i', $entry) === 1;
 }

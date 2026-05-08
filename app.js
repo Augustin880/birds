@@ -28,6 +28,16 @@ const submitButton = document.getElementById("submit-button");
 const DEFAULT_IMAGE = "./img/default.jpg";
 const EMPTY_IMAGE_PLACEHOLDER =
   "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+const SUPPORTED_IMAGE_EXTENSIONS = [
+  "png",
+  "jpg",
+  "jpeg",
+  "webp",
+  "gif",
+  "avif",
+  "bmp",
+  "svg"
+];
 const NEXT_TAXON_RANK = {
   class: "order",
   order: "family",
@@ -1378,8 +1388,7 @@ function resolveRepresentativeImageCandidates(nodeId) {
   }
 
   if (node.type === "species") {
-    const image = buildSpeciesImagePath(node, 0);
-    const candidates = image ? [image] : [];
+    const candidates = buildSpeciesImagePaths(node, 0);
     nodeRepresentativeImageCandidatesCache.set(nodeId, candidates);
     return candidates;
   }
@@ -1417,14 +1426,32 @@ function getSpeciesImageFolder(node) {
   return `./img/${[...lineageSegments, speciesSegment].join("/")}`;
 }
 
-function buildSpeciesImagePath(node, index) {
+function buildSpeciesImagePaths(node, index) {
   const speciesFolder = getSpeciesImageFolder(node);
 
   if (!speciesFolder) {
-    return "";
+    return [];
   }
 
-  return `${speciesFolder}/${index}.png`;
+  return buildIndexedImageCandidates(speciesFolder, index);
+}
+
+function buildIndexedImageCandidates(folderPath, index) {
+  const candidates = [];
+  const seen = new Set();
+
+  SUPPORTED_IMAGE_EXTENSIONS.forEach((extension) => {
+    [extension, extension.toUpperCase()].forEach((variant) => {
+      const candidate = `${folderPath}/${index}.${variant}`;
+
+      if (!seen.has(candidate)) {
+        seen.add(candidate);
+        candidates.push(candidate);
+      }
+    });
+  });
+
+  return candidates;
 }
 
 function formatImagePathSegment(value) {
@@ -1532,7 +1559,7 @@ function getNodeImage(node) {
 }
 
 function getSpeciesInitialImage(node) {
-  return buildSpeciesImagePath(node, 0) || DEFAULT_IMAGE;
+  return buildSpeciesImagePaths(node, 0)[0] || DEFAULT_IMAGE;
 }
 
 async function initializeSpeciesGallery(node) {
@@ -1635,9 +1662,11 @@ async function collectImageSeries(folderPath) {
   let foundInSeries = false;
 
   for (let index = 0; index < 50; index += 1) {
-    const imagePath = `${folderPath}/${index}.png`;
+    const imagePath = await findFirstLoadableImage(
+      buildIndexedImageCandidates(folderPath, index)
+    );
 
-    if (await canLoadImage(imagePath)) {
+    if (imagePath) {
       images.push(imagePath);
       foundInSeries = true;
     } else if (foundInSeries) {
@@ -1646,6 +1675,16 @@ async function collectImageSeries(folderPath) {
   }
 
   return images;
+}
+
+async function findFirstLoadableImage(candidates) {
+  for (const candidate of candidates) {
+    if (await canLoadImage(candidate)) {
+      return candidate;
+    }
+  }
+
+  return "";
 }
 
 function pushUniqueImage(images, imageKeys, imagePath) {

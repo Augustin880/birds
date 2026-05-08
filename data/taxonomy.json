@@ -2908,6 +2908,50 @@
                 "status": ""
             },
             "notes": ""
+        },
+        "streptopelia": {
+            "id": "streptopelia",
+            "type": "taxon",
+            "label": "Streptopelia",
+            "rank": "genus",
+            "summary": ""
+        },
+        "eurasian-collared-dove": {
+            "id": "eurasian-collared-dove",
+            "type": "species",
+            "label": "Eurasian Collared Dove",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Streptopelia Decaocto",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
+        },
+        "passer": {
+            "id": "passer",
+            "type": "taxon",
+            "label": "Passer",
+            "rank": "genus",
+            "summary": "Passer as a genus branch within Passeridae."
+        },
+        "house-sparrow": {
+            "id": "house-sparrow",
+            "type": "species",
+            "label": "House Sparrow",
+            "rank": "species",
+            "summary": "",
+            "profile": {
+                "scientificName": "Passer Domesticus",
+                "habitat": "",
+                "diet": "",
+                "wingspan": "",
+                "status": ""
+            },
+            "notes": ""
         }
     },
     "children": {
@@ -3041,7 +3085,8 @@
             "columbidae"
         ],
         "columbidae": [
-            "columba"
+            "columba",
+            "streptopelia"
         ],
         "columba": [
             "wood-pigeon"
@@ -3554,6 +3599,15 @@
         ],
         "gulosus": [
             "european-shag"
+        ],
+        "streptopelia": [
+            "eurasian-collared-dove"
+        ],
+        "passeridae": [
+            "passer"
+        ],
+        "passer": [
+            "house-sparrow"
         ]
     },
     "parents": {
@@ -3636,6 +3690,7 @@
         "pteroclidae": "pterocliformes",
         "columbidae": "columbiformes",
         "columba": "columbidae",
+        "streptopelia": "columbidae",
         "wood-pigeon": "columba",
         "opisthocomidae": "opisthocomiformes",
         "aramidae": "gruiformes",
@@ -3937,6 +3992,9 @@
         "larus": "laridae",
         "european-herring-gull": "larus",
         "gulosus": "phalacrocoracidae",
-        "european-shag": "gulosus"
+        "european-shag": "gulosus",
+        "eurasian-collared-dove": "streptopelia",
+        "passer": "passeridae",
+        "house-sparrow": "passer"
     }
 }
